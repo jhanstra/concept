@@ -1,0 +1,25 @@
+/* Header
+__________________________________________________ */
+header {
+  height: $header-height;
+  display:block;
+  div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h1,h2,h3,h4,h5,h6,p {
+    text-align:center;
+    font-weight:100;
+    @if ($background == 'image') {
+      color:$white;
+    }
+    @else {
+      color:$black;
+    }
+  }
+  h1 {
+    font-size:7rem;
+  }
+
+}

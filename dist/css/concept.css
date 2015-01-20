@@ -1,0 +1,877 @@
+@charset "UTF-8";
+/*
+* Concept V0.0
+* Copyright 2015, Jared Hanstra
+* www.c-o-n-c-e-p-t.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 1/19/2015
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Base Styles
+- Grid
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* COLORS */
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *  user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+/* line 23, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 36, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 62, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 74, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 88, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 99, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 110, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 119, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 131, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 140, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 154, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 163, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 199, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 238, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 247, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 254, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 258, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 313, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 324, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 335, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 343, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 353, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 365, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+/* line 393, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 407, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 419, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+/* line 436, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 449, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 458, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 468, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+/* line 479, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 495, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *  (include `-moz` to future-proof).
+ */
+/* line 505, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 519, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 527, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 540, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 553, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 562, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 573, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 579, /Users/hanstra/Dropbox/Jared/dev/current/concept/bower_components/normalize-scss/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html font-size is set to 62.5% so that all the REM measurements throughout Concept
+are based on 10px sizing. So 1.5rem = 15px :) Props to Dave Gamache for the inspiration for this. */
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 11, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/base.scss */
+a {
+  color: #1eaedb; }
+  /* line 13, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/base.scss */
+  a:hover {
+    color: #0fa0ce; }
+
+/* Base Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 3, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+html {
+  font-size: 10px; }
+
+/* line 6, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Merriweather Sans', "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+/* line 14, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  margin: 0; }
+
+/* line 19, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+p, a, li, span {
+  font-family: 'Merriweather Sans';
+  font-weight: 300;
+  font-size: 1.5rem; }
+
+/* line 25, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+/* line 26, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+/* line 27, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+/* line 28, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem; }
+
+/* line 29, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem; }
+
+/* line 30, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  /* line 34, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h1 {
+    font-size: 5rem; }
+  /* line 35, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h2 {
+    font-size: 4.2rem; }
+  /* line 36, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h3 {
+    font-size: 3.6rem; }
+  /* line 37, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h4 {
+    font-size: 3rem; }
+  /* line 38, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h5 {
+    font-size: 2.4rem; }
+  /* line 39, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/typography.scss */
+  h6 {
+    font-size: 1.5rem; } }
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 3, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+.c-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 9, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+.c-container-fixed {
+  max-width: 960px; }
+
+/* line 12, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+[class*="c-col-"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 17, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+.c-row {
+  margin-bottom: 2rem; }
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  /* line 25, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-1 {
+    width: 3.33333%; }
+  /* line 26, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-2 {
+    width: 6.66667%; }
+  /* line 27, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-3 {
+    width: 10%; }
+  /* line 28, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-4 {
+    width: 13.33333%; }
+  /* line 29, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-5 {
+    width: 16.66667%; }
+  /* line 30, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-6 {
+    width: 20%; }
+  /* line 31, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-7 {
+    width: 23.33333%; }
+  /* line 32, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-8 {
+    width: 26.66667%; }
+  /* line 33, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-9 {
+    width: 30%; }
+  /* line 34, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-10 {
+    width: 33.33333%; }
+  /* line 35, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-11 {
+    width: 36.66667%; }
+  /* line 36, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-12 {
+    width: 40%; }
+  /* line 37, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-13 {
+    width: 43.33333%; }
+  /* line 38, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-14 {
+    width: 46.66667%; }
+  /* line 39, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-15 {
+    width: 50%; }
+  /* line 40, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-16 {
+    width: 53.33333%; }
+  /* line 41, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-17 {
+    width: 56.66667%; }
+  /* line 42, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-18 {
+    width: 60%; }
+  /* line 43, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-19 {
+    width: 63.33333%; }
+  /* line 44, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-20 {
+    width: 66.66667%; }
+  /* line 45, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-21 {
+    width: 70%; }
+  /* line 46, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-22 {
+    width: 73.33333%; }
+  /* line 47, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-23 {
+    width: 76.66667%; }
+  /* line 48, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-24 {
+    width: 80%; }
+  /* line 49, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-25 {
+    width: 83.33333%; }
+  /* line 50, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-26 {
+    width: 86.66667%; }
+  /* line 51, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-27 {
+    width: 90%; }
+  /* line 52, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-28 {
+    width: 93.33333%; }
+  /* line 53, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-29 {
+    width: 96.66667%; }
+  /* line 54, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-30 {
+    width: 100%; }
+  /* line 55, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-31 {
+    width: 103.33333%; }
+  /* line 56, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-32 {
+    width: 106.66667%; }
+  /* line 57, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-33 {
+    width: 110%; }
+  /* line 58, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-34 {
+    width: 113.33333%; }
+  /* line 59, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-35 {
+    width: 116.66667%; }
+  /* line 60, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-36 {
+    width: 120%; }
+  /* line 61, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-37 {
+    width: 123.33333%; }
+  /* line 62, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-38 {
+    width: 126.66667%; }
+  /* line 63, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-39 {
+    width: 130%; }
+  /* line 64, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-40 {
+    width: 133.33333%; }
+  /* line 65, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-41 {
+    width: 136.66667%; }
+  /* line 66, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-42 {
+    width: 140%; }
+  /* line 67, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-43 {
+    width: 143.33333%; }
+  /* line 68, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-44 {
+    width: 146.66667%; }
+  /* line 69, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-45 {
+    width: 150%; }
+  /* line 70, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-46 {
+    width: 153.33333%; }
+  /* line 71, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-47 {
+    width: 156.66667%; }
+  /* line 72, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-48 {
+    width: 160%; }
+  /* line 73, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-49 {
+    width: 163.33333%; }
+  /* line 74, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-col-50 {
+    width: 166.66667%; }
+  /* Offsets */
+  /* line 78, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-1 {
+    margin-left: 3.33333%; }
+  /* line 79, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-2 {
+    margin-left: 6.66667%; }
+  /* line 80, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-3 {
+    margin-left: 10%; }
+  /* line 81, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-4 {
+    margin-left: 13.33333%; }
+  /* line 82, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-5 {
+    margin-left: 16.66667%; }
+  /* line 83, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-6 {
+    margin-left: 20%; }
+  /* line 84, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-7 {
+    margin-left: 23.33333%; }
+  /* line 85, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-8 {
+    margin-left: 26.66667%; }
+  /* line 86, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-9 {
+    margin-left: 30%; }
+  /* line 87, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-10 {
+    margin-left: 33.33333%; }
+  /* line 88, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-11 {
+    margin-left: 36.66667%; }
+  /* line 89, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-12 {
+    margin-left: 40%; }
+  /* line 90, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-13 {
+    margin-left: 43.33333%; }
+  /* line 91, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-14 {
+    margin-left: 46.66667%; }
+  /* line 92, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-15 {
+    margin-left: 50%; }
+  /* line 93, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-16 {
+    margin-left: 53.33333%; }
+  /* line 94, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-17 {
+    margin-left: 56.66667%; }
+  /* line 95, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-18 {
+    margin-left: 60%; }
+  /* line 96, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-19 {
+    margin-left: 63.33333%; }
+  /* line 97, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-20 {
+    margin-left: 66.66667%; }
+  /* line 98, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-21 {
+    margin-left: 70%; }
+  /* line 99, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-22 {
+    margin-left: 73.33333%; }
+  /* line 100, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-23 {
+    margin-left: 76.66667%; }
+  /* line 101, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-24 {
+    margin-left: 80%; }
+  /* line 102, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-25 {
+    margin-left: 83.33333%; }
+  /* line 103, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-26 {
+    margin-left: 86.66667%; }
+  /* line 104, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-27 {
+    margin-left: 90%; }
+  /* line 105, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-28 {
+    margin-left: 93.33333%; }
+  /* line 106, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-29 {
+    margin-left: 96.66667%; }
+  /* line 107, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-30 {
+    margin-left: 100%; }
+  /* line 108, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-31 {
+    margin-left: 103.33333%; }
+  /* line 109, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-32 {
+    margin-left: 106.66667%; }
+  /* line 110, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-33 {
+    margin-left: 110%; }
+  /* line 111, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-34 {
+    margin-left: 113.33333%; }
+  /* line 112, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-35 {
+    margin-left: 116.66667%; }
+  /* line 113, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-36 {
+    margin-left: 120%; }
+  /* line 114, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-37 {
+    margin-left: 123.33333%; }
+  /* line 115, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-38 {
+    margin-left: 126.66667%; }
+  /* line 116, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-39 {
+    margin-left: 130%; }
+  /* line 117, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-40 {
+    margin-left: 133.33333%; }
+  /* line 118, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-41 {
+    margin-left: 136.66667%; }
+  /* line 119, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-42 {
+    margin-left: 140%; }
+  /* line 120, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-43 {
+    margin-left: 143.33333%; }
+  /* line 121, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-44 {
+    margin-left: 146.66667%; }
+  /* line 122, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-45 {
+    margin-left: 150%; }
+  /* line 123, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-46 {
+    margin-left: 153.33333%; }
+  /* line 124, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-47 {
+    margin-left: 156.66667%; }
+  /* line 125, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-48 {
+    margin-left: 160%; }
+  /* line 126, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-49 {
+    margin-left: 163.33333%; }
+  /* line 127, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/base/grid.scss */
+  .c-container .c-offset-50 {
+    margin-left: 166.66667%; } }
+
+/* line 1, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/background.scss */
+.c-full-background-image {
+  background-image: url('../images/dunes-blur.jpg');
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1; }
+
+/* Header
+__________________________________________________ */
+/* line 3, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/header.scss */
+header {
+  height: 600px;
+  display: block; }
+  /* line 6, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/header.scss */
+  header div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  /* line 11, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/header.scss */
+  header h1, header h2, header h3, header h4, header h5, header h6, header p {
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff; }
+  /* line 21, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/header.scss */
+  header h1 {
+    font-size: 7rem; }
+
+/* line 1, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/horizontal-rule.scss */
+hr {
+  background-color: #ffffff;
+  border: none;
+  height: 1px;
+  margin: 0 auto; }
+
+/* line 7, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/horizontal-rule.scss */
+.c-hr-full {
+  width: 100%; }
+
+/* line 10, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/horizontal-rule.scss */
+.c-hr-half {
+  width: 50%; }
+
+/* line 13, /Users/hanstra/Dropbox/Jared/dev/current/concept/src/components/horizontal-rule.scss */
+.c-hr-mini {
+  width: 50px; }
+

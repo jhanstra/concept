@@ -1,0 +1,128 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.c-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.c-container-fixed {
+  max-width: $container-fixed-max-width;
+}
+[class*="c-col-"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.c-row {
+  margin-bottom: 2rem;
+}
+
+
+/* For devices larger than 550px */
+@media (min-width:550px) {
+
+  .c-container .c-col-1            { width: 100% / $number-of-columns * 1; }
+  .c-container .c-col-2            { width: 100% / $number-of-columns * 2; }
+  .c-container .c-col-3            { width: 100% / $number-of-columns * 3; }
+  .c-container .c-col-4            { width: 100% / $number-of-columns * 4; }
+  .c-container .c-col-5            { width: 100% / $number-of-columns * 5; }
+  .c-container .c-col-6            { width: 100% / $number-of-columns * 6; }
+  .c-container .c-col-7            { width: 100% / $number-of-columns * 7; }
+  .c-container .c-col-8            { width: 100% / $number-of-columns * 8; }
+  .c-container .c-col-9            { width: 100% / $number-of-columns * 9; }
+  .c-container .c-col-10            { width: 100% / $number-of-columns * 10; }
+  .c-container .c-col-11            { width: 100% / $number-of-columns * 11; }
+  .c-container .c-col-12            { width: 100% / $number-of-columns * 12; }
+  .c-container .c-col-13            { width: 100% / $number-of-columns * 13; }
+  .c-container .c-col-14            { width: 100% / $number-of-columns * 14; }
+  .c-container .c-col-15            { width: 100% / $number-of-columns * 15; }
+  .c-container .c-col-16            { width: 100% / $number-of-columns * 16; }
+  .c-container .c-col-17            { width: 100% / $number-of-columns * 17; }
+  .c-container .c-col-18            { width: 100% / $number-of-columns * 18; }
+  .c-container .c-col-19            { width: 100% / $number-of-columns * 19; }
+  .c-container .c-col-20            { width: 100% / $number-of-columns * 20; }
+  .c-container .c-col-21            { width: 100% / $number-of-columns * 21; }
+  .c-container .c-col-22            { width: 100% / $number-of-columns * 22; }
+  .c-container .c-col-23            { width: 100% / $number-of-columns * 23; }
+  .c-container .c-col-24            { width: 100% / $number-of-columns * 24; }
+  .c-container .c-col-25            { width: 100% / $number-of-columns * 25; }
+  .c-container .c-col-26            { width: 100% / $number-of-columns * 26; }
+  .c-container .c-col-27            { width: 100% / $number-of-columns * 27; }
+  .c-container .c-col-28            { width: 100% / $number-of-columns * 28; }
+  .c-container .c-col-29            { width: 100% / $number-of-columns * 29; }
+  .c-container .c-col-30            { width: 100% / $number-of-columns * 30; }
+  .c-container .c-col-31            { width: 100% / $number-of-columns * 31; }
+  .c-container .c-col-32            { width: 100% / $number-of-columns * 32; }
+  .c-container .c-col-33            { width: 100% / $number-of-columns * 33; }
+  .c-container .c-col-34            { width: 100% / $number-of-columns * 34; }
+  .c-container .c-col-35            { width: 100% / $number-of-columns * 35; }
+  .c-container .c-col-36            { width: 100% / $number-of-columns * 36; }
+  .c-container .c-col-37            { width: 100% / $number-of-columns * 37; }
+  .c-container .c-col-38            { width: 100% / $number-of-columns * 38; }
+  .c-container .c-col-39            { width: 100% / $number-of-columns * 39; }
+  .c-container .c-col-40            { width: 100% / $number-of-columns * 40; }
+  .c-container .c-col-41            { width: 100% / $number-of-columns * 41; }
+  .c-container .c-col-42            { width: 100% / $number-of-columns * 42; }
+  .c-container .c-col-43            { width: 100% / $number-of-columns * 43; }
+  .c-container .c-col-44            { width: 100% / $number-of-columns * 44; }
+  .c-container .c-col-45            { width: 100% / $number-of-columns * 45; }
+  .c-container .c-col-46            { width: 100% / $number-of-columns * 46; }
+  .c-container .c-col-47            { width: 100% / $number-of-columns * 47; }
+  .c-container .c-col-48            { width: 100% / $number-of-columns * 48; }
+  .c-container .c-col-49            { width: 100% / $number-of-columns * 49; }
+  .c-container .c-col-50            { width: 100% / $number-of-columns * 50; }
+
+
+  /* Offsets */
+  .c-container .c-offset-1           { margin-left: 100% / $number-of-columns * 1; }
+  .c-container .c-offset-2           { margin-left: 100% / $number-of-columns * 2; }
+  .c-container .c-offset-3           { margin-left: 100% / $number-of-columns * 3; }
+  .c-container .c-offset-4           { margin-left: 100% / $number-of-columns * 4; }
+  .c-container .c-offset-5           { margin-left: 100% / $number-of-columns * 5; }
+  .c-container .c-offset-6           { margin-left: 100% / $number-of-columns * 6; }
+  .c-container .c-offset-7           { margin-left: 100% / $number-of-columns * 7; }
+  .c-container .c-offset-8           { margin-left: 100% / $number-of-columns * 8; }
+  .c-container .c-offset-9           { margin-left: 100% / $number-of-columns * 9; }
+  .c-container .c-offset-10           { margin-left: 100% / $number-of-columns * 10; }
+  .c-container .c-offset-11           { margin-left: 100% / $number-of-columns * 11; }
+  .c-container .c-offset-12           { margin-left: 100% / $number-of-columns * 12; }
+  .c-container .c-offset-13           { margin-left: 100% / $number-of-columns * 13; }
+  .c-container .c-offset-14           { margin-left: 100% / $number-of-columns * 14; }
+  .c-container .c-offset-15           { margin-left: 100% / $number-of-columns * 15; }
+  .c-container .c-offset-16           { margin-left: 100% / $number-of-columns * 16; }
+  .c-container .c-offset-17           { margin-left: 100% / $number-of-columns * 17; }
+  .c-container .c-offset-18           { margin-left: 100% / $number-of-columns * 18; }
+  .c-container .c-offset-19           { margin-left: 100% / $number-of-columns * 19; }
+  .c-container .c-offset-20           { margin-left: 100% / $number-of-columns * 20; }
+  .c-container .c-offset-21           { margin-left: 100% / $number-of-columns * 21; }
+  .c-container .c-offset-22           { margin-left: 100% / $number-of-columns * 22; }
+  .c-container .c-offset-23           { margin-left: 100% / $number-of-columns * 23; }
+  .c-container .c-offset-24           { margin-left: 100% / $number-of-columns * 24; }
+  .c-container .c-offset-25           { margin-left: 100% / $number-of-columns * 25; }
+  .c-container .c-offset-26           { margin-left: 100% / $number-of-columns * 26; }
+  .c-container .c-offset-27           { margin-left: 100% / $number-of-columns * 27; }
+  .c-container .c-offset-28           { margin-left: 100% / $number-of-columns * 28; }
+  .c-container .c-offset-29           { margin-left: 100% / $number-of-columns * 29; }
+  .c-container .c-offset-30           { margin-left: 100% / $number-of-columns * 30; }
+  .c-container .c-offset-31           { margin-left: 100% / $number-of-columns * 31; }
+  .c-container .c-offset-32           { margin-left: 100% / $number-of-columns * 32; }
+  .c-container .c-offset-33           { margin-left: 100% / $number-of-columns * 33; }
+  .c-container .c-offset-34           { margin-left: 100% / $number-of-columns * 34; }
+  .c-container .c-offset-35           { margin-left: 100% / $number-of-columns * 35; }
+  .c-container .c-offset-36           { margin-left: 100% / $number-of-columns * 36; }
+  .c-container .c-offset-37           { margin-left: 100% / $number-of-columns * 37; }
+  .c-container .c-offset-38           { margin-left: 100% / $number-of-columns * 38; }
+  .c-container .c-offset-39           { margin-left: 100% / $number-of-columns * 39; }
+  .c-container .c-offset-40           { margin-left: 100% / $number-of-columns * 40; }
+  .c-container .c-offset-41           { margin-left: 100% / $number-of-columns * 41; }
+  .c-container .c-offset-42           { margin-left: 100% / $number-of-columns * 42; }
+  .c-container .c-offset-43           { margin-left: 100% / $number-of-columns * 43; }
+  .c-container .c-offset-44           { margin-left: 100% / $number-of-columns * 44; }
+  .c-container .c-offset-45           { margin-left: 100% / $number-of-columns * 45; }
+  .c-container .c-offset-46           { margin-left: 100% / $number-of-columns * 46; }
+  .c-container .c-offset-47           { margin-left: 100% / $number-of-columns * 47; }
+  .c-container .c-offset-48           { margin-left: 100% / $number-of-columns * 48; }
+  .c-container .c-offset-49           { margin-left: 100% / $number-of-columns * 49; }
+  .c-container .c-offset-50           { margin-left: 100% / $number-of-columns * 50; }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "concept",
+  "version": "0.0.0",
+  "authors": [
+    "Jared Hanstra <jhanstra@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "~3.0.2"
+  }
+}
