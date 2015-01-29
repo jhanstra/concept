@@ -1,0 +1,158 @@
+// Basic Button
+.c-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  font-size:1.2rem;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  margin: 10px 0px;
+  border-radius: 4px;
+  //transition: 0.1s ease-in-out;
+  position: relative;
+  border:0px solid transparent;
+  padding:6px 12px;
+  text-transform:uppercase;
+}
+.btn:hover {
+  text-decoration:none;
+  transition:0.1s ease-in-out;
+}
+
+
+// Sizes
+.c-jumbo {
+  font-size:2.4rem;
+  padding:20px 70px;
+  border-radius:8px;
+}
+.c-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  padding:12px 40px;
+}
+.c-sm {
+  padding:4px 12px;
+  border-radius:3px;
+  font-size:1.0rem;
+}
+.c-xs {
+  padding:2px 5px;
+  border-radius:3px;
+  font-size:0.85rem;
+}
+.c-fixed-width {
+  width:350px;
+  padding:7px 0px;
+}
+.c-full-width {
+  width:100%;
+  font-size:3rem;
+  border-radius:0px;
+  padding:50px 0px;
+}
+
+
+
+// Color Schemes
+.c-default,
+.c-raised {
+  background-color:$white;
+  color: $black;
+  box-shadow:0px 2px 0px $black;
+  border:1px solid #eee;
+  &:hover {
+    background-color:darken($white,$button-hover-darken-percentage);
+    border:1px solid darken($white,$button-hover-darken-percentage);
+  }
+}
+.c-primary {
+  background-color:$primary-button-background-color;
+  border:1px solid $primary-button-background-color;
+  color:$white;
+  &:hover {
+    background-color:darken($primary-button-background-color, $button-hover-darken-percentage);
+    border:1px solid darken($primary-button-background-color, $button-hover-darken-percentage);
+    color:darken($white,5%);
+  }
+}
+.c-success {
+  background-color:$success-button-background-color;
+  border:1px solid $success-button-background-color;
+  color:$white;
+  &:hover {
+    background-color:darken($success-button-background-color, $button-hover-darken-percentage);
+    border:1px solid darken($success-button-background-color, $button-hover-darken-percentage);
+    color:darken($white,5%);
+  }
+}
+.c-neutral {
+  background-color:$neutral-button-background-color;
+  border:1px solid $neutral-button-background-color;
+  color:$white;
+  &:hover {
+    background-color:darken($neutral-button-background-color, $button-hover-darken-percentage);
+    border:1px solid darken($neutral-button-background-color, $button-hover-darken-percentage);
+    color:darken($white,5%);
+  }
+}
+.c-danger {
+  background-color:$danger-button-background-color;
+  border:1px solid $danger-button-background-color;
+  color:$white;
+  &:hover {
+    background-color:darken($danger-button-background-color, $button-hover-darken-percentage);
+    border:1px solid darken($danger-button-background-color, $button-hover-darken-percentage);
+    color:darken($white,5%);
+  }
+}
+
+.c-transparent-dark {
+  background-color:rgba(0,0,0,0.1);
+  color:$white;
+  &:hover {
+    background-color:rgba(0,0,0,0.3);
+  }
+}
+.c-transparent-light {
+  background-color:rgba(255,255,255,0.1);
+  color:$white;
+  &:hover {
+    background-color:rgba(255,255,255,0.2);
+  }
+}
+
+// Styles
+.c-flat {
+  box-shadow:0px 0px 0px transparent;
+}
+.c-outline {
+  background-color:transparent;
+  &:hover {
+    background-color:transparent;
+  }
+}
+.c-rect {
+  border-radius:0px;
+}
+.c-clicky {
+  box-shadow:0px 2px 0px $black;
+  color:$white;
+  &:hover {
+    box-shadow:0px 0px 0px transparent;
+    transform: translateY(2px);
+  }
+}
+.c-text {
+  background:transparent;
+  border:0px solid transparent;
+  &:hover {
+    border:0px solid transparent;
+  }
+}

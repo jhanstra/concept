@@ -11,6 +11,7 @@ lrserver = require('tiny-lr')(),
 express = require('express'),
 livereload = require('connect-livereload'),
 sass = require('gulp-sass'),
+minifycss = require('gulp-minify-css'),
 //ngAnnotate = require('gulp-ng-annotate'),
 autoprefixer = require('gulp-autoprefixer'),
 scsslint = require('gulp-scss-lint'),
@@ -39,22 +40,32 @@ server.all('/*', function(req, res) {
 // });
 
 
-// Views task
+//
 gulp.task('views', function() {
   // Get our index.html
-  gulp.src('index.html')
+  gulp.src('app/index.html')
   // And put it in the dist folder
   .pipe(gulp.dest('dist/'));
+  // JS
+  gulp.src('app/js/**/*')
+  .pipe(gulp.dest('dist/js/'));
+  gulp.src('src/concept.js')
+  .pipe(gulp.dest('dist/js/'));
+  // jQuery
+  gulp.src('bower_components/jquery/dist/**/*')
+  .pipe(gulp.dest('dist/jquery/'));
   // Images
-  gulp.src('./images/**/*')
+  gulp.src('./app/images/**/*')
   .pipe(gulp.dest('dist/images'));
-  // Fonts
+  // Fonts/Icons
+  gulp.src('./bower_components/open-iconic/font/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts/iconic'));
   gulp.src('./bower_components/font-awesome/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'));
+  .pipe(gulp.dest('dist/fonts/font-awesome'));
 
   // Any other view files from pages
-  gulp.src('./pages/**/*')
-  .pipe(gulp.dest('dist/pages/'))
+  gulp.src('./app/views/**/*')
+  .pipe(gulp.dest('dist/views/'))
   .pipe(refresh(lrserver)); // Tell the lrserver to refresh
 
 });
@@ -82,6 +93,8 @@ gulp.task('styles', function() {
   .pipe(sass({ errLogToConsole: true, sourceComments: 'map', sourceMap: 'sass' }))
   // Optionally add autoprefixer
   .pipe(autoprefixer("last 2 versions", "> 1%", "ie 8"))
+  // Minify
+  .pipe(minifycss())
   // These last two should look familiar now :)
   .pipe(gulp.dest('dist/css/'))
   .pipe(refresh(lrserver));
@@ -89,7 +102,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', [], function() {
   // Watch our files
-  gulp.watch(['pages/**/*.html','src/**/*.scss','index.html','images/**/*.jpg','images/**/*.png'],[
+  gulp.watch(['app/views/**/*.html','src/**/*.scss','src/**/*.js','app/index.html','images/**/*.jpg','images/**/*.png'],[
   'views',
   'scss-lint',
   'styles'

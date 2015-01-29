@@ -4,13 +4,40 @@
 html font-size is set to 62.5% so that all the REM measurements throughout Concept
 are based on 10px sizing. So 1.5rem = 15px :) Props to Dave Gamache for the inspiration for this. */
 
+body {
+  //background:$full-background-color;
+  display:flex;
+  flex-direction:column nowrap;
+  height:100vh;
+}
+ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+button,
+button:focus,
+button:active {
+  outline:none;  
+}
+
+
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: $link;
+  text-decoration:none;
   &:hover {
     color: $link-hover;
   }
+}
+
+
+.c-right {
+  float:right;
+}
+.c-full-window-height {
+  height:100vh;
 }

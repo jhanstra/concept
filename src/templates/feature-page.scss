@@ -1,0 +1,35 @@
+.c-feature-page {
+  .c-block {
+    background-color:rgba(0,0,0,0.5);
+    height:400px;
+  }
+  .button-block {
+    height:1500px;
+    background-color:rgba(0,0,0,0.5);
+  }
+  .button-block-dark {
+    height:1200px;
+    background-color:rgba(0,0,0,0.6);
+  }
+  .c-dark {
+    background-color:rgba(0,0,0,0.6);
+  }
+  .c-super-dark {
+    background-color:rgba(0,0,0,0.7);
+  }
+  xmp {
+    text-align:left;
+    padding:20px;
+    margin:0 auto;
+    color:$white;
+  }
+
+
+}
+.grid {
+  margin:30px auto;
+}
+.grid [class*="c-col-"] {
+  border:1px solid $white;
+  height:40px;
+}

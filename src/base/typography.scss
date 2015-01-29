@@ -7,19 +7,32 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: $primary-font, "HelveticaNeue", Helvetica, Arial, sans-serif;
-  color: #222;
+  font-family: $paragraph-font, "HelveticaNeue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $head-font;
-  font-weight: 300;
+  font-family: $header-font, Helvetica, Arial, sans-serif;
+  font-weight: $default-font-weight;
   margin:0;
+  color:$default-font-color;
 }
 p,a,li,span {
-  font-family: $primary-font;
-  font-weight: 300;
+  font-family: $paragraph-font;
+  font-weight: $default-font-weight;
   font-size:1.5rem;
+  color:$default-font-color;
+}
+button,
+.btn {
+  font-family: $button-font;
+}
+.c-center {
+  text-align:center;
+}
+.c-v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
@@ -28,6 +41,12 @@ h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+code {
+  background-color:$black;
+  border-radius:3px;
+  padding:4px 8px;
+}
 
 /* Larger than phablet */
 @media (min-width: 550px) {

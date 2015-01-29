@@ -2,7 +2,7 @@ hr {
   background-color:$white;
   border:none;
   height:1px;
-  margin:0 auto;
+  margin:$hr-margin-default auto;
 }
 .c-hr-full {
   width:100%;
