@@ -1,0 +1,217 @@
+<div class="c-full-background-image c-fbi-2"></div>
+<header>
+  <div>
+    <h1>CSS</h1>
+    <p>Concept's CSS is modern. Here are the base styles.</p>
+  </div>
+</header>
+
+<!-- Typography -->
+<div class="c-row">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-left-aligned-content">
+      <h2>Typography</h2>
+      <p>All headers <code>h1</code> through <code>h6</code> have a default font of Helvetica Neue. All <code>p</code> tags have a default font of Merrieweather Sans. You can easily change these fonts by changing the variables <code>$header-font</code> and <code>$paragraph-font</code>, respectively, in <code>variables.scss</code>
+    </div>
+  </div>
+</div>
+
+<!-- Header text -->
+<div class="c-row c-center" id="header-block">
+  <div class="c-col-6 c-block">
+    <div class="c-v-center">
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      <h6>Header 6</h6>
+    </div>
+  </div>
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-v-center">
+      <h3>Headers</h3>
+      <p>Concept's default font is Helvetica Neue.</p>
+      <xmp>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+      </xmp>
+    </div>
+  </div>
+</div>
+
+<!-- Paragraph text -->
+<div class="c-row c-center" id="paragraph-block">
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-v-center">
+      <h3>Paragraph text</h3>
+    </div>
+  </div>
+  <div class="c-col-6 c-block">
+    <div class="c-left-aligned-content c-v-center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus urna eu urna ornare gravida. Fusce sit amet eros dolor. Vestibulum eget iaculis turpis, ut varius lectus. Duis hendrerit nulla eget lobortis blandit. Morbi semper gravida finibus.</p>
+      <p>In euismod nec enim sit amet auctor. Sed facilisis ex sed pretium fringilla. Ut auctor dui accumsan, blandit lacus at, eleifend nulla. Mauris at elementum nisi. Donec non venenatis mauris. Vestibulum ultrices odio at est imperdiet, at finibus mauris mollis.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Grid -->
+<div class="c-row">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-right-aligned-content">
+      <h2>Grid</h2>
+      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <code>$number-of-columns</code> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
+    </div>
+    <div class="c-row">
+      <div class="c-col-10 c-offset-1">
+        <div class="c-row grid">
+          <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
+          <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+<!-- Buttons -->
+<div class="c-row">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-left-aligned-content">
+      <h2>Buttons</h2>
+      <p>Use a variety of classes to build buttons. Start by adding class <code>.c-btn</code> to any &ltbutton&gt or &lta&gt element and add classes as you wish. Choose between 7 different sizes: extra small, small, normal, large, jumbo, fixed-width, or full-width. Choose between flat buttons, raised buttons, outline buttons, rectangle buttons,  or clicky buttons.
+    </div>
+  </div>
+</div>
+<!-- Button examples -->
+<div class="c-row c-center" id="button-block">
+  <div class="c-col-6 c-block">
+    <div class="c-v-center">
+      <button class="c-btn c-default">Default button</button>
+      <hr class="c-hr-mini">
+      <a class="c-btn c-default c-primary">Raised button (default)</a><br>
+      <a class="c-btn c-primary c-flat">Flat button</a><br>
+      <a class="c-btn c-primary c-outline">Outline button</a><br>
+      <a class="c-btn c-primary c-rect">Rectangle button</a><br>
+      <a class="c-btn c-primary c-rounded">Rounded button</a><br>
+      <a class="c-btn c-primary c-clicky">Clicky button</a><br>
+      <a class="c-btn c-primary c-text">Text button</a><br>
+      <hr class="c-hr-mini">
+      <button class="c-btn c-primary">Primary button</button><br>
+      <a class="c-btn c-default c-success">Success button</a><br>
+      <button class="c-btn c-default c-neutral">Neutral button</button><br>
+      <button class="c-btn c-default c-danger">Danger button</button><br>
+      <button class="c-btn c-default c-disabled">Disabled button</button><br>
+      <button class="c-btn c-flat c-transparent-dark">Transparent Dark button</button><br>
+      <button class="c-btn c-flat c-transparent-light">Transparent Light button</button><br>
+      <hr class="c-hr-mini">
+      <button class="c-btn c-default c-xs c-neutral">Extra small button</button><br>
+      <button class="c-btn c-default c-sm c-neutral">Small button</button><br>
+      <button class="c-btn c-default c-neutral">Normal (default) button</button><br>
+      <button class="c-btn c-default c-lg c-neutral">Large button</button><br>
+      <button class="c-btn c-default c-jumbo c-neutral">Jumbo button</button><br>
+      <button class="c-btn c-default c-fixed-width c-neutral">Fixed Width button</button><br>
+      <button class="c-btn c-full-width c-neutral">Full width button</button>
+    </div>
+  </div>
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-left-aligned-content">
+      <h4>Default Button<small><code>.c-default</code></small></h4>
+      <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
+      <br><br><br>
+      <h4>Button Types</h4>
+      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons (.c-flat) remove the box-shadow raised look, outline buttons (.c-outline) use a transparent background, rectangle buttons (.c-rect) remove rounded corners, clicky buttons (.c-clicky) appear pressed when hovered over, and text buttons (.c-text) appear as simple text and show a background color on hover.</p>
+      <br><br><br><br>
+      <h4>Button Colors</h4>
+      <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color (.c-primary) to communicate importance. It's purple by default and can be changed with $primary-button-background-color. Use a success button (.c-success) for positive interactive buttons and a danger button (.c-danger) for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark (.c-transparent-dark) of transparent-light (.c-transparent-light) buttons are useful for interfaces with a photo background.</p>
+      <br><br><br>
+      <h4>Button Sizes</h4>
+      <p>Concept uses five sizes for buttons of dynamic width - extra small (.c-xs), small (.c-sm), normal (default), large (.c-lg), and jumbo (.c-jumbo). Fix the width of your button with fixed-width buttons (.c-fixed-width) or make it super jumbo huge with a full-width button (.c-full-width) that takes the full width of its containing element.</p>
+      <br><br><br>
+      <h4>Button Helpers</h4>
+      <p>Button text is capitalized by default. You can set to back to normal capitalization with (.c-capital) or lowercase with (.c-lowercase). Add a transition
+      
+    </div>
+  </div>
+</div>
+
+<!-- Input -->
+<div class="c-row">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-right-aligned-content">
+      <h2>Input</h2>
+      <p>Use a variety of classes to build buttons. Start by adding class <code>.c-btn</code> to any &ltbutton&gt or &lta&gt element and add classes as you wish. Choose between 7 different sizes: extra small, small, normal, large, jumbo, fixed-width, or full-width. Choose between flat buttons, raised buttons, outline buttons, rectangle buttons,  or clicky buttons.
+    </div>
+  </div>
+</div>
+<!-- Input examples -->
+<div class="c-row c-center" id="input-block">
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-left-aligned-content">
+      <h4>Default Button<small><code>.c-default</code></small></h4>
+      <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
+      <br><br><br>
+      <h4>Button Types</h4>
+      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons (.c-flat) remove the box-shadow raised look, outline buttons (.c-outline) use a transparent background, rectangle buttons (.c-rect) remove rounded corners, clicky buttons (.c-clicky) appear pressed when hovered over, and text buttons (.c-text) appear as simple text and show a background color on hover.</p>
+      <br><br><br><br>
+      <h4>Button Colors</h4>
+      <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color (.c-primary) to communicate importance. It's purple by default and can be changed with $primary-button-background-color. Use a success button (.c-success) for positive interactive buttons and a danger button (.c-danger) for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark (.c-transparent-dark) of transparent-light (.c-transparent-light) buttons are useful for interfaces with a photo background.</p>
+      <br><br><br>
+      <h4>Button Sizes</h4>
+      <p>Concept uses five sizes for buttons of dynamic width - extra small (.c-xs), small (.c-sm), normal (default), large (.c-lg), and jumbo (.c-jumbo). Fix the width of your button with fixed-width buttons (.c-fixed-width) or make it super jumbo huge with a full-width button (.c-full-width) that takes the full width of its containing element.</p>
+      <br><br><br>
+      <h4>Button Helpers</h4>
+      <p>Button text is capitalized by default. You can set to back to normal capitalization with (.c-capital) or lowercase with (.c-lowercase). Add a transition
+        
+    </div>
+  </div>
+  <div class="c-col-6 c-block">
+    <div class="c-v-center">
+      <form>
+        <div>
+          <div>
+            <label for="exampleEmailInput">Your email</label>
+            <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+          </div>
+          <div>
+            <label for="exampleRecipientInput">Reason for contacting</label>
+            <select class="u-full-width" id="exampleRecipientInput">
+              <option value="Option 1">Questions</option>
+              <option value="Option 2">Admiration</option>
+              <option value="Option 3">Can I get your number?</option>
+            </select>
+          </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+        <label class="example-send-yourself-copy">
+          <input type="checkbox">
+          <span class="label-body">Send a copy to yourself</span>
+        </label>
+        <input class="button-primary" type="submit" value="Submit">
+      </form>
+      
+      <button class="c-btn c-default">Default button</button>
+      <hr class="c-hr-mini">
+      <a class="c-btn c-default c-primary">Raised button (default)</a><br>
+      <a class="c-btn c-primary c-flat">Flat button</a><br>
+      <a class="c-btn c-primary c-outline">Outline button</a><br>
+      <a class="c-btn c-primary c-rect">Rectangle button</a><br>
+      <a class="c-btn c-primary c-rounded">Rounded button</a><br>
+      <a class="c-btn c-primary c-clicky">Clicky button</a><br>
+      <a class="c-btn c-primary c-text">Text button</a><br>
+      <hr class="c-hr-mini">
+      <button class="c-btn c-primary">Primary button</button><br>
+      <a class="c-btn c-default c-success">Success button</a><br>
+      <button class="c-btn c-default c-neutral">Neutral button</button><br>
+      <button class="c-btn c-default c-danger">Danger button</button><br>
+      <button class="c-btn c-default c-disabled">Disabled button</button><br>
+      <button class="c-btn c-flat c-transparent-dark">Transparent Dark button</button><br>
+      <button class="c-btn c-flat c-transparent-light">Transparent Light button</button><br>
+    </div>
+  </div>
+</div>

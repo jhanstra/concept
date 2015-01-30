@@ -38,10 +38,20 @@
 @import 'base/base.scss';
 @import 'base/typography.scss';
 @import 'base/grid.scss';
+@import 'base/content.scss';
+@import 'base/buttons.scss';
+
+// Icons
+@import 'bower_components/open-iconic/font/css/open-iconic.scss';
+@import 'base/icons.scss';
 
 
 // Components
-@import 'components/buttons.scss';
 @import 'components/background.scss';
 @import 'components/header.scss';
 @import 'components/horizontal-rule.scss';
+@import 'components/vertical-nav.scss';
+@import 'components/horizontal-nav.scss';
+
+// Templates
+@import 'templates/feature-page.scss';

@@ -11,7 +11,7 @@ header {
   h1,h2,h3,h4,h5,h6,p {
     text-align:center;
     font-weight:100;
-    @if ($background == 'image') {
+    @if ($background-type == 'image') {
       color:$white;
     }
     @else {
@@ -21,5 +21,19 @@ header {
   h1 {
     font-size:7rem;
   }
+  p {
+    width:50%;
+    margin:30px auto;
+    font-size:1.8rem;
+    font-family:'Helvetica Neue';
+    font-weight:200;
+  }
 
+}
+.header-background {
+  background-image:url('../images/house.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
 }

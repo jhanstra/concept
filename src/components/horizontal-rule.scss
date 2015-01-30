@@ -1,8 +1,8 @@
 hr {
-  background-color:$white;
+  background-color:$hr-color;
   border:none;
-  height:1px;
-  margin:0 auto;
+  height:$hr-height;
+  margin:$hr-margin auto;
 }
 .c-hr-full {
   width:100%;
@@ -12,4 +12,7 @@ hr {
 }
 .c-hr-mini {
   width:50px;
+}
+.c-hr-custom {
+  width:$hr-custom-width;
 }

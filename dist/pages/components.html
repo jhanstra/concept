@@ -1,7 +1,87 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <h1>Components</h1>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/concept.css">
+  <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700|Lora|Pacifico|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="c-full-background-image"></div>
+  <div class="c-vertical-nav">
+    <ul>
+      <li>Matthew Fox</li>
+      <li>Evangeline Lilly</li>
+      <li>Terry O'Quinn</li>
+      <li>Josh Holloway</li>
+      <li>Matthew Fox</li>
+      <li>Evangeline Lilly</li>
+      <li>Terry O'Quinn</li>
+      <li>Josh Holloway</li>
+    </ul>
+  </div>
+  <div class="c-container c-feature-page">
+    <div class="c-horizontal-nav">
+      <ul>
+        <li><a href="../index.html"><span class="oi" data-glyph="menu"></span></a></li>
+        <li><a href="../index.html">Concept</a></li>
+        <li><a href="http://google.com">Coffee</a></li>
+        <li id="c-right"><a href="http://facebook.com">Account</a></li>
+      </ul>
+    </div>
+    <header>
+      <div>
+        <h1>Components</h1>
+        <p>Concept provides dozens of components that you can plug and play in your website or application. Choose which components to include in the concept.scss file and add classes to your html to use the styles for each component.</p>
+      </div>
+    </header>
+    <div class="c-row c-center">
+      <div class="c-col-6 c-block c-dark">
+        <div class="c-v-center">
+          <h2>Horizontal Rule</h2>
+          <p>Choose from three styles:</p>
+          <xmp>
+<div class="c-v-center">
+  <hr class="c-hr-full">
+  <hr class="c-hr-half">
+  <hr class="c-hr-mini">
+</div>
+          </xmp>
+        </div>
+      </div>
+      <div class="c-col-6 c-block">
+        <div class="c-v-center">
+          <hr class="c-hr-full">
+          <hr class="c-hr-half">
+          <hr class="c-hr-mini">
+        </div>
+      </div>
+    </div>
+    <div class="c-row c-center">
+      <div class="c-col-6 c-block">
+        <header class="header-background">
+          <div>
+            <h1>This is a header</h1>
+            <h3>Here is a subtitle.</h3>
+          </div>
+        </header>
+      </div>
+      <div class="c-col-6 c-block c-dark">
+        <div class="c-v-center">
+          <h2>Header</h2>
+          <p>Choose the height of your header with $header-height.</p>
+          <xmp>
+// Defines the height of a default header div
+$header-height: 70%;
+
+<header class="header-background">
+  <div>
+    <h1>This is a header</h1>
+    <h3>Here is a subtitle.</h3>
+  </div>
+</header>
+          </xmp>
+        </div>
+      </div>
+    </div>
+
   </body>
-</html>
+  </html>

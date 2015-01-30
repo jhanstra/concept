@@ -1,10 +1,9 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .c-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+
+  order:2;
+  overflow-y:auto;
 }
 .c-container-fixed {
   max-width: $container-fixed-max-width;
@@ -13,9 +12,11 @@
   float: left;
   width: 100%;
   box-sizing: border-box;
+
 }
 .c-row {
-  margin-bottom: 2rem;
+  overflow:hidden;
+  clear:both;
 }
 
 
