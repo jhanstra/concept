@@ -1,4 +1,4 @@
-/* Base Typography
+  /* Base Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
   font-size: 10px;
@@ -28,11 +28,21 @@ button,
 }
 .c-center {
   text-align:center;
+  margin:auto;
 }
 .c-v-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+.c-uppercase {
+  text-transform:uppercase;
+}
+.c-capital {
+  text-transform:capitalize;
+}
+.c-lowercase {
+  text-transform:lowercase;
 }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}

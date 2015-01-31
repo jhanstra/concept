@@ -1,20 +1,26 @@
 
-$absolute:absolute;
-$fixed:fixed;
-$relative:relative;
-$transparent:transparent;
+$absolute: absolute;
+$fixed: fixed;
+$relative: relative;
+$transparent: transparent;
+
+// Site-wide Defaults
+$default-border-radius:4px;
 
 // Defines the height of a default header div
 $header-height: 100%;
 
 // Horizontal Rule
-$hr-margin-default:30px;
+$hr-color: $white;
+$hr-margin: 30px;
+$hr-height: 1px;
+$hr-custom-width: 70%;
 
 // Background Type: choose from 'image' or 'color'
 $background-type: 'image';
 $full-background-color: $white;
 $full-background-image: url('../images/milky-way.jpg');
-$full-background-image-2: url('../images/starry-sky.jpg');
+$full-background-image-2: url('../images/milky-way.jpg');
 $full-background-image-3: url('../images/railroad.jpg');
 $full-background-image-4: none;
 $full-background-image-5: none;
@@ -26,11 +32,11 @@ $full-background-image-10: none;
 
 
 // Typography
-$paragraph-font: 'Merriweather Sans';
+$paragraph-font: 'Helvetica Neue';
 $header-font: 'Helvetica Neue';
 $button-font: 'Merriweather Sans';
-$default-font-color:$white;
-$default-font-weight:100;
+$default-font-color: $white;
+$default-font-weight: 100;
 
 // If using a fixed width, defines how wide the page should be
 $container-fixed-max-width: 960px;
@@ -44,7 +50,17 @@ $success-button-background-color: $success-green;
 $danger-button-background-color: $warning-red;
 $neutral-button-background-color: $neutral-blue;
 $clicky-button-background-color: $purpley;
+$disabled-button-background-color: #999;
 $button-hover-darken-percentage: 15%;
+$button-fixed-width:280px;
+
+
+// Forms
+$form-default-width:320px; // best for mobile
+$input-border-radius:4px;
+$form-default-padding:12px;
+
+
 
 
 // Vertical Nav

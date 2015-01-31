@@ -4,6 +4,20 @@
 html font-size is set to 62.5% so that all the REM measurements throughout Concept
 are based on 10px sizing. So 1.5rem = 15px :) Props to Dave Gamache for the inspiration for this. */
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:active,
+*:hover,
+*:focus {
+  outline:none;
+}
+
 body {
   //background:$full-background-color;
   display:flex;

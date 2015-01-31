@@ -1,16 +1,19 @@
 .c-feature-page {
   .c-block {
     background-color:rgba(0,0,0,0.5);
-    height:400px;
+    height:100%;
+    padding:30px;
+    p {
+      color:#aaa;
+      font-weight:200;
+    }
   }
-  .button-block {
-    height:1500px;
-    background-color:rgba(0,0,0,0.5);
-  }
-  .button-block-dark {
-    height:1200px;
-    background-color:rgba(0,0,0,0.6);
-  }
+  #header-block { height: 500px; }
+  #paragraph-block { height: 500px; }
+  #grid-block { height: 400px; }
+  #button-block { height:1500px; }
+  #input-block { height:1500px; }
+
   .c-dark {
     background-color:rgba(0,0,0,0.6);
   }

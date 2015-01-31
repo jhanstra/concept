@@ -18,6 +18,7 @@
   border:0px solid transparent;
   padding:6px 12px;
   text-transform:uppercase;
+  font-family:$button-font, $paragraph-font, Helvetica, Arial, sans-serif;
 }
 .btn:hover {
   text-decoration:none;
@@ -27,12 +28,12 @@
 
 // Sizes
 .c-jumbo {
-  font-size:2.4rem;
+  font-size:1.6rem;
   padding:20px 70px;
   border-radius:8px;
 }
 .c-lg {
-  font-size: 18px;
+  font-size: 1.6rem;
   line-height: 1.33;
   border-radius: 6px;
   padding:12px 40px;
@@ -48,14 +49,11 @@
   font-size:0.85rem;
 }
 .c-fixed-width {
-  width:350px;
-  padding:7px 0px;
+  width:$button-fixed-width;
+  font-size:1.2rem;
 }
 .c-full-width {
   width:100%;
-  font-size:3rem;
-  border-radius:0px;
-  padding:50px 0px;
 }
 
 
@@ -112,6 +110,17 @@
     color:darken($white,5%);
   }
 }
+.c-disabled {
+  background-color:$disabled-button-background-color;
+  border:1px solid $disabled-button-background-color;
+  color:$white;
+  &:hover {
+    background-color:$disabled-button-background-color;
+    border:1px solid $disabled-button-background-color;
+    color:$white;
+    cursor:default;
+  }
+}
 
 .c-transparent-dark {
   background-color:rgba(0,0,0,0.1);
@@ -138,6 +147,9 @@
     background-color:transparent;
   }
 }
+.c-rounded {
+  border-radius:1000px;
+}
 .c-rect {
   border-radius:0px;
 }
@@ -156,3 +168,6 @@
     border:0px solid transparent;
   }
 }
+
+// Helpers
+

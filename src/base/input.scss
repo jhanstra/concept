@@ -1,0 +1,100 @@
+textarea {
+
+}
+.c-form {
+  text-align:left;
+  margin:0px auto;
+  display:inline-block;
+  width:$form-default-width;
+  padding:0px;
+  margin:0px;
+  border-radius:0px;
+  border:none;
+  font-family:'Merriweather Sans';
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width:100%;
+    border:0px solid transparent;
+    
+  }
+
+  .c-form-title {
+    position:relative;
+    top:-1px;
+    display:block;
+    font-weight:400;
+    background-color:#333;
+    color:$white;
+    margin:-$form-default-padding -$form-default-padding 0px -$form-default-padding;
+    padding:$form-default-padding;
+    border-top-left-radius:$default-border-radius;
+    border-top-right-radius:$default-border-radius;
+    margin-bottom:10px;
+    h1,h2,h3,h4,h5,h6 {
+      font-size:1.8rem;
+      font-weight:400;
+    }
+  }
+}
+
+// Full width Form
+.c-form-full {
+  width:100%;
+}
+
+// Default Form
+.c-form-default {
+  background-color:#ccc;
+  padding:$form-default-padding;
+  border-radius:$default-border-radius;
+  label {
+    display:block;
+    color:#333;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    border-radius:$default-border-radius;
+    border:1px solid #eee;
+    background-color:#eee;
+    padding:8px 6px;
+    margin-bottom:5px;
+    font-size:1.6rem;
+    &:focus {
+      background-color:#fff;
+    }
+  }
+
+}
+
+// Lines Form
+.c-form-lines {
+  background-color:transparent;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    background-color:transparent;
+    color:#ccc;
+    border-bottom:1px solid #777;
+    padding:8px 6px;
+    margin-bottom:5px;
+    font-size:1.6rem;
+    &:focus {
+      color:;
+      border-bottom:1px solid $white;
+    }
+  }
+}
+
+
+
+
+@media (max-width:549px) {
+  .c-form {
+    width:96%;
+  }
+}
