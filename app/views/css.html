@@ -134,7 +134,7 @@
       <br><br><br>
       <h4>Button Helpers</h4>
       <p>Button text is capitalized by default. You can set to back to normal capitalization with (.c-capital) or lowercase with (.c-lowercase). Add a transition
-      
+
     </div>
   </div>
 </div>
@@ -152,7 +152,7 @@
 <div class="c-row c-center" id="input-block">
   <div class="c-col-6 c-block c-dark">
     <div class="c-left-aligned-content">
-      
+
     </div>
   </div>
   <div class="c-col-6 c-block">
@@ -164,32 +164,194 @@
         <label>First Name</label>
         <input type="text" placeholder="John">
         <label>Last Name</label>
-        <input type="text" placeholder="Doe">  
+        <input type="text" placeholder="Doe">
         <label>Email</label>
-        <input type="email" placeholder="jdoe@gmail.com">     
+        <input type="email" placeholder="jdoe@gmail.com">
         <label>Message</label>
-        <textarea placeholder="Hi Dave …"></textarea>
+        <textarea placeholder="Hi Dave…"></textarea>
         <input class="c-btn c-success c-full-width" type="submit" value="Submit">
       </form>
-      
+
       <br><br><br><br>
       <h3>Full width default form</h3>
       <form class="c-form c-form-default c-form-full">
         <label>Your email</label>
-        <input type="email" placeholder="test@mailbox.com">        
+        <input type="email" placeholder="test@mailbox.com">
         <label for="exampleMessage">Message</label>
-        <textarea placeholder="Hi Dave …"></textarea>
+        <textarea placeholder="Hi Dave…"></textarea>
         <input class="c-btn c-success" type="submit" value="Submit">
       </form>
-      <br><br><br>
+      <br><br>
       <h3>Lines Form</h3>
+      <br><br>
       <form class="c-form c-form-lines">
         <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">  
-        <input type="email" placeholder="Email">     
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
         <textarea placeholder="Message"></textarea>
-        <div class="c-center"><input class="c-btn c-primary c-rounded c-clicky c-center" type="submit" value="Submit"></div>
+        <div class="c-center"><input class="c-btn c-primary c-rounded c-clicky" type="submit" value="Submit"></div>
       </form>
-      
+      <br><br>
+      <h3>Transparent Form</h3>
+      <br>
+      <form class="c-form c-form-default c-form-transparent">
+        <label>First Name</label>
+        <input type="text" placeholder="John">
+        <label>Last Name</label>
+        <input type="text" placeholder="Doe">
+        <label>Email</label>
+        <input type="email" placeholder="jdoe@gmail.com">
+        <label>Message</label>
+        <textarea placeholder="Hi Dave…"></textarea>
+        <input class="c-btn c-success c-full-width" type="submit" value="Submit">
+      </form>
+      <br><br>
+      <h3>Special Input</h3>
+      <br>
+      <form class="c-form c-form-default c-form-transparent">
+        <label>First Name</label>
+        <input type="text" placeholder="John">
+        <h5>Checkboxes</h5>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox 1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> Checkbox 2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3"> Checkbox 3
+        </label>
+        <h5>Radio Buttons</h5>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Option 1
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Option 2
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Option 3
+        </label>
+        <h5>Selects</h5>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </form>
+      <br><br>
+      <h3>Input/Button Combo</h3>
+      <br>
+      <form class="c-form c-form-default">
+        <span class="c-input-group">
+        <input type="text" placeholder="Search">
+        <input class="c-btn c-primary" type="submit" value="Search">
+        <span>
+      </form>
+
   </div>
 </div>
+
+
+<!-- Tables -->
+<div class="c-row">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-left-aligned-content">
+      <h2>Tables</h2>
+      <p>Concept provides simple tables to use.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Table examples -->
+  <div class="c-row c-center" id="table-block">
+    <div class="c-col-6 c-block">
+      <table class="c-table">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      <br><br>
+      <table class="c-table c-table-lg">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      <br><br>
+      <table class="c-table c-table-pattern">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </div>
+    <div class="c-col-6 c-block c-dark">
+      <div class="c-left-aligned-content">
+        <h4>Default Button<small><code>.c-default</code></small></h4>
+        <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
+        <br><br><br>
+        <h4>Button Types</h4>
+        <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons (.c-flat) remove the box-shadow raised look, outline buttons (.c-outline) use a transparent background, rectangle buttons (.c-rect) remove rounded corners, clicky buttons (.c-clicky) appear pressed when hovered over, and text buttons (.c-text) appear as simple text and show a background color on hover.</p>
+        <br><br><br><br>
+        <h4>Button Colors</h4>
+        <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color (.c-primary) to communicate importance. It's purple by default and can be changed with $primary-button-background-color. Use a success button (.c-success) for positive interactive buttons and a danger button (.c-danger) for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark (.c-transparent-dark) of transparent-light (.c-transparent-light) buttons are useful for interfaces with a photo background.</p>
+        <br><br><br>
+        <h4>Button Sizes</h4>
+        <p>Concept uses five sizes for buttons of dynamic width - extra small (.c-xs), small (.c-sm), normal (default), large (.c-lg), and jumbo (.c-jumbo). Fix the width of your button with fixed-width buttons (.c-fixed-width) or make it super jumbo huge with a full-width button (.c-full-width) that takes the full width of its containing element.</p>
+        <br><br><br>
+        <h4>Button Helpers</h4>
+        <p>Button text is capitalized by default. You can set to back to normal capitalization with (.c-capital) or lowercase with (.c-lowercase). Add a transition
+
+        </div>
+      </div>
+    </div>

@@ -52,13 +52,19 @@ $neutral-button-background-color: $neutral-blue;
 $clicky-button-background-color: $purpley;
 $disabled-button-background-color: #999;
 $button-hover-darken-percentage: 15%;
-$button-fixed-width:280px;
+$button-fixed-width: 280px;
 
 
 // Forms
-$form-default-width:320px; // best for mobile
-$input-border-radius:4px;
-$form-default-padding:12px;
+$form-default-width: 400px; // best for mobile
+$input-border-radius: 4px;
+$form-default-padding: 12px;
+
+$line-form-focus-text-color: $white;
+
+
+// Tables
+$table-default-color: #ccc;
 
 
 
