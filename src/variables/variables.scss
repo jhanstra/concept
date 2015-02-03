@@ -36,7 +36,8 @@ $paragraph-font: 'Helvetica Neue';
 $header-font: 'Helvetica Neue';
 $button-font: 'Merriweather Sans';
 $default-font-color: $white;
-$default-font-weight: 100;
+$default-header-font-weight: 100;
+$default-paragraph-font-weight: 200;
 
 // If using a fixed width, defines how wide the page should be
 $container-fixed-max-width: 960px;
@@ -65,6 +66,12 @@ $line-form-focus-text-color: $white;
 
 // Tables
 $table-default-color: #ccc;
+$table-pattern-background-color:#ddd;
+
+// Links
+$link-color: #1eaedb;
+$link-hover: #0fa0ce;
+$concept-link-color:#d45500;
 
 
 

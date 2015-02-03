@@ -24,16 +24,12 @@ body {
   flex-direction:column nowrap;
   height:100vh;
 }
-ul {
-  list-style-type:none;
-  padding:0;
-  margin:0;
-}
 button,
 button:focus,
 button:active {
-  outline:none;  
+  outline:none;
 }
+
 
 
 
@@ -41,10 +37,8 @@ button:active {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $link;
   text-decoration:none;
   &:hover {
-    color: $link-hover;
   }
 }
 

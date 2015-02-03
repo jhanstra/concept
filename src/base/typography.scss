@@ -12,13 +12,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font, Helvetica, Arial, sans-serif;
-  font-weight: $default-font-weight;
+  font-weight: $default-header-font-weight;
   margin:0;
   color:$default-font-color;
 }
-p,a,li,span {
+p,li,span {
   font-family: $paragraph-font;
-  font-weight: $default-font-weight;
+  font-weight: $default-paragraph-font-weight;
   font-size:1.5rem;
   color:$default-font-color;
 }

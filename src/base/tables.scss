@@ -4,33 +4,37 @@
   text-align:left;
   th {
     font-weight:bold;
-    padding:10px 0px;
+    padding:8px 6px;
   }
   td {
-    padding:8px 0px;
+    padding:8px 6px;
     border-top:1px solid $table-default-color;
   }
 }
 
 .c-table-lg {
-  font-size:1.8rem;
-  td {
+  td,th {
     padding:12px 10px;
+  }
+}
+.c-table-sm {
+  td,th {
+    padding:4px 4px;
   }
 }
 .c-table-pattern {
   color:#333;
   border-radius:$default-border-radius;
   th {
-    background-color:#ddd;
-    border-bottom:1px solid #aaa;
+    background-color:$table-pattern-background-color;
+    border-bottom:1px solid darken($table-pattern-background-color,20%);
     padding:8px 12px;
   }
   tr:nth-child(odd) {
-    background-color:#ddd;
+    background-color:$table-pattern-background-color;
   }
   tr:nth-child(even) {
-    background-color:#eee;
+    background-color:lighten($table-pattern-background-color, 10%);
   }
   td {
     border-top:0px solid transparent;

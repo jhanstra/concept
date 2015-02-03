@@ -8,24 +8,18 @@
       font-weight:200;
     }
   }
-  #header-block { height: 500px; }
-  #paragraph-block { height: 500px; }
-  #grid-block { height: 400px; }
-  #button-block { height:1500px; }
-  #input-block { height:3000px; }
-  #table-block { height:2000px; }
+  #header-block > div { height: 500px; }
+  #paragraph-block > div { height: 500px; }
+  #grid-block > div { height: 400px; }
+  #button-block > div { height:1500px; }
+  #input-block > div { height:2500px; }
+  #table-block > div { height:900px; }
 
   .c-dark {
     background-color:rgba(0,0,0,0.6);
   }
   .c-super-dark {
     background-color:rgba(0,0,0,0.7);
-  }
-  xmp {
-    text-align:left;
-    padding:20px;
-    margin:0 auto;
-    color:$white;
   }
 
 

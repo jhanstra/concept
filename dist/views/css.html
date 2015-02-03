@@ -18,6 +18,11 @@
 
 <!-- Header text -->
 <div class="c-row c-center" id="header-block">
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-v-center">
+      <h3>Headers</h3>
+    </div>
+  </div>
   <div class="c-col-6 c-block">
     <div class="c-v-center">
       <h1>Header 1</h1>
@@ -28,20 +33,7 @@
       <h6>Header 6</h6>
     </div>
   </div>
-  <div class="c-col-6 c-block c-dark">
-    <div class="c-v-center">
-      <h3>Headers</h3>
-      <p>Concept's default font is Helvetica Neue.</p>
-      <xmp>
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
-        <h5>Header 5</h5>
-        <h6>Header 6</h6>
-      </xmp>
-    </div>
-  </div>
+
 </div>
 
 <!-- Paragraph text -->
@@ -144,7 +136,7 @@
   <div class="c-col-12 c-super-dark">
     <div class="c-right-aligned-content">
       <h2>Input</h2>
-      <p>Use a variety of classes to build buttons. Start by adding class <code>.c-btn</code> to any &ltbutton&gt or &lta&gt element and add classes as you wish. Choose between 7 different sizes: extra small, small, normal, large, jumbo, fixed-width, or full-width. Choose between flat buttons, raised buttons, outline buttons, rectangle buttons,  or clicky buttons.
+      <p>Forms can be built up in a similar way to buttons. Give every form a class of c-form and add classes based on what type of form you want.</p>
     </div>
   </div>
 </div>
@@ -152,11 +144,23 @@
 <div class="c-row c-center" id="input-block">
   <div class="c-col-6 c-block c-dark">
     <div class="c-left-aligned-content">
-
+      <h4>Default Form</h4>
+      <p>Add .c-form-default for the default form, which has a gray background color, lighter gray input fields, and a fixed width. You can add a header to your form with a div inside of class .c-form-title. Use standard Concept buttons classes for submit input elements.
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h4>Full Width Form</h4>
+      <p>Forms are a fixed width by default, controlled by the $form-default-width variable. Forms can be expanded to the full width of their containing element with .c-form-full.</p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h4>Modern Form Styles</h4>
+      <p>Add some style to your form with .c-form-lines and .c-form-transparent. These types of lists are best for login screens and screens with a backdrop image. For lines forms, it is recommended not to use placeholders in place of visible input labels.</p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br>
+      <h4>Special Input Fields</h4>
+      <p>Concept doesn't add much styling to inputs like radio buttons, checklists, selects. Here's what they look like.</p>
     </div>
+
   </div>
   <div class="c-col-6 c-block">
-      <h3>Default Form</h3><br>
+      <br>
       <form class="c-form c-form-default">
         <div class="c-form-title">
           <h3 class="c-center">Optional Form Title</h3>
@@ -172,8 +176,7 @@
         <input class="c-btn c-success c-full-width" type="submit" value="Submit">
       </form>
 
-      <br><br><br><br>
-      <h3>Full width default form</h3>
+      <br><br><br><br><br><br>
       <form class="c-form c-form-default c-form-full">
         <label>Your email</label>
         <input type="email" placeholder="test@mailbox.com">
@@ -181,9 +184,7 @@
         <textarea placeholder="Hi Dave…"></textarea>
         <input class="c-btn c-success" type="submit" value="Submit">
       </form>
-      <br><br>
-      <h3>Lines Form</h3>
-      <br><br>
+      <br><br><br><br><br><br>
       <form class="c-form c-form-lines">
         <input type="text" placeholder="First Name">
         <input type="text" placeholder="Last Name">
@@ -191,9 +192,7 @@
         <textarea placeholder="Message"></textarea>
         <div class="c-center"><input class="c-btn c-primary c-rounded c-clicky" type="submit" value="Submit"></div>
       </form>
-      <br><br>
-      <h3>Transparent Form</h3>
-      <br>
+      <br><br><br><br><br><br>
       <form class="c-form c-form-default c-form-transparent">
         <label>First Name</label>
         <input type="text" placeholder="John">
@@ -205,12 +204,8 @@
         <textarea placeholder="Hi Dave…"></textarea>
         <input class="c-btn c-success c-full-width" type="submit" value="Submit">
       </form>
-      <br><br>
-      <h3>Special Input</h3>
-      <br>
+      <br><br><br><br><br><br>
       <form class="c-form c-form-default c-form-transparent">
-        <label>First Name</label>
-        <input type="text" placeholder="John">
         <h5>Checkboxes</h5>
         <label class="checkbox-inline">
           <input type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox 1
@@ -240,9 +235,7 @@
           <option>5</option>
         </select>
       </form>
-      <br><br>
-      <h3>Input/Button Combo</h3>
-      <br>
+      <br><br><br><br><br><br>
       <form class="c-form c-form-default">
         <span class="c-input-group">
         <input type="text" placeholder="Search">
@@ -312,6 +305,29 @@
         </tr>
       </table>
       <br><br>
+      <table class="c-table c-table-sm">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      <br><br>
       <table class="c-table c-table-pattern">
         <tr>
           <th>Firstname</th>
@@ -337,21 +353,66 @@
     </div>
     <div class="c-col-6 c-block c-dark">
       <div class="c-left-aligned-content">
-        <h4>Default Button<small><code>.c-default</code></small></h4>
-        <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
+        <h4>Default Table</h4>
+        <p>Use Concept table styles by adding (.c-table) to your &lttable&gt element. Tables have very basic styles by default - a transparent background and top border for rows.</p>
+        <br><br><br><br><br><br><br>
+        <h4>Table Sizes</h4>
+        <p>Give table rows more breathing room with (.c-table-lg) or less with (.c-table-sm)</p>
+        <br><br><br><br><br><br><br>
+        <h4>Table Types</h4>
+        <p>(.c-table-pattern) will give your table an alternating background-color to rows in your table. Change the background-color with $table-pattern-backgroud-color. Add (.c-table-hover) for a hovering effect.</p>
         <br><br><br>
-        <h4>Button Types</h4>
-        <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons (.c-flat) remove the box-shadow raised look, outline buttons (.c-outline) use a transparent background, rectangle buttons (.c-rect) remove rounded corners, clicky buttons (.c-clicky) appear pressed when hovered over, and text buttons (.c-text) appear as simple text and show a background color on hover.</p>
-        <br><br><br><br>
-        <h4>Button Colors</h4>
-        <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color (.c-primary) to communicate importance. It's purple by default and can be changed with $primary-button-background-color. Use a success button (.c-success) for positive interactive buttons and a danger button (.c-danger) for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark (.c-transparent-dark) of transparent-light (.c-transparent-light) buttons are useful for interfaces with a photo background.</p>
-        <br><br><br>
-        <h4>Button Sizes</h4>
-        <p>Concept uses five sizes for buttons of dynamic width - extra small (.c-xs), small (.c-sm), normal (default), large (.c-lg), and jumbo (.c-jumbo). Fix the width of your button with fixed-width buttons (.c-fixed-width) or make it super jumbo huge with a full-width button (.c-full-width) that takes the full width of its containing element.</p>
-        <br><br><br>
-        <h4>Button Helpers</h4>
-        <p>Button text is capitalized by default. You can set to back to normal capitalization with (.c-capital) or lowercase with (.c-lowercase). Add a transition
+        </div>
+      </div>
+    </div>
 
+
+
+    <!-- Miscellaneous -->
+    <div class="c-row">
+      <div class="c-col-12 c-super-dark">
+        <div class="c-right-aligned-content">
+          <h2>Miscellaneous</h2>
+          <p>Links, lists, and more! Here are some more useful classes Concept ships with.
+          </div>
+        </div>
+      </div>
+      <!-- Miscellaneous examples -->
+      <div class="c-row c-center" id="input-block">
+        <div class="c-col-6 c-block c-dark">
+          <div class="c-left-aligned-content">
+            <h4>Links</h4>
+            <p>Default links are given styles based on their parent elements. Inline links within paragraph tags are blue, and have a border-bottom on hover. Links within header tags and &ltli&gt tags inherit their color and are not underlined on hover. Add .c-link-list to a list which has links that should take the blue styling.</p>
+            <br><br><br>
+            <h4>Lists</h4>
+            <p>
+          </div>
+        </div>
+        <div class="c-col-6 c-block">
+          <div class="c-left-aligned-content">
+            <p>This is a paragraph with a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">basic link</a> in it.
+            <p>Concept has its own, more exciting <a class="c-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">paragraph link.</a> Just add .c-link</p>
+            <h5><a href="">This is a header link</a></h5>
+            <br><br><br><br>
+            <h5>Random Fruits</h5>
+            <ul class="c-list">
+              <li>Pineapple</li>
+              <li>Mango</li>
+              <li>Watermelon</li>
+              <li>Pomegranate</li>
+              <li>Grapefruit</li>
+            </ul>
+            <br><br>
+            <h5>Favorite Lost Characters</h5>
+            <ol class="c-list c-link-list">
+              <li>Desmond</li>
+              <li>Hurley</li>
+              <li>Daniel</li>
+              <li>Jin</li>
+              <li>Locke</li>
+              <li>Juliet</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
