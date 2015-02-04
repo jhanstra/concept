@@ -1,3 +1,4 @@
+/**** CSS ****/
 
 $absolute: absolute;
 $fixed: fixed;
@@ -9,6 +10,8 @@ $default-border-radius:4px;
 
 // Defines the height of a default header div
 $header-height: 100%;
+$header-background-color: none;
+$header-background-image: url('../images/starry-sky.jpg');
 
 // Horizontal Rule
 $hr-color: $white;
@@ -21,7 +24,7 @@ $background-type: 'image';
 $full-background-color: $white;
 $full-background-image: url('../images/milky-way.jpg');
 $full-background-image-2: url('../images/milky-way.jpg');
-$full-background-image-3: url('../images/railroad.jpg');
+$full-background-image-3: url('../images/milky-way.jpg');
 $full-background-image-4: none;
 $full-background-image-5: none;
 $full-background-image-6: none;
@@ -38,6 +41,7 @@ $button-font: 'Merriweather Sans';
 $default-font-color: $white;
 $default-header-font-weight: 100;
 $default-paragraph-font-weight: 200;
+$line-height:1.428571429;
 
 // If using a fixed width, defines how wide the page should be
 $container-fixed-max-width: 960px;
@@ -74,7 +78,7 @@ $link-hover: #0fa0ce;
 $concept-link-color:#d45500;
 
 
-
+/**** COMPONENTS ****/
 
 // Vertical Nav
 $vertical-nav-width: 200px;
@@ -92,3 +96,11 @@ $horizontal-nav-height: 50px;
 $horizontal-nav-vert-align: 25%;
 $horizontal-nav-spacing: 0px 20px;
 $horizontal-nav-item-hover-background: $transparent;
+
+// Labels
+$label-1-background-color:#006c9e;
+$label-2-background-color:$green;
+$label-3-background-color:$orange;
+$label-4-background-color:$warning-red;
+$label-5-background-color:$fb-blue;
+$label-6-background-color:$tw-blue;

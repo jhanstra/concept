@@ -1,11 +1,17 @@
-.c-list {
+ul, ol {
   padding:0px;
   margin:0px;
 }
-ul.c-list {
+ul {
   list-style-type:none;
 }
-ol.c-list {
+ol {
   padding-left:22px;
   margin:0px;
+}
+ul.c-list-indented {
+  padding-left:40px;
+}
+ol.c-list-indented {
+  padding-left:40px;
 }

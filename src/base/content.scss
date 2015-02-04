@@ -11,3 +11,10 @@
     text-align:left;
   }
 }
+
+
+@media (max-width:549px) {
+  .c-left-aligned-content {
+    padding:20px;
+  }
+}

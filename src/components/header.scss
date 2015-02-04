@@ -31,7 +31,8 @@ header {
 
 }
 .header-background {
-  background-image:url('../images/house.jpg');
+  background-image:$header-background-image;
+  background-color:$header-background-color;
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;

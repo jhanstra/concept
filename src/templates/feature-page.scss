@@ -8,12 +8,23 @@
       font-weight:200;
     }
   }
-  #header-block > div { height: 500px; }
-  #paragraph-block > div { height: 500px; }
+
+  // CSS Page
+  #header-block > div { height: 350px; }
+  #paragraph-block > div { height: 350px; }
   #grid-block > div { height: 400px; }
-  #button-block > div { height:1500px; }
+  #button-block > div { height:1600px; }
   #input-block > div { height:2500px; }
   #table-block > div { height:900px; }
+  #misc-block > div { height:800px;}
+
+  // Components Page
+  #header-div-block > div { height: 500px; }
+
+
+  .header-example {
+    height:600px;
+  }
 
   .c-dark {
     background-color:rgba(0,0,0,0.6);
