@@ -6,24 +6,36 @@ $relative: relative;
 $transparent: transparent;
 
 // Site-wide Defaults
-$default-border-radius:4px;
+$border-radius:4px;
 
 // Defines the height of a default header div
-$header-height: 100%;
-$header-background-color: none;
-$header-background-image: url('../images/starry-sky.jpg');
+$header-full-height: 100vh;
+$header-primary-height: 500px;
+$header-secondary-height:250px;
+$header-primary-background-color: none;
+$header-secondary-background-color: none;
+$header-full-background-color: none;
+
+// Header images
+$header-background-image-1: url('../images/house.jpg');
+$header-background-image-2: none;
+$header-background-image-3: none;
+$header-background-image-4: none;
+$header-background-image-5: none;
 
 // Horizontal Rule
 $hr-color: $white;
 $hr-margin: 30px;
 $hr-height: 1px;
+$hr-mini-width:50px;
 $hr-custom-width: 70%;
+
 
 // Background Type: choose from 'image' or 'color'
 $background-type: 'image';
 $full-background-color: $white;
 $full-background-image: url('../images/milky-way.jpg');
-$full-background-image-2: url('../images/milky-way.jpg');
+$full-background-image-2: url('../images/rainbow-lake.jpg');
 $full-background-image-3: url('../images/milky-way.jpg');
 $full-background-image-4: none;
 $full-background-image-5: none;

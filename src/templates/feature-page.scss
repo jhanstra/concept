@@ -19,11 +19,20 @@
   #misc-block > div { height:800px;}
 
   // Components Page
-  #header-div-block > div { height: 500px; }
+  #header-div-block > div { height: 800px; }
+  #header-description-block > div { height: 800px; }
+  #miscellaneous-block > div { height: 800px; }
 
 
   .header-example {
-    height:600px;
+    height:550px;
+    border-top-left-radius:$border-radius;
+    border-top-right-radius:$border-radius
+  }
+  .header-example-body {
+    height: 100px;
+
+    background:#aaa;
   }
 
   .c-dark {

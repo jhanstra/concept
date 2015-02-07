@@ -25,8 +25,8 @@
     color:$white;
     margin:-$form-default-padding -$form-default-padding 0px -$form-default-padding;
     padding:$form-default-padding;
-    border-top-left-radius:$default-border-radius;
-    border-top-right-radius:$default-border-radius;
+    border-top-left-radius:$border-radius;
+    border-top-right-radius:$border-radius;
     margin-bottom:10px;
     h1,h2,h3,h4,h5,h6 {
       font-size:1.6rem;
@@ -44,7 +44,7 @@
 .c-form-default {
   background-color:#ddd;
   padding:$form-default-padding;
-  border-radius:$default-border-radius;
+  border-radius:$border-radius;
   label {
     display:block;
     color:#555;
@@ -55,7 +55,7 @@
   textarea,
   select {
     width:100%;
-    border-radius:$default-border-radius;
+    border-radius:$border-radius;
     border:1px solid #f3f3f3;
     background-color:#f3f3f3;
     padding:8px 6px;

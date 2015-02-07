@@ -1,40 +1,72 @@
 /* Header
 __________________________________________________ */
 header {
-  height: $header-height;
   display:block;
-  div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  h1,h2,h3,h4,h5,h6,p {
-    text-align:center;
-    font-weight:100;
-    @if ($background-type == 'image') {
-      color:$white;
-    }
-    @else {
-      color:$black;
-    }
-  }
-  h1 {
-    font-size:7rem;
-  }
-  p {
-    width:50%;
-    margin:30px auto;
-    font-size:1.8rem;
-    font-family:'Helvetica Neue';
-    font-weight:200;
-  }
+  // div {
+  //   position: relative;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+  // h1,h2,h3,h4,h5,h6,p {
+  //   text-align:center;
+  //   font-weight:100;
+  //   @if ($background-type == 'image') {
+  //     color:$white;
+  //   }
+  //   @else {
+  //     color:$black;
+  //   }
+  // }
+  // h1 {
+  //   font-size:7rem;
+  // }
+  // p {
+  //   width:50%;
+  //   margin:30px auto;
+  //   font-size:1.8rem;
+  //   font-family:'Helvetica Neue';
+  //   font-weight:200;
+  // }
 
 }
-.header-background {
-  background-image:$header-background-image;
-  background-color:$header-background-color;
+.c-header-full {
+  height:$header-full-height;
+  background-color:$header-full-background-color;
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
+}
+.c-header-primary {
+  height:$header-primary-height;
+  background-color:$header-primary-background-color;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+.c-header-secondary {
+  height:$header-secondary-height;
+  background-color:$header-secondary-background-color;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+.c-header-image-bg-1 {
+  background-image:$header-background-image-1;
+  box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
+}
+.c-header-image-bg-2 {
+  background-image:$header-background-image-2;
+  box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
+}
+.c-header-image-bg-3 {
+  background-image:$header-background-image-3;
+  box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
+}
+.c-header-image-bg-4 {
+  background-image:$header-background-image-4;
+  box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
+}
+.c-header-image-bg-5 {
+  background-image:$header-background-image-5;
   box-shadow: inset 0 0 0 1000px rgba(20,20,20,.6);
 }

@@ -24,7 +24,7 @@
 }
 .c-table-pattern {
   color:#333;
-  border-radius:$default-border-radius;
+  border-radius:$border-radius;
   th {
     background-color:$table-pattern-background-color;
     border-bottom:1px solid darken($table-pattern-background-color,20%);
@@ -41,17 +41,17 @@
     padding:8px 12px;
   }
   th:first-child {
-    border-top-left-radius:$default-border-radius;
+    border-top-left-radius:$border-radius;
   }
   th:last-child {
-    border-top-right-radius:$default-border-radius;
+    border-top-right-radius:$border-radius;
   }
   tr:last-child {
     td:first-child {
-      border-bottom-left-radius:$default-border-radius;
+      border-bottom-left-radius:$border-radius;
     }
     td:last-child {
-      border-bottom-right-radius:$default-border-radius;
+      border-bottom-right-radius:$border-radius;
     }
   }
 }

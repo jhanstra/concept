@@ -11,7 +11,7 @@ hr {
   width:50%;
 }
 .c-hr-mini {
-  width:50px;
+  width:$hr-mini-width;
 }
 .c-hr-custom {
   width:$hr-custom-width;

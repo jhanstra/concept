@@ -1,22 +1,23 @@
 <div class="c-full-background-image c-fbi-3"></div>
-<header>
-  <div>
+<header class="c-header-primary">
+  <div class="c-v-center c-center">
     <h1>Components</h1>
     <p>Concept provides dozens of components that you can plug and play in your website or application. Choose which components to include in the concept.scss file and add classes to your html to use the styles for each component.</p>
   </div>
 </header>
 
-<!-- Header -->
-<div class="c-row">
+<!-- Header & Navigation -->
+<div class="c-row" id="header-div-block">
   <div class="c-col-12 c-super-dark">
     <div class="c-left-aligned-content">
-      <h2>Header & Sidebar</h2>
+      <h2>Header & Navigation</h2>
       <p>Add a header to the top of your page with <span class="c-label-1">.c-header</span>. You can easily change the height of the header with <span class="c-label-2">$header-height</span>. Add a vertical sidebar with <span class="c-label-1">.c-vertical-nav</span> or horizontal navigation with <span class="c-label-1">.c-horizontal-nav</span>.</p>
     </div>
     <div class="c-row">
-      <div class="c-col-10 c-offset-1 c-rel header-example">
+      <div class="c-col-10 c-offset-1 c-rel">
         <div class="c-horizontal-nav">
           <ul class="c-list">
+            <li class="c-show-sidebar"><a><span class="oi c-menu-toggle" data-glyph="menu"></span></a></li>
             <li class="c-bold"><a href="">Your Company</a></li>
             <li><a href="">About</a></li>
             <li><a href="">More Stuff</a></li>
@@ -26,120 +27,55 @@
             <li class="c-right"><a href="http://facebook.com">Account</a></li> -->
           </ul>
         </div>
-        <header class="header-background">
-
-          <div>
+        <header class="c-header-primary c-header-image-bg-1 header-example">
+          <div class="c-v-center c-center">
             <h1>This is a header</h1>
             <h3>Here is a subtitle.</h3>
           </div>
         </header>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Header text -->
-<div class="c-row c-center" id="header-block">
-  <div class="c-col-6 c-block c-dark">
-    <div class="c-v-center">
-      <h3>Headers</h3>
-    </div>
-  </div>
-  <div class="c-col-6 c-block">
-    <div class="c-v-center">
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
-    </div>
-  </div>
-
-</div>
-
-<!-- Paragraph text -->
-<div class="c-row c-center" id="paragraph-block">
-  <div class="c-col-6 c-block c-dark">
-    <div class="c-v-center">
-      <h3>Paragraph text</h3>
-    </div>
-  </div>
-  <div class="c-col-6 c-block">
-    <div class="c-left-aligned-content c-v-center">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus urna eu urna ornare gravida. Fusce sit amet eros dolor. Vestibulum eget iaculis turpis, ut varius lectus. Duis hendrerit nulla eget lobortis blandit. Morbi semper gravida finibus.</p>
-      <p>In euismod nec enim sit amet auctor. Sed facilisis ex sed pretium fringilla. Ut auctor dui accumsan, blandit lacus at, eleifend nulla. Mauris at elementum nisi. Donec non venenatis mauris. Vestibulum ultrices odio at est imperdiet, at finibus mauris mollis.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Grid -->
-<div class="c-row">
-  <div class="c-col-12 c-super-dark">
-    <div class="c-right-aligned-content">
-      <h2>Grid</h2>
-      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <span class="c-label-2">$number-of-columns</span> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
-      </div>
-      <div class="c-row">
-        <div class="c-col-10 c-offset-1">
-          <div class="c-row grid">
-            <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
-            <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
+        <div class="c-row">
+          <div class="c-col-12 header-example-body">
           </div>
         </div>
       </div>
-
     </div>
-
-
-
-<!-- Header -->
-<div class="c-row c-center" id="header-div-block">
+  </div>
+</div>
+<!-- Header & Nav Examples -->
+<div class="c-row" id="header-description-block">
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-left-aligned-content">
+      <h4>Header</h4>
+      <p>The &ltheader&gt element introduces the content of your page, and is often set apart visually from the rest of the page. Add <span class="c-label-1">.c-header-primary</span> to give your page a jumbo (500px height by default) header. Or use <span class="c-label-1">.c-header-full</span> to add a full-height (the height of the viewport) header to your page. This site uses full-height headers.</p>
+      <p>Concept also offers <span class="c-label-1">.c-header-secondary</span> for secondary pages, which has a default height of 250px.</p>
+      <p>You can give your headers a background-image with <span class="c-label-1">.c-header-bg-image-1</span> and by editing the <span class="c-label-2">$header-background-image-1</span> variable. Images are automatically centered and will fill the containing space for all screen sizes. Pretty neat.</p>
+    </div>
+  </div>
   <div class="c-col-6 c-block">
-    <header class="header-background">
-      <div>
-        <h1>This is a header</h1>
-        <h3>Here is a subtitle.</h3>
+    <div class="c-v-center">
+      <hr class="c-hr-full">
+      <hr class="c-hr-half">
+      <hr class="c-hr-mini">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Miscellaneous -->
+<div class="c-row c-super-dark">
+  <div class="c-col-12 c-super-dark">
+    <div class="c-right-aligned-content">
+      <h2>Miscellaneous</h2>
+    </div>
+  </div>
+</div>
+<div class="c-row" id="miscellaneous-block">
+  <div class="c-col-6 c-block c-dark">
+    <div class="c-left-aligned-content">
+      <h4>Horizontal Rule</h4>
+      <p>Add <span class="c-label-1">.c-hr-full</span> for a horizontal rule that spans the full width of its containing element. Add <span class="c-label-1">.c-hr-half</span> for one that is 50% of the width, centered. Use <span class="c-label-1">.c-hr-mini</span> for a mini &lthr&gt, by default 50px.</p>
       </div>
-    </header>
-  </div>
-  <div class="c-col-6 c-block c-dark">
-    <div class="c-v-center">
-      <h2>Header</h2>
-      <p>Choose the height of your header with $header-height.</p>
-      <xmp>
-// Defines the height of a default header div
-$header-height: 70%;
-
-<header class="header-background">
-<div>
-<h1>This is a header</h1>
-<h3>Here is a subtitle.</h3>
-</div>
-</header>
-      </xmp>
-    </div>
-  </div>
-</div>
-
-
-<!-- Horizontal Rule -->
-<div class="c-row c-center">
-  <div class="c-col-6 c-block c-dark">
-    <div class="c-v-center">
-      <h2>Horizontal Rule</h2>
-      <p>Choose from three styles:</p>
-      <xmp>
-        <div class="c-v-center">
-          <hr class="c-hr-full">
-          <hr class="c-hr-half">
-          <hr class="c-hr-mini">
-          <hr class="c-hr-custom">
-        </div>
-      </xmp>
-    </div>
   </div>
   <div class="c-col-6 c-block">
     <div class="c-v-center">
