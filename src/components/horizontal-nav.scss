@@ -13,7 +13,7 @@
   float:left;
   display:table;
   height:$horizontal-nav-height;
-  a {
+  a:not(.c-btn) {
     display:table-cell;
     vertical-align:middle;
     height:100%;
@@ -25,4 +25,13 @@
 }
 .c-horizontal-nav li.c-right {
   float:right;
+}
+.c-horizontal-nav div.c-button-in-nav {
+  display:table-cell;
+  vertical-align:middle;
+  margin:0px;
+  padding:$horizontal-nav-spacing;
+  .c-btn {
+    margin:0px;
+  }
 }

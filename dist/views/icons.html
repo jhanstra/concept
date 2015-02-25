@@ -1,12 +1,23 @@
 <header class="c-header-full">
   <div class="c-v-center c-center">
     <h1>Icons</h1>
-    <p class="page-header-text">Concept includes the free version of Iconic, a set of over 200 icons for interface elements. For more icons see Iconic's full set of fantastic svg and font icons.</p>
+    <p class="page-header-text">Concept includes Open Iconic, a set of over 200 icons for interface elements. For more icons see Iconic's full set of fantastic svg and font icons.</p>
+    <br><br>
+    <a href="http://useiconic.com" class="c-btn c-default c-flat c-outline c-lg c-capital">Check out Iconic</a>
   </div>
+
 </header>
 
 <!-- Icons -->
-<div class="c-row">
-  
-</div>
+<div class="c-row" ng-controller="IconsCtrl as iconsCtrl">
+  <div class="c-col-12" id="icon-list">
+    <ul>
+      <li class="c-col-2" ng-repeat="icon in icons">
+        <span class="oi" data-glyph="{{icon}}"></span>
+        <p>{{icon}}</p>
+      </li>
 
+
+    </ul>
+  </div>
+</div>

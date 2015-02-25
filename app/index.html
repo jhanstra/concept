@@ -5,33 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Concept</title>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700|Lora|Pacifico|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700|Raleway|Montserrat|Lora|Pacifico|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="concept" ng-controller="MainCtrl as mainCtrl">
-    <div class="c-vertical-nav c-vertical-nav-closed">
-      <ul class="c-list">
-        <li><a href="/#/">Home</a></li>
-        <li><a href="/#/css">CSS</a></li>
-        <li><a href="/#/components">Components</a></li>
-        <li><a href="/#/icons">Icons</a></li>
-        <li><a href="/#/themes">Themes</a></li>
-        <li><a href="/#/learn">Learn</a></li>
-
-      </ul>
-    </div>
 
     <div class="c-container">
       <div class="c-horizontal-nav">
         <ul class="c-list">
-          <li class="c-show-sidebar"><a><span class="oi c-menu-toggle" data-glyph="menu"></span></a></li>
-          <li class="c-hide-sidebar"><a><span class="oi c-menu-toggle" data-glyph="x"></span></a></li>
+          <!-- <li class="c-show-sidebar"><a><span class="oi c-menu-toggle" data-glyph="menu"></span></a></li>
+          <li class="c-hide-sidebar"><a><span class="oi c-menu-toggle" data-glyph="x"></span></a></li> -->
+            <li class="c-bold"><a href="/#/">Concept</a></li>
+            <li><a href="/#/css">CSS</a></li>
+            <li><a href="/#/components">Components</a></li>
+            <li><a href="/#/icons">Icons</a></li>
+            <li><a href="/#/themes">Themes</a></li>
+            <li><a href="/#/learn">Learn</a></li>
+            <li class="c-right">
+              <div class="c-button-in-nav"><a href class="c-btn c-primary "><span class="oi" data-glyph="cloud-download"></span> Use Concept</a></div>
+            </li>
           <!-- <li><a href="#/">Concept</a></li>
           <li><a href="/#/components">Components</a></li>
           <li class="c-right"><a href="http://facebook.com">Account</a></li> -->
         </ul>
       </div>
-      <div class="c-full-background-image"></div>
-      <div ng-view class="c-full-window-height"></div>
+      <div class="c-full-background-image" ng-class="{'c-fbi-2' : (randomImage == 2), 'c-fbi-3' : (randomImage == 3), 'c-fbi-4' : (randomImage == 4), 'c-fbi-5' : (randomImage == 5)}"></div>
+      <div ng-view autoscroll></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js"></script>

@@ -26,6 +26,7 @@
 }
 
 
+
 // Sizes
 .c-jumbo {
   font-size:1.6rem;
@@ -166,6 +167,16 @@
   border:0px solid transparent;
   &:hover {
     border:0px solid transparent;
+  }
+}
+
+// Special Combinations
+.c-default.c-outline {
+  color:#ccc;
+  border:1px solid #ccc;
+  &:hover {
+    border:1px solid $true-white;
+    color:$true-white;
   }
 }
 
