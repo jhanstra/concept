@@ -72,6 +72,23 @@
     padding:40px 0px 60px;
     background-color:rgba(0,0,0,0.6);
   }
+  #icon-list {
+    text-align:center;
+    background-color:rgba(0,0,0,0.3);
+    padding:40px 50px;
+    li {
+      margin-bottom:30px;
+      padding:10px;
+      height:100px;
+      &:hover {
+        background-color:rgba(0,0,0,0.8);
+        cursor:pointer;
+      }
+      span {
+        font-size:2rem;
+      }
+    }
+  }
 
 .grid {
   margin:30px auto;
