@@ -71,10 +71,10 @@ gulp.task('views', function() {
 });
 
 // Lint SCSS
-gulp.task('scss-lint', function() {
-  gulp.src('app/styles/*.scss')
-    .pipe(scsslint());
-});
+// gulp.task('scss-lint', function() {
+//   gulp.src('app/styles/*.scss')
+//     .pipe(scsslint());
+// });
 
 // Dev task
 gulp.task('dev', function() {
@@ -100,15 +100,29 @@ gulp.task('styles', function() {
   .pipe(refresh(lrserver));
 });
 
+// Custom styles task
+gulp.task('custom-styles', function() {
+  gulp.src('app/styles/custom.scss')
+  // The onerror handler prevents Gulp from crashing when you make a mistake in your SASS
+  .pipe(sass({ errLogToConsole: true, sourceComments: 'map', sourceMap: 'sass' }))
+  // Optionally add autoprefixer
+  .pipe(autoprefixer("last 2 versions", "> 1%", "ie 8"))
+  // Minify
+  .pipe(minifycss())
+  // These last two should look familiar now :)
+  .pipe(gulp.dest('dist/css/'))
+  .pipe(refresh(lrserver));
+});
+
 gulp.task('watch', [], function() {
   // Watch our files
-  gulp.watch(['app/views/**/*.html','src/**/*.scss','src/**/*.js','app/index.html','images/**/*.jpg','images/**/*.png'],[
+  gulp.watch(['app/views/**/*.html','src/**/*.scss','src/**/*.js','app/index.html','images/**/*.jpg','images/**/*.png','app/styles/**/*.scss'],[
   'views',
-  'scss-lint',
-  'styles'
+  'styles',
+  'custom-styles'
   ]);
 });
 
 gulp.task('default' , function() {
-  gulp.start('views','scss-lint','dev','styles','watch');
+  gulp.start('views','dev','styles','custom-styles','watch');
 });

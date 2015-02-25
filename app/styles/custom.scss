@@ -1,0 +1,82 @@
+@import '../../src/concept.scss';
+
+.c-block {
+  background-color:rgba(0,0,0,0.5);
+  height:100%;
+  padding:30px;
+  p {
+    color:#aaa;
+    font-weight:200;
+  }
+}
+
+  // CSS Page
+  #header-block > div { height: 350px; }
+  #paragraph-block > div { height: 350px; }
+  #grid-block > div { height: 400px; }
+  #button-block > div { height:1600px; }
+  #input-block > div { height:2500px; }
+  #table-block > div { height:900px; }
+  #misc-block > div { height:800px;}
+
+  // Components Page
+  #header-div-block > div { height: 800px; }
+  #header-description-block > div { height: 800px; }
+  #miscellaneous-block > div { height: 800px; }
+
+  .header-example-container {
+    box-shadow:0px 0px 50px #333;
+  }
+  .header-example {
+    height:550px;
+    border-top-left-radius:$border-radius;
+    border-top-right-radius:$border-radius;
+
+  }
+  .header-example-body {
+    height: 20px;
+    background:#111;
+  }
+  .page-header-text {
+    width:60%;
+    margin:0 auto;
+  }
+  .section-header {
+    background-color:rgba(0,0,0,0.8);
+    text-align:center;
+    padding:30px 20%;
+  }
+  .x-large .dark-box,
+  .x-large .darker-box {
+    height:800px;
+  }
+  .large .dark-box,
+  .large .darker-box {
+    height:500px;
+  }
+  .small .dark-box,
+  .small .darker-box {
+    height:250px;
+  }
+  .dark-box {
+    background-color:rgba(0,0,0,0.3);
+    padding:30px;
+    height:400px;
+  }
+  .darker-box {
+    background-color:rgba(0,0,0,0.5);
+    padding:30px;
+    height:400px;
+  }
+  #header-section {
+    padding:40px 0px 60px;
+    background-color:rgba(0,0,0,0.6);
+  }
+
+.grid {
+  margin:30px auto;
+}
+.grid [class*="c-col-"] {
+  border:1px solid $white;
+  height:40px;
+}
