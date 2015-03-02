@@ -1,20 +1,63 @@
-.c-label-1 {
+.c-label {
   background-color:$label-1-background-color;
+  border:1px solid $label-1-background-color;
   border-radius:$border-radius;
   color:$white;
   font-weight:400;
   line-height:$line-height;
-  padding:0px 6px;
-  margin:0;
+  padding:2px 6px;
+  margin:4px 5px;
   display:inline-block;
+  font-size:1.3rem;
+  &:hover {
+    cursor:default;
+  }
+}
+p .c-label {
+  margin:0px 3px;
 }
 .c-label-2 {
   background-color:$label-2-background-color;
-  border-radius:$border-radius;
-  color:$white;
-  font-weight:400;
-  line-height:$line-height;
-  padding:0px 6px;
-  margin:0;
-  display:inline-block;
+  border:1px solid $label-2-background-color;
+}
+.c-label-3 {
+  background-color:$label-3-background-color;
+  border:1px solid $label-3-background-color;
+}
+.c-label-4 {
+  background-color:$label-4-background-color;
+  border:1px solid $label-4-background-color;
+}
+.c-label-5 {
+  background-color:$label-5-background-color;
+  border:1px solid $label-5-background-color;
+}
+.c-label-6 {
+  background-color:$label-6-background-color;
+  border:1px solid $label-6-background-color;
+}
+.c-label-7 {
+  background-color:$label-7-background-color;
+  border:1px solid $label-7-background-color;
+}
+.c-label-8 {
+  background-color:$label-8-background-color;
+  border:1px solid $label-8-background-color;
+}
+.c-label-9 {
+  background-color:$label-9-background-color;
+  border:1px solid $label-9-background-color;
+}
+.c-label0 {
+  background-color:$label-10-background-color;
+  border:1px solid $label-10-background-color;
+}
+.c-label.c-outline {
+  background-color:transparent;
+}
+.c-label.c-rounded {
+  border-radius:1000px;
+}
+.c-label.c-rectangle {
+  border-radius:0px;
 }

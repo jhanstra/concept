@@ -1,7 +1,7 @@
 <header class="c-header-full">
   <div class="c-v-center c-center">
     <h1>CSS</h1>
-    <p class="page-header-text">Concept's CSS follows modern best practices and techniques. It starts off with Normalize.css, adds minimal styles to base elements, and provides dozens of specialized, modular, prefixed classes.</p>
+    <p class="page-header-text">Concept's CSS follows modern best practices and techniques. It uses Normalize.css, adds minimal styles to base elements, and provides dozens of specialized, modular classes.</p>
   </div>
 </header>
 
@@ -9,7 +9,7 @@
 <div class="c-row">
   <div class="c-col-12 section-header">
       <h2>Typography</h2>
-      <p>All headers <code>h1</code> through <code>h6</code> have a default font of Helvetica Neue. All <code>p</code> tags have a default font of Merrieweather Sans. You can easily change these fonts by changing the variables <span class="c-label-2">$header-font</span> and <span class="c-label-2">$paragraph-font</span>, respectively, in variables.scss.</p>
+      <p>All headers <code>h1</code> through <code>h6</code> have a default font of Helvetica Neue. All <code>p</code> tags have a default font of Merrieweather Sans. You can easily change these fonts by changing the variables <span class="c-label c-label-2">$header-font</span> and <span class="c-label c-label-2">$paragraph-font</span>, respectively, in variables.scss.</p>
   </div>
 </div>
 
@@ -51,7 +51,7 @@
 <div class="c-row">
   <div class="c-col-12 section-header">
       <h2>Grid</h2>
-      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <span class="c-label-2">$number-of-columns</span> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
+      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <span class="c-label c-label-2">$number-of-columns</span> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
     </div>
     <div class="c-row">
       <div class="c-col-10 c-offset-1">
@@ -68,7 +68,7 @@
 <div class="c-row section-header">
   <div class="c-col-12">
       <h2>Buttons</h2>
-      <p>Use a variety of classes to build buttons. Start by adding class <span class="c-label-1">.c-btn</span> to any &ltbutton&gt or &lta&gt element and add classes as you wish.</p>
+      <p>Use a variety of classes to build buttons. Start by adding class <span class="c-label">.c-btn</span> to any &ltbutton&gt or &lta&gt element and add classes as you wish.</p>
   </div>
 </div>
 
@@ -76,7 +76,7 @@
 <div class="c-row c-center section small">
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content">
-      <h4>Default Button<span class="c-label-1">.c-default</span></h4>
+      <h4>Default Button<span class="c-label">.c-default</span></h4>
       <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
       </div>
     </div>
@@ -92,7 +92,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Button Types</h4>
-      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons <span class="c-label-1">.c-flat</span> remove the box-shadow raised look, outline buttons <span class="c-label-1">.c-outline</span> use a transparent background, rectangle buttons <span class="c-label-1">.c-rect</span> remove rounded corners, clicky buttons <span class="c-label-1">.c-clicky</span> appear pressed when hovered over, and text buttons <span class="c-label-1">.c-text</span> appear as simple text and show a background color on hover.</p>
+      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons <span class="c-label">.c-flat</span> remove the box-shadow raised look, outline buttons <span class="c-label">.c-outline</span> use a transparent background, rectangle buttons <span class="c-label">.c-rect</span> remove rounded corners, clicky buttons <span class="c-label">.c-clicky</span> appear pressed when hovered over, and text buttons <span class="c-label">.c-text</span> appear as simple text and show a background color on hover.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -111,7 +111,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Button Colors</h4>
-      <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color <span class="c-label-1">.c-primary</span> to communicate importance. It's purple by default and can be changed with <span class="c-label-2">$primary-button-background-color</span>. Use a success button <span class="c-label-1">.c-success</span> for positive interactive buttons and a danger button <span class="c-label-1">.c-danger</span> for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark <span class="c-label-1">.c-transparent-dark</span> of transparent-light <span class="c-label-1">.c-transparent-light</span> buttons are useful for interfaces with a photo background.</p>
+      <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color <span class="c-label">.c-primary</span> to communicate importance. It's purple by default and can be changed with <span class="c-label c-label-2">$primary-button-background-color</span>. Use a success button <span class="c-label">.c-success</span> for positive interactive buttons and a danger button <span class="c-label">.c-danger</span> for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark <span class="c-label">.c-transparent-dark</span> of transparent-light <span class="c-label">.c-transparent-light</span> buttons are useful for interfaces with a photo background.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -130,7 +130,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Button Sizes</h4>
-      <p>Concept uses five sizes for buttons of dynamic width - extra small <span class="c-label-1">.c-xs</span>, small <span class="c-label-1">.c-sm</span>, normal (default), large <span class="c-label-1">.c-lg</span>, and jumbo <span class="c-label-1">.c-jumbo</span>. Fix the width of your button with fixed-width buttons <span class="c-label-1">.c-fixed-width</span> or make it super jumbo huge with a full-width button <span class="c-label-1">.c-full-width</span> that takes the full width of its containing element.</p>
+      <p>Concept uses five sizes for buttons of dynamic width - extra small <span class="c-label">.c-xs</span>, small <span class="c-label">.c-sm</span>, normal (default), large <span class="c-label">.c-lg</span>, and jumbo <span class="c-label">.c-jumbo</span>. Fix the width of your button with fixed-width buttons <span class="c-label">.c-fixed-width</span> or make it super jumbo huge with a full-width button <span class="c-label">.c-full-width</span> that takes the full width of its containing element.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -149,7 +149,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Button Helpers</h4>
-      <p>Button text is capitalized by default. You can set to back to normal capitalization with <span class="c-label-1">.c-capital</span> or lowercase with <span class="c-label-1">.c-lowercase</span>.
+      <p>Button text is capitalized by default. You can set to back to normal capitalization with <span class="c-label">.c-capital</span> or lowercase with <span class="c-label">.c-lowercase</span>.
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -171,7 +171,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Default Form</h4>
-      <p>Add <span class="c-label-1">.c-form-default</span> for the default form, which has a gray background color, lighter gray input fields, and a fixed width. You can add a header to your form with a div inside of class <span class="c-label-1">.c-form-title</span>. Use standard Concept buttons classes for submit input elements.
+      <p>Add <span class="c-label">.c-form-default</span> for the default form, which has a gray background color, lighter gray input fields, and a fixed width. You can add a header to your form with a div inside of class <span class="c-label">.c-form-title</span>. Use standard Concept buttons classes for submit input elements.
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -197,7 +197,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Full Width Form</h4>
-      <p>Forms are a fixed width by default, controlled by the <span class="c-label-2">$form-default-width</span> variable. Forms can be expanded to the full width of their containing element with <span class="c-label-1">.c-form-full</span>.</p>
+      <p>Forms are a fixed width by default, controlled by the <span class="c-label c-label-2">$form-default-width</span> variable. Forms can be expanded to the full width of their containing element with <span class="c-label">.c-form-full</span>.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -216,7 +216,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Modern Form Styles</h4>
-      <p>Add some style to your form with <span class="c-label-1">.c-form-lines</span> or <span class="c-label-1">.c-form-transparent</span>. These types of lists are best for login screens and screens with a backdrop image. For lines forms, it is recommended not to use placeholders in place of visible input labels.</p>
+      <p>Add some style to your form with <span class="c-label">.c-form-lines</span> or <span class="c-label">.c-form-transparent</span>. These types of lists are best for login screens and screens with a backdrop image. For lines forms, it is recommended not to use placeholders in place of visible input labels.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -243,7 +243,7 @@
     </div>
   </div>
 </div>
-<div class="c-row c-center section x-large">
+<div class="c-row c-center section">
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Special Input Fields</h4>
@@ -282,13 +282,6 @@
           <option>5</option>
         </select>
       </form>
-      <br><br><br><br><br><br>
-      <form class="c-form c-form-default">
-        <span class="c-input-group">
-        <input type="text" placeholder="Search">
-        <input class="c-btn c-primary" type="submit" value="Search">
-        <span>
-      </form>
     </div>
   </div>
 </div>
@@ -306,7 +299,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Default Table</h4>
-      <p>Use Concept table styles by adding <span class="c-label-1">.c-table</span> to your &lttable&gt element. Tables have very basic styles by default - a transparent background and top border for rows.</p>
+      <p>Use Concept table styles by adding <span class="c-label">.c-table</span> to your &lttable&gt element. Tables have very basic styles by default - a transparent background and top border for rows.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -340,7 +333,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Table Sizes</h4>
-      <p>Give table rows more breathing room with <span class="c-label-1">.c-table-lg</span> or less with <span class="c-label-1">.c-table-sm</span></p>
+      <p>Give table rows more breathing room with <span class="c-label">.c-table-lg</span> or less with <span class="c-label">.c-table-sm</span></p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -397,7 +390,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Table Types</h4>
-      <p><span class="c-label-1">.c-table-pattern</span> will give your table an alternating background-color to rows in your table. Change the background-color with <span class="c-label-2">$table-pattern-backgroud-color</span>. Add <span class="c-label-1">.c-table-hover</span> for a hovering effect.</p>
+      <p><span class="c-label">.c-table-pattern</span> will give your table an alternating background-color to rows in your table. Change the background-color with <span class="c-label c-label-2">$table-pattern-backgroud-color</span>. Add <span class="c-label">.c-table-hover</span> for a hovering effect.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -443,7 +436,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Links</h4>
-      <p>Default links are given styles based on their parent elements. Inline links within paragraph tags are blue, and have a border-bottom on hover. Links within header tags and &ltli&gt tags inherit their color and are not underlined on hover. Add <span class="c-label-1">.c-link-list</span> to a list which has links that should take the blue styling.</p>
+      <p>Default links are given styles based on their parent elements. Inline links within paragraph tags are blue, and have a border-bottom on hover. Links within header tags and &ltli&gt tags inherit their color and are not underlined on hover. Add <span class="c-label">.c-link-list</span> to a list which has links that should take the blue styling.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
@@ -457,7 +450,7 @@
   <div class="c-col-6 darker-box">
     <div class="c-left-aligned-content c-v-center">
       <h4>Lists</h4>
-      <p>By default unordered lists have no padding, margin, or list-style-type. Ordered lists are padded to compensate for the numbers preceding the items. For a standard indented list, add <span class="c-label-1">.c-list-indented</span>.</p>
+      <p>By default unordered lists have no padding, margin, or list-style-type. Ordered lists are padded to compensate for the numbers preceding the items. For a standard indented list, add <span class="c-label">.c-list-indented</span>.</p>
     </div>
   </div>
   <div class="c-col-6 dark-box">
