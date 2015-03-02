@@ -1,5 +1,7 @@
 var app = angular.module('concept', [
-'ngRoute'
+'ngRoute',
+'angulartics',
+'angulartics.google.analytics'
 ]);
 
 // CONTROLLERS
@@ -7,6 +9,7 @@ app.controller('MainCtrl', ['$rootScope','$scope', function($rootScope, $scope) 
   $scope.test = "hello test";
   $scope.randomImage = Math.floor((Math.random() * 5) + 1);
 }]);
+
 
 
 // CONFIG / ROUTING
@@ -19,6 +22,9 @@ app.config(function($routeProvider) {
   .otherwise({ redirectTo: '/' });
 
 });
+
+// GOOGLE ANALYTICS
+//angular.module('myApp', ['angulartics', 'angulartics.google.analytics'])
 
 app.controller('IconsCtrl', ['$rootScope','$scope', function($rootScope, $scope) {
   $scope.icons = [
