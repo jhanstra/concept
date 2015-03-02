@@ -53,6 +53,8 @@ gulp.task('views', function() {
   .pipe(gulp.dest('dist/js/'));
   gulp.src('bower_components/angulartics/dist/angulartics.min.js')
   .pipe(gulp.dest('dist/js/'));
+  gulp.src('bower_components/angulartics/dist/angulartics-ga.min.js')
+  .pipe(gulp.dest('dist/js/'));
   // jQuery
   gulp.src('bower_components/jquery/dist/**/*')
   .pipe(gulp.dest('dist/jquery/'));
