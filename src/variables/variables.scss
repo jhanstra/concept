@@ -47,13 +47,19 @@ $full-background-image-10: none;
 
 
 // Typography
-$paragraph-font: 'Helvetica Neue';
-$header-font: 'Helvetica Neue';
+$paragraph-font: 'Montserrat';
+$header-font: 'Lato';
 $button-font: 'Montserrat';
 $default-font-color: $white;
 $default-header-font-weight: 100;
 $default-paragraph-font-weight: 200;
 $line-height:1.428571429;
+  // Titles
+$title-font-size: 7.0rem;
+$title-color: $white;
+$title-margin-bottom: 10px;
+$subtitle-font-size: 2.5rem;
+$subtitle-color: #bbb;
 
 // If using a fixed width, defines how wide the page should be
 $container-fixed-max-width: 960px;

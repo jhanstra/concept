@@ -23,8 +23,13 @@ app.config(function($routeProvider) {
 
 });
 
-// GOOGLE ANALYTICS
-//angular.module('myApp', ['angulartics', 'angulartics.google.analytics'])
+// DIRECTIVES
+app.directive('conceptFooter', function(){
+  return {
+    restrict : 'E',
+    templateUrl : 'views/concept-footer.html'
+  }
+});
 
 app.controller('IconsCtrl', ['$rootScope','$scope', function($rootScope, $scope) {
   $scope.icons = [

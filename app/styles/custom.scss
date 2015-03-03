@@ -1,28 +1,5 @@
 @import '../../src/concept.scss';
 
-.c-block {
-  background-color:rgba(0,0,0,0.5);
-  height:100%;
-  padding:30px;
-  p {
-    color:#aaa;
-    font-weight:200;
-  }
-}
-
-  // CSS Page
-  #header-block > div { height: 350px; }
-  #paragraph-block > div { height: 350px; }
-  #grid-block > div { height: 400px; }
-  #button-block > div { height:1600px; }
-  #input-block > div { height:2500px; }
-  #table-block > div { height:900px; }
-  #misc-block > div { height:800px;}
-
-  // Components Page
-  #header-div-block > div { height: 800px; }
-  #header-description-block > div { height: 800px; }
-  #miscellaneous-block > div { height: 800px; }
 
   .header-example-container {
     box-shadow:0px 0px 50px #333;
@@ -38,8 +15,10 @@
     background:#111;
   }
   .page-header-text {
-    width:60%;
-    margin:0 auto;
+    width:50%;
+    max-width:600px;
+    min-width:300px;
+    margin:10px auto;
   }
   .section-header {
     background-color:rgba(0,0,0,0.8);
@@ -95,5 +74,16 @@
 }
 .grid [class*="c-col-"] {
   border:1px solid $white;
-  height:40px;
+  height:120px;
+}
+.footer {
+  background-color:rgba(0,0,0,0.6);
+  padding:30px;
+}
+.alpha-announcement {
+  background-color:rgba(255,255,255,0.1);
+}
+footer .c-hr-mini {
+  margin:15px auto;
+
 }
