@@ -18,21 +18,17 @@ Concept uses Sass as its preprocessor. This allows you to completely customize t
 Concept's styles are broken down into four categories: base, components, mixins, and variables.
 
 #### Base
-
 The Base folder contains much of the CSS for basic HTML elements, along with basic classes for styling those elements. It contains styles for buttons, content, icons, images, input, links, lists, tables, typography, and the grid.
 
 #### Components
-
 The Components folder contains higher-level classes for targeting sets of HTML elements. For example, it has styles for headers, top navigation, sidebar navigation, cards, etc.
 
 #### Mixins
-
 The Mixins folder contains all the Sass mixins used throughout Concept.
 
 #### Variables
-
 The Variables folder contains all of the Sass variables used throughout Concept. They are separated into the colors.scss and variables.scss files.
 
 ## Contribute
 
-Concept is created by one dude named [Jared Hanstra](http://www.jaredhanstra.com). Please help him by contributing! Pull requests are welcome. If you have any questions or need help feel free to email him at jhanstra@gmail.com.
+Concept is created by [Jared Hanstra](http://www.jaredhanstra.com). Please help him by contributing! Pull requests are welcome. If you have any questions or need help feel free to email him at jhanstra@gmail.com.

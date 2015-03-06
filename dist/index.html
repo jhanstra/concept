@@ -11,7 +11,20 @@
   </head>
   <body ng-app="concept" ng-controller="MainCtrl as mainCtrl">
 
-    <div class="c-container">
+    <div class="c-container" ng-class="{true: 'darken'}[downloadLink === true]">
+      <div class="c-row no-show" ng-if="downloadLink" ng-class="{true: 'show'}[downloadLink === true]">
+        <div class="c-col-4 c-offset-4 c-card download-card">
+          <h3 ng-click="toggleDownload()">Use Concept<span class="oi c-right" data-glyph="x"></span></h3>
+
+          <div class="c-row c-center c-card-content">
+            <p><code>bower install concept</code></p>
+            <p>or</p>
+            <a class="c-btn c-outline c-default c-flat c-lg" href="https://github.com/jhanstra/concept">Download Source on Github</a>
+            <p>or</p>
+            <a class="c-btn c-outline c-default c-flat c-lg" href="css/concept.css" download>Download concept.css</a>
+          </div>
+        </div>
+      </div>
       <div class="c-horizontal-nav">
         <ul class="c-list">
           <!-- <li class="c-show-sidebar"><a><span class="oi c-menu-toggle" data-glyph="menu"></span></a></li>
@@ -23,7 +36,7 @@
             <!-- <li><a href="/#/themes">Themes</a></li>
             <li><a href="/#/learn">Learn</a></li> -->
             <li class="c-right">
-              <div class="c-button-in-nav"><a href class="c-btn c-primary"><span class="oi" data-glyph="cloud-download"></span> Use Concept</a></div>
+              <div class="c-button-in-nav"><a href class="c-btn c-primary" ng-click="toggleDownload()"><span class="oi" data-glyph="cloud-download"></span> Use Concept</a></div>
             </li>
           <!-- <li><a href="#/">Concept</a></li>
           <li><a href="/#/components">Components</a></li>
@@ -33,7 +46,9 @@
       <div class="c-full-background-image" ng-class="{'c-fbi-2' : (randomImage == 2), 'c-fbi-3' : (randomImage == 3), 'c-fbi-4' : (randomImage == 4), 'c-fbi-5' : (randomImage == 5)}"></div>
       <div ng-view autoscroll></div>
       <concept-footer></concept-footer>
+
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular-route.min.js"></script>
@@ -54,24 +69,3 @@
     </script>
   </body>
 </html>
-
-<!--<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lingo</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body ng-app="lingo" class="container-fluid" ng-controller="MainCtrl as mainCtrl">
-  <sidebar class="sidebar hidden-xs"></sidebar>
-  <div class="background-photo"></div>
-  <div class="row">
-
-    <div ng-view></div>
-  </div>
-  <script type="text/javascript" src="../js/bundle.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.js"></script>
-</body>
-</html> -->

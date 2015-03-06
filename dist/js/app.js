@@ -8,6 +8,10 @@ var app = angular.module('concept', [
 app.controller('MainCtrl', ['$rootScope','$scope', function($rootScope, $scope) {
   $scope.test = "hello test";
   $scope.randomImage = Math.floor((Math.random() * 5) + 1);
+  $scope.downloadLink = false;
+  $scope.toggleDownload = function() {
+    $scope.downloadLink = !$scope.downloadLink;
+  }
 }]);
 
 
@@ -28,6 +32,15 @@ app.directive('conceptFooter', function(){
   return {
     restrict : 'E',
     templateUrl : 'views/concept-footer.html'
+  }
+});
+app.directive('downloadLightBox', function(){
+  return {
+    restrict : 'E',
+    scope: {
+      downloadLink: '='
+    },
+    templateUrl : 'views/download-light-box.html'
   }
 });
 

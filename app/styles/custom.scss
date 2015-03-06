@@ -85,5 +85,31 @@
 }
 footer .c-hr-mini {
   margin:15px auto;
+}
 
+.download-card {
+  width:30%;
+  position:fixed;
+  margin:20% auto 0px;
+  z-index:1000;
+  background-color:rgba(120,43,184,1);
+  .c-card-content {
+    padding:40px 20px;
+  }
+  code {
+    font-size:18px;
+    background-color:darken($purpley,15%);
+    padding:8px 15px;
+    margin-bottom:5px;
+    display:inline-block;
+  }
+}
+.darken {
+  background-color:rgba(0,0,0,0.6);
+}
+.no-show {
+  display:none;
+}
+.show {
+  display:block;
 }
