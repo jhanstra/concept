@@ -31,4 +31,4 @@ The Variables folder contains all of the Sass variables used throughout Concept.
 
 ## Contribute
 
-Concept is created by [Jared Hanstra](http://www.jaredhanstra.com). Please help him by contributing! Pull requests are welcome. If you have any questions or need help feel free to email him at jhanstra@gmail.com.
+Concept is created by [Jared Hanstra](https://twitter.com/jhanstra). Please help him by contributing! Pull requests are welcome. If you have any questions or need help feel free to email him at jhanstra@gmail.com.
