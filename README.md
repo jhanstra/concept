@@ -1,4 +1,4 @@
-[# Concept](http://c-o-n-c-e-p-t.com/)
+# [Concept](http://c-o-n-c-e-p-t.com/)
 
 Concept is a modern, flexible CSS framework for creating beautiful web pages. It values modularity, flexibility, modern design, and efficiency.
 
