@@ -25,10 +25,10 @@ var server = express();
 // Add live reload
 server.use(livereload({port: livereloadport}));
 // Use our 'dist' folder as rootfolder
-server.use(express.static('./dist'));
+server.use(express.static('./website'));
 // Because I like HTML5 pushstate .. this redirects everything back to our index.html
 server.all('/*', function(req, res) {
-  res.sendfile('index.html', { root: 'dist' });
+  res.sendfile('index.html', { root: 'website' });
 });
 
 // // JSHint task
@@ -44,27 +44,27 @@ server.all('/*', function(req, res) {
 gulp.task('views', function() {
   // Get our index.html
   gulp.src('app/index.html')
-  // And put it in the dist folder
-  .pipe(gulp.dest('dist/'));
+  // And put it in the website folder
+  .pipe(gulp.dest('website/'));
   // JS
   gulp.src('app/js/**/*')
-  .pipe(gulp.dest('dist/js/'));
+  .pipe(gulp.dest('website/js/'));
   gulp.src('src/concept.js')
-  .pipe(gulp.dest('dist/js/'));
+  .pipe(gulp.dest('website/js/'));
   gulp.src('bower_components/angulartics/dist/angulartics.min.js')
-  .pipe(gulp.dest('dist/js/'));
+  .pipe(gulp.dest('website/js/'));
   gulp.src('bower_components/angulartics/dist/angulartics-ga.min.js')
-  .pipe(gulp.dest('dist/js/'));
+  .pipe(gulp.dest('website/js/'));
   // Images
   gulp.src('./app/images/**/*')
-  .pipe(gulp.dest('dist/images'));
+  .pipe(gulp.dest('website/images'));
   // Fonts/Icons
   gulp.src('./bower_components/open-iconic/font/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts/iconic'));
+  .pipe(gulp.dest('website/fonts/iconic'));
 
   // Any other view files from pages
   gulp.src('./app/views/**/*')
-  .pipe(gulp.dest('dist/views/'))
+  .pipe(gulp.dest('website/views/'))
   .pipe(refresh(lrserver)); // Tell the lrserver to refresh
 
 });
@@ -109,7 +109,7 @@ gulp.task('custom-styles', function() {
   // Minify
   .pipe(minifycss())
   // These last two should look familiar now :)
-  .pipe(gulp.dest('dist/css/'))
+  .pipe(gulp.dest('website/css/'))
   .pipe(refresh(lrserver));
 });
 
