@@ -55,17 +55,12 @@ gulp.task('views', function() {
   .pipe(gulp.dest('dist/js/'));
   gulp.src('bower_components/angulartics/dist/angulartics-ga.min.js')
   .pipe(gulp.dest('dist/js/'));
-  // jQuery
-  gulp.src('bower_components/jquery/dist/**/*')
-  .pipe(gulp.dest('dist/jquery/'));
   // Images
   gulp.src('./app/images/**/*')
   .pipe(gulp.dest('dist/images'));
   // Fonts/Icons
   gulp.src('./bower_components/open-iconic/font/fonts/**/*')
   .pipe(gulp.dest('dist/fonts/iconic'));
-  gulp.src('./bower_components/font-awesome/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts/font-awesome'));
 
   // Any other view files from pages
   gulp.src('./app/views/**/*')
