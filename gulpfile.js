@@ -60,7 +60,9 @@ gulp.task('views', function() {
   .pipe(gulp.dest('website/images'));
   // Fonts/Icons
   gulp.src('./bower_components/open-iconic/font/fonts/**/*')
-  .pipe(gulp.dest('website/fonts/iconic'));
+  .pipe(gulp.dest('website/fonts'));
+  gulp.src('./bower_components/open-iconic/font/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'));
 
   // Any other view files from pages
   gulp.src('./app/views/**/*')
