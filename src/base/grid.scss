@@ -1,8 +1,18 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.c-container {
+.c-concept {
+  display:flex;
+  background:$default-background-color;
+  flex-flow:row wrap;
+  height:100vh;
+  order:0;
+  justify-content:flex-start;
+  overflow:hidden;
+  flex:1 1;
+}
 
-  order:2;
+.c-container {
+  flex:1 1;
   overflow-y:auto;
 }
 .c-container-fixed {

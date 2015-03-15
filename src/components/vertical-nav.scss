@@ -1,11 +1,8 @@
 .c-vertical-nav {
   background-color:$vertical-nav-background-color;
   color:$vertical-nav-text-color;
-  height:100%;
   flex:0 0 $vertical-nav-width;
-  order:1;
   overflow-y:auto;
-  overflow-x:auto;
   transition:0.2s linear;
   li {
     padding:0px;

@@ -19,10 +19,7 @@ are based on 10px sizing. So 1.5rem = 15px :) Props to Dave Gamache for the insp
 }
 
 body {
-  //background:$full-background-color;
-  display:flex;
-  flex-direction:column nowrap;
-  height:100vh;
+  background:$default-background-color;
 }
 button,
 button:focus,
