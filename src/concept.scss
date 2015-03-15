@@ -1,5 +1,5 @@
 /*
-* Concept V0.1.4
+* Concept V0.1.5
 * Copyright 2015, Jared Hanstra
 * www.c-o-n-c-e-p-t.com
 * Free to use under the MIT license.
@@ -24,9 +24,12 @@
 - Media Queries
 */
 
-// Variables
+// Base Variables
 @import 'variables/colors.scss';
-@import 'variables/variables.scss';
+@import 'variables/base_variables.scss';
+
+// Custom Variables
+@import 'variables/custom_variables.scss';
 
 
 // Mixins

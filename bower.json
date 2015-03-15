@@ -1,6 +1,6 @@
 {
   "name": "concept",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "authors": [
     "Jared Hanstra <jhanstra@gmail.com>"
   ],
@@ -30,6 +30,7 @@
     "angulartics": "~0.17.2"
   },
   "dependencies": {
-    "open-iconic": "~1.1.1"
+    "open-iconic": "~1.1.1",
+    "normalize-scss": "~3.0.2"
   }
 }
