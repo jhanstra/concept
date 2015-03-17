@@ -32,3 +32,7 @@ The Variables folder contains all of the Sass variables used throughout Concept.
 ## Contribute
 
 Concept is created by [Jared Hanstra](https://twitter.com/jhanstra). Please help him by contributing! Pull requests are welcome. If you have any questions or need help feel free to email him at jhanstra@gmail.com.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jhanstra/concept/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
