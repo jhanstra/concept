@@ -17,11 +17,17 @@ $header-secondary-background-color: none;
 $header-full-background-color: none;
 
 // Header images
+$default-header-shadow: inset 0 0 0 1000px rgba(20,20,20,.8)
 $header-background-image-1: url('../images/house.jpg');
 $header-background-image-2: none;
 $header-background-image-3: none;
 $header-background-image-4: none;
 $header-background-image-5: none;
+$header-background-image-6: none;
+$header-background-image-7: none;
+$header-background-image-8: none;
+$header-background-image-9: none;
+$header-background-image-10: none;
 
 // Horizontal Rule
 $hr-color: $white;
@@ -105,6 +111,7 @@ $vertical-nav-width-closed: 0px;
 $vertical-nav-background-color: $black;
 $vertical-nav-text-color: $white;
 $vertical-nav-item-hover-background:$true-black;
+$vertical-nav-text-color-hover: $white;
 
 // Horizontal Nav
 /* Choose 'relative' for nav only at the top, 'absolute' to fix it to top of page */

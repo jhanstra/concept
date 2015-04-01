@@ -9,19 +9,29 @@
     margin:0px;
     a {
       display:block;
-      text-align:center;
       margin:10px auto;
-      padding:15px 0px;
+      padding:15px 0px 15px 40px;
+      color:$vertical-nav-text-color;
       &:hover {
         background-color:$vertical-nav-item-hover-background;
-        color:$white;
+        color:$vertical-nav-text-color-hover;
+        cursor:pointer;
       }
+    }
+  }
+}
+.c-vertical-nav.c-center {
+  li {
+    a {
+      text-align:center;
+      padding:15px 0px;
     }
   }
 }
 .c-vertical-nav-closed {
   flex:0 0 $vertical-nav-width-closed;
   transition:0.2s linear;
+  display:none;
 }
 
 @media (max-width:768px) {
