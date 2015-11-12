@@ -5,8 +5,7 @@ $fixed: fixed;
 $relative: relative;
 $transparent: transparent;
 
-// Site-wide Defaults
-$border-radius:4px;
+$base-border-radius:4px;
 
 // Defines the height of a default header div
 $header-full-height: 100vh;
@@ -50,14 +49,9 @@ $background-image-20: none;
 
 
 // Typography
-$paragraph-font: 'Montserrat';
-$header-font: 'Lato';
-$button-font: 'Montserrat';
-$default-font-color: $white;
-$default-header-font-weight: 100;
-$default-paragraph-font-weight: 200;
-$line-height:1.428571429;
-  // Titles
+$base-line-height:1.428571429;
+
+// Titles
 $title-font-size: 7.0rem;
 $title-color: $white;
 $title-margin-bottom: 10px;
@@ -70,7 +64,23 @@ $container-fixed-max-width: 960px;
 // Choose the number of columns for the grid
 $number-of-columns: 12;
 
+// Paragraphs
+$paragraph-font: 'Montserrat';
+$paragraph-font-size: 1.4rem;
+$paragraph-line-height: $base-line-height;
+$paragraph-font-color: $black;
+
+// Headers
+$header-font: 'Lato';
+$header-font-size: 2.5rem;
+$header-line-height: $base-line-height;
+$header-font-color: $black;
+
 // Buttons
+$button-font-size: $paragraph-font-size;
+$button-line-height: $paragraph-line-height;
+$button-border-radius: $base-border-radius;
+
 $primary-button-background-color: $purpley;
 $success-button-background-color: $success-green;
 $danger-button-background-color: $warning-red;

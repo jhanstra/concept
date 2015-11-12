@@ -1,5 +1,10 @@
 // Basic Button
-.c-btn {
+button,
+button:focus,
+button:active {
+  outline:none;
+}
+.btn {
   display: inline-block;
   font-weight: normal;
   text-align: center;
@@ -7,13 +12,11 @@
   cursor: pointer;
   background-image: none;
   white-space: nowrap;
-  font-size:1.2rem;
-  line-height: $line-height;
+  font-size:$button-font-size;
+  line-height: $button-line-height;
   border-radius: 4px;
   -webkit-user-select: none;
   margin: 10px 0px;
-  border-radius: 4px;
-  //transition: 0.1s ease-in-out;
   position: relative;
   border:0px solid transparent;
   padding:6px 12px;
@@ -22,115 +25,81 @@
 }
 .btn:hover {
   text-decoration:none;
-  transition:0.1s ease-in-out;
 }
 
 
 
 // Sizes
-.c-jumbo {
-  font-size:1.6rem;
+.btn.jumbo {
+  font-size:2.4rem;
   padding:20px 70px;
   border-radius:8px;
 }
-.c-lg {
-  font-size: 1.6rem;
+.btn.xl {
+  font-size:2.2rem;
+  padding:10px 44px;
+  border-radius:8px;
+}
+.btn.lg {
+  font-size: 2.0rem;
   line-height: 1.33;
   border-radius: 6px;
-  padding:12px 40px;
+  padding:10px 40px;
 }
-.c-sm {
+.btn.sm {
   padding:4px 12px;
   border-radius:3px;
   font-size:1.0rem;
 }
-.c-xs {
+.btn.xs {
   padding:2px 5px;
   border-radius:3px;
   font-size:0.85rem;
 }
-.c-fixed-width {
-  width:$button-fixed-width;
-  font-size:1.2rem;
-}
-.c-full-width {
-  width:100%;
-}
 
-
-
-// Color Schemes
-.c-default,
-.c-raised {
+// Colors
+.btn.white {
   background-color:$white;
-  color: $black;
-  box-shadow:0px 2px 0px $black;
-  border:1px solid #eee;
+  border:2px solid $white;
+  color:$black;
   &:hover {
-    background-color:darken($white,$button-hover-darken-percentage);
-    border:1px solid darken($white,$button-hover-darken-percentage);
+    background-color: darken($white, $hover-darken);
+    border:2px solid darken($white, $hover-darken);
+    transition:0.05s ease-in-out;
   }
 }
-.c-primary {
-  background-color:$primary-button-background-color;
-  border:1px solid $primary-button-background-color;
+.btn.green {
+  background-color:$green;
+  border:2px solid $green;
   color:$white;
   &:hover {
-    background-color:darken($primary-button-background-color, $button-hover-darken-percentage);
-    border:1px solid darken($primary-button-background-color, $button-hover-darken-percentage);
-    color:darken($white,5%);
+    border:2px solid darken($green, $hover-darken);
+    background-color: darken($green, $hover-darken);
   }
 }
-.c-success {
-  background-color:$success-button-background-color;
-  border:1px solid $success-button-background-color;
+.btn.blue {
+  background-color:$blue;
+  border:2px solid $blue;
   color:$white;
   &:hover {
-    background-color:darken($success-button-background-color, $button-hover-darken-percentage);
-    border:1px solid darken($success-button-background-color, $button-hover-darken-percentage);
-    color:darken($white,5%);
+    background-color: darken($blue, $hover-darken);
+    border:2px solid darken($blue, $hover-darken);
   }
 }
-.c-neutral {
-  background-color:$neutral-button-background-color;
-  border:1px solid $neutral-button-background-color;
-  color:$white;
-  &:hover {
-    background-color:darken($neutral-button-background-color, $button-hover-darken-percentage);
-    border:1px solid darken($neutral-button-background-color, $button-hover-darken-percentage);
-    color:darken($white,5%);
-  }
-}
-.c-danger {
-  background-color:$danger-button-background-color;
-  border:1px solid $danger-button-background-color;
-  color:$white;
-  &:hover {
-    background-color:darken($danger-button-background-color, $button-hover-darken-percentage);
-    border:1px solid darken($danger-button-background-color, $button-hover-darken-percentage);
-    color:darken($white,5%);
-  }
-}
-.c-disabled {
-  background-color:$disabled-button-background-color;
-  border:1px solid $disabled-button-background-color;
-  color:$white;
-  &:hover {
-    background-color:$disabled-button-background-color;
-    border:1px solid $disabled-button-background-color;
-    color:$white;
-    cursor:default;
-  }
-}
+// Add more colors to match your brand
 
-.c-transparent-dark {
+
+
+
+
+.btn.transparent-dark {
   background-color:rgba(0,0,0,0.1);
   color:$white;
   &:hover {
     background-color:rgba(0,0,0,0.3);
   }
 }
-.c-transparent-light {
+.btn.transparent-light {
   background-color:rgba(255,255,255,0.1);
   color:$white;
   &:hover {
@@ -139,22 +108,22 @@
 }
 
 // Styles
-.c-flat {
+.btn.flat {
   box-shadow:0px 0px 0px transparent;
 }
-.c-outline {
+.btn.outline {
   background-color:transparent;
   &:hover {
     background-color:transparent;
   }
 }
-.c-rounded {
+.btn.rounded {
   border-radius:1000px;
 }
-.c-rect {
+.btn.rect {
   border-radius:0px;
 }
-.c-clicky {
+.btn.clicky {
   box-shadow:0px 2px 0px $black;
   color:$white;
   &:hover {
@@ -162,7 +131,7 @@
     transform: translateY(2px);
   }
 }
-.c-text {
+.btn.text {
   background:transparent;
   border:0px solid transparent;
   &:hover {
@@ -180,4 +149,77 @@
   }
 }
 
-// Helpers
+// Icons in Buttons
+.btn.icon {
+  padding:0px;
+  border:0px;
+  i {
+    padding:4px 10px;
+    display:inline-block;
+    color:$white;
+    font-size:20px;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+  p {
+    padding:4px 10px;
+    margin:0px;
+    display: inline-block;
+    font-family:$brandon;
+    color:$white;
+  }
+  &:hover {
+    border:0px;
+  }
+}
+.btn.icon.green {
+  i { background-color:darken($green, $hover-darken); }
+  p { background-color:$green; }
+  &:hover {
+    i { background-color:darken($green, $hover-double-darken); }
+    p { background-color:darken($green, $hover-darken); }
+  }
+}
+.btn.icon.dark {
+  background-color:#333;
+  i { background-color:darken(#333, $hover-darken); }
+  p { background-color:#333; }
+  &:hover {
+    i { background-color:darken(#333, $hover-double-darken); }
+    p { background-color:darken(#333, $hover-darken); }
+  }
+}
+.btn.icon.light {
+  background-color:#ccc;
+  i { background-color:darken(#ccc, $hover-darken); color:#222; }
+  p { background-color:#ccc; color:#222; }
+  &:hover {
+    i { background-color:darken(#ccc, $hover-double-darken); }
+    p { background-color:darken(#ccc, $hover-darken); }
+  }
+}
+
+// Mobile Sizes
+@media(max-width:550px) {
+  .btn.jumbo {
+    font-size:1.4rem;
+    padding:20px 70px;
+    border-radius:8px;
+  }
+  .btn.lg {
+    font-size: 1.4rem;
+    line-height: 1.33;
+    border-radius: 6px;
+    padding:8px 30px;
+  }
+  .btn.sm {
+    padding:4px 12px;
+    border-radius:3px;
+    font-size:1.0rem;
+  }
+  .btn.xs {
+    padding:2px 5px;
+    border-radius:3px;
+    font-size:0.85rem;
+  }
+}

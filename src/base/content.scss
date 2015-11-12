@@ -1,8 +1,8 @@
-.c-left-aligned-content {
+.left-aligned-content {
   padding:40px 60px;
   text-align:left;
 }
-.c-right-aligned-content {
+.right-aligned-content {
   padding:40px 60px;
   h1,h2,h3,h4,h5,h6 {
     text-align:right;
@@ -12,6 +12,54 @@
   }
 }
 
+.float-down-top-10 {
+  position:relative;
+  top: 10vh;
+}
+.float-down-top-20 {
+  position:relative;
+  top: 20vh;
+}
+.float-down-top-30 {
+  position:relative;
+  top: 30vh;
+}
+.float-down-top-40 {
+  position:relative;
+  top: 40vh;
+}
+.float-down-top-50 {
+  position:relative;
+  top: 50vh;
+}
+.float-down-top-60 {
+  position:relative;
+  top: 60vh;
+}
+.float-down-top-70 {
+  position:relative;
+  top: 70vh;
+}
+.float-down-top-80 {
+  position:relative;
+  top: 80vh;
+}
+.float-down-top-90 {
+  position:relative;
+  top: 90%;
+}
+.float-down-bottom-10 {
+  position:absolute;
+  bottom: 10vh;
+}
+.float-down-bottom-20 {
+  position:absolute;
+  bottom: 20vh;
+}
+.float-down-bottom-30 {
+  position:absolute;
+  bottom: 30vh;
+}
 
 @media (max-width:549px) {
   .c-left-aligned-content {

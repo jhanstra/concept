@@ -8,30 +8,20 @@
 *,
 *:active,
 *:hover,
-*:focus {
+*:focus,
+*:after,
+*:before {
   outline:none;
+  box-sizing:inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin:0px;
+  padding:0px;
 }
 
 body {
   background:$default-background-color;
 }
-button,
-button:focus,
-button:active {
-  outline:none;
-}
-
-
-
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  text-decoration:none;
-  &:hover {
-  }
-}
-
-
-
