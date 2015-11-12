@@ -1,4 +1,4 @@
-.c-vertical-nav {
+.vertical-nav {
   background-color:$vertical-nav-background-color;
   color:$vertical-nav-text-color;
   flex:0 0 $vertical-nav-width;
@@ -20,7 +20,7 @@
     }
   }
 }
-.c-vertical-nav.c-center {
+.vertical-nav.center {
   li {
     a {
       text-align:center;
@@ -28,21 +28,21 @@
     }
   }
 }
-.c-vertical-nav-closed {
+.vertical-nav-closed {
   flex:0 0 $vertical-nav-width-closed;
   transition:0.2s linear;
   display:none;
 }
 
 @media (max-width:768px) {
-  .c-vertical-nav {
+  .vertical-nav {
     display:block;
     flex:none;
     position:absolute;
     width:$vertical-nav-width-mobile;
     z-index:100;
   }
-  .c-vertical-nav-closed {
+  .vertical-nav-closed {
     width:0px;
   }
 }

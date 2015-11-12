@@ -1,19 +1,8 @@
 
 
-$absolute: absolute;
-$fixed: fixed;
-$relative: relative;
-$transparent: transparent;
 
 $base-border-radius:4px;
 
-// Defines the height of a default header div
-$header-full-height: 100vh;
-$header-primary-height: 500px;
-$header-secondary-height:250px;
-$header-primary-background-color: none;
-$header-secondary-background-color: none;
-$header-full-background-color: none;
 
 
 
@@ -24,27 +13,27 @@ $header-full-background-color: none;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-              $default-background-color: $true-white
-              $background-image-1: none;
-              $background-image-2: none;
-              $background-image-3: none;
-              $background-image-4: none;
-              $background-image-5: none;
-              $background-image-6: none;
-              $background-image-7: none;
-              $background-image-8: none;
-              $background-image-9: none;
-              $background-image-10: none;
-              $background-image-11: none;
-              $background-image-12: none;
-              $background-image-13: none;
-              $background-image-14: none;
-              $background-image-15: none;
-              $background-image-16: none;
-              $background-image-17: none;
-              $background-image-18: none;
-              $background-image-19: none;
-              $background-image-20: none;
+    $default-background-color: $true-white
+    $background-image-1: none;
+    $background-image-2: none;
+    $background-image-3: none;
+    $background-image-4: none;
+    $background-image-5: none;
+    $background-image-6: none;
+    $background-image-7: none;
+    $background-image-8: none;
+    $background-image-9: none;
+    $background-image-10: none;
+    $background-image-11: none;
+    $background-image-12: none;
+    $background-image-13: none;
+    $background-image-14: none;
+    $background-image-15: none;
+    $background-image-16: none;
+    $background-image-17: none;
+    $background-image-18: none;
+    $background-image-19: none;
+    $background-image-20: none;
 
 
 
@@ -61,12 +50,12 @@ $subtitle-color: #bbb;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-              $number-of-columns: 12;
-              $extra-narrow-row-width: 480px;
-              $narrow-row-width: 680px;
-              $default-row-width: 960px;
-              $wide-row-width: 1080px;
-              $extra-wide-row-width:1200px;
+    $number-of-columns: 12;
+    $extra-narrow-row-width: 480px;
+    $narrow-row-width: 680px;
+    $default-row-width: 960px;
+    $wide-row-width: 1080px;
+    $extra-wide-row-width:1200px;
               
 
 ////////////////////////////////////////////////////////////
@@ -75,33 +64,33 @@ $subtitle-color: #bbb;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
       
-              $base-line-height: 1.428571429;
+    $base-line-height: 1.428571429;
 
-              // Paragraphs
-              $paragraph-font: 'Montserrat';
-              $paragraph-font-size: 1.4rem;
-              $paragraph-font-weight: 400;
-              $paragraph-line-height: $base-line-height;
-              $paragraph-font-color: $black;
-              $paragraph-margin: 24px 0px 0px;
-              $paragraph-lead-margin: 60px;
-              $paragraph-margin-after-header: 50px;
+    // Paragraphs
+    $paragraph-font: 'Montserrat';
+    $paragraph-font-size: 1.4rem;
+    $paragraph-font-weight: 400;
+    $paragraph-line-height: $base-line-height;
+    $paragraph-font-color: $black;
+    $paragraph-margin: 24px 0px 0px;
+    $paragraph-lead-margin: 60px;
+    $paragraph-margin-after-header: 50px;
 
-              // Headers
-              $header-font: 'Lato';
-              $header-font-size: 2.5rem;
-              $header-font-weight: 400;
-              $header-line-height: $base-line-height;
-              $header-font-color: $black;
+    // Headers
+    $header-font: 'Lato';
+    $header-font-size: 2.5rem;
+    $header-font-weight: 400;
+    $header-line-height: $base-line-height;
+    $header-font-color: $black;
 
-              // Code
-              $code-font: $paragraph-font;
-              $code-font-size: $paragraph-font-size;
-              $code-font-weight: 400;
-              $code-font-color: $paragraph-font-color;
-              $code-background-color: inherit;
-              $code-border: 1px solid #ccc;
-              $code-border-radius: 3px;
+    // Code
+    $code-font: $paragraph-font;
+    $code-font-size: $paragraph-font-size;
+    $code-font-weight: 400;
+    $code-font-color: $paragraph-font-color;
+    $code-background-color: inherit;
+    $code-border: 1px solid #ccc;
+    $code-border-radius: 3px;
               
 ////////////////////////////////////////////////////////////
 ///                                                      ///
@@ -109,10 +98,10 @@ $subtitle-color: #bbb;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-              // Buttons
-              $button-font-size: $paragraph-font-size;
-              $button-line-height: $paragraph-line-height;
-              $button-border-radius: $base-border-radius;
+    // Buttons
+    $button-font-size: $paragraph-font-size;
+    $button-line-height: $paragraph-line-height;
+    $button-border-radius: $base-border-radius;
 
 $primary-button-background-color: $purpley;
 $success-button-background-color: $success-green;
@@ -155,27 +144,19 @@ $vertical-nav-text-color: $white;
 $vertical-nav-item-hover-background:$true-black;
 $vertical-nav-text-color-hover: $white;
 
-// Horizontal Nav
-/* Choose 'relative' for nav only at the top, 'absolute' to fix it to top of page */
-$horizontal-nav-positioning: $absolute;
-$horizontal-nav-background-color: rgba(0,0,0,0.9);
-$horizontal-nav-height: 50px;
-$horizontal-nav-vert-align: 25%;
-$horizontal-nav-spacing: 0px 20px;
-$horizontal-nav-item-hover-background: rgba(150,150,150,0.5);
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Navigation                                         ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
-// Labels
-$label-1-background-color:#006c9e;
-$label-2-background-color:$green;
-$label-3-background-color:$orange;
-$label-4-background-color:$warning-red;
-$label-5-background-color:$fb-blue;
-$label-6-background-color:$tw-blue;
-$label-7-background-color:$tw-blue;
-$label-8-background-color:$tw-blue;
-$label-9-background-color:$tw-blue;
-$label-10-background-color:$tw-blue;
-
+    $horizontal-nav-positioning: fixed;
+    $horizontal-nav-background-color: rgba(0,0,0,0.9);
+    $horizontal-nav-height: 50px;
+    $horizontal-nav-vert-align: 25%;
+    $horizontal-nav-initial-spacing: 20px;
+    $horizontal-nav-spacing: 0px 20px;
+    $horizontal-nav-item-hover-background: rgba(150,150,150,0.5);
 
 ////////////////////////////////////////////////////////////
 ///                                                      ///
@@ -189,3 +170,21 @@ $label-10-background-color:$tw-blue;
               $hr-height: 1px;
               $hr-mini-width:50px;
               $hr-custom-width: 70%;
+              
+              // Labels
+              $label-font-size: $paragraph-font-size;
+              $label-font-weight: 400;
+              $label-font-color: $paragraph-font-color;
+              $label-padding: 2px 6px;
+              $label-margin: 4px 5px;
+              $label-border-radius: $base-border-radius;
+              $label-1-background-color:#006c9e;
+              $label-2-background-color:$green;
+              $label-3-background-color:$orange;
+              $label-4-background-color:$warning-red;
+              $label-5-background-color:$fb-blue;
+              $label-6-background-color:$tw-blue;
+              $label-7-background-color:$tw-blue;
+              $label-8-background-color:$tw-blue;
+              $label-9-background-color:$tw-blue;
+              $label-10-background-color:$tw-blue;
