@@ -16,18 +16,7 @@ $header-primary-background-color: none;
 $header-secondary-background-color: none;
 $header-full-background-color: none;
 
-// Header images
-$default-header-shadow: inset 0 0 0 1000px rgba(20,20,20,.8)
-$header-background-image-1: url('../images/house.jpg');
-$header-background-image-2: none;
-$header-background-image-3: none;
-$header-background-image-4: none;
-$header-background-image-5: none;
-$header-background-image-6: none;
-$header-background-image-7: none;
-$header-background-image-8: none;
-$header-background-image-9: none;
-$header-background-image-10: none;
+
 
 // Horizontal Rule
 $hr-color: $white;
@@ -36,20 +25,28 @@ $hr-height: 1px;
 $hr-mini-width:50px;
 $hr-custom-width: 70%;
 
-
-// Background Type: choose from 'image' or 'color'
-$background-type: 'image';
-$default-background-color: $white;
-$full-background-image: url('../images/snowy-trees.jpg');
-$full-background-image-2: url('../images/earth-space.jpg');
-$full-background-image-3: url('../images/milky-way.jpg');
-$full-background-image-4: url('../images/winter-trees.jpg');
-$full-background-image-5: url('../images/green-mountain.jpg');
-$full-background-image-6: none;
-$full-background-image-7: none;
-$full-background-image-8: none;
-$full-background-image-9: none;
-$full-background-image-10: none;
+// Backgrounds
+$default-background-color: $true-white
+$background-image-1: none;
+$background-image-2: none;
+$background-image-3: none;
+$background-image-4: none;
+$background-image-5: none;
+$background-image-6: none;
+$background-image-7: none;
+$background-image-8: none;
+$background-image-9: none;
+$background-image-10: none;
+$background-image-11: none;
+$background-image-12: none;
+$background-image-13: none;
+$background-image-14: none;
+$background-image-15: none;
+$background-image-16: none;
+$background-image-17: none;
+$background-image-18: none;
+$background-image-19: none;
+$background-image-20: none;
 
 
 // Typography

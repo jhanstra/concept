@@ -1,15 +1,56 @@
-.c-rel {
-  position:relative;
+.center {
+  text-align:center;
 }
-.c-bold {
-  font-weight:bold;
+.left-align {
+  text-align:left;
 }
-.c-dark-text {
-  color:$black;
+.right-align {
+  text-align:right;
 }
-.c-capital {
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.uppercase {
+  text-transform:uppercase;
+}
+.capital {
   text-transform:capitalize;
 }
-.c-lowercase {
+.lowercase {
   text-transform:lowercase;
+}
+.float-right {
+  float:right
+}
+.float-left {
+  float:left
+}
+.pos-rel {
+  position:relative;
+}
+.pos-fixed {
+  position:fixed;
+}
+.bold {
+  font-weight:bold;
+}
+.italic {
+  font-weight:italic;
+}
+.rounded {
+  border-radius:$border-radius;
+}
+.circular {
+  border-radius:1000px;
+}
+.no-m, .btn.no-m {
+  margin:0px;
+}
+.no-p {
+  padding:0px;
+}
+.on-dark {
+  color:$white;
 }
