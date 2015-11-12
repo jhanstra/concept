@@ -1,4 +1,4 @@
-/**** CSS ****/
+
 
 $absolute: absolute;
 $fixed: fixed;
@@ -17,39 +17,36 @@ $header-full-background-color: none;
 
 
 
-// Horizontal Rule
-$hr-color: $white;
-$hr-margin: 30px;
-$hr-height: 1px;
-$hr-mini-width:50px;
-$hr-custom-width: 70%;
 
-// Backgrounds
-$default-background-color: $true-white
-$background-image-1: none;
-$background-image-2: none;
-$background-image-3: none;
-$background-image-4: none;
-$background-image-5: none;
-$background-image-6: none;
-$background-image-7: none;
-$background-image-8: none;
-$background-image-9: none;
-$background-image-10: none;
-$background-image-11: none;
-$background-image-12: none;
-$background-image-13: none;
-$background-image-14: none;
-$background-image-15: none;
-$background-image-16: none;
-$background-image-17: none;
-$background-image-18: none;
-$background-image-19: none;
-$background-image-20: none;
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Backgrounds                                        ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+              $default-background-color: $true-white
+              $background-image-1: none;
+              $background-image-2: none;
+              $background-image-3: none;
+              $background-image-4: none;
+              $background-image-5: none;
+              $background-image-6: none;
+              $background-image-7: none;
+              $background-image-8: none;
+              $background-image-9: none;
+              $background-image-10: none;
+              $background-image-11: none;
+              $background-image-12: none;
+              $background-image-13: none;
+              $background-image-14: none;
+              $background-image-15: none;
+              $background-image-16: none;
+              $background-image-17: none;
+              $background-image-18: none;
+              $background-image-19: none;
+              $background-image-20: none;
 
 
-// Typography
-$base-line-height:1.428571429;
 
 // Titles
 $title-font-size: 7.0rem;
@@ -58,28 +55,64 @@ $title-margin-bottom: 10px;
 $subtitle-font-size: 2.5rem;
 $subtitle-color: #bbb;
 
-// If using a fixed width, defines how wide the page should be
-$container-fixed-max-width: 960px;
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Grid                                               ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
-// Choose the number of columns for the grid
-$number-of-columns: 12;
+              $number-of-columns: 12;
+              $extra-narrow-row-width: 480px;
+              $narrow-row-width: 680px;
+              $default-row-width: 960px;
+              $wide-row-width: 1080px;
+              $extra-wide-row-width:1200px;
+              
 
-// Paragraphs
-$paragraph-font: 'Montserrat';
-$paragraph-font-size: 1.4rem;
-$paragraph-line-height: $base-line-height;
-$paragraph-font-color: $black;
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Typography                                         ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+      
+              $base-line-height: 1.428571429;
 
-// Headers
-$header-font: 'Lato';
-$header-font-size: 2.5rem;
-$header-line-height: $base-line-height;
-$header-font-color: $black;
+              // Paragraphs
+              $paragraph-font: 'Montserrat';
+              $paragraph-font-size: 1.4rem;
+              $paragraph-font-weight: 400;
+              $paragraph-line-height: $base-line-height;
+              $paragraph-font-color: $black;
+              $paragraph-margin: 24px 0px 0px;
+              $paragraph-lead-margin: 60px;
+              $paragraph-margin-after-header: 50px;
 
-// Buttons
-$button-font-size: $paragraph-font-size;
-$button-line-height: $paragraph-line-height;
-$button-border-radius: $base-border-radius;
+              // Headers
+              $header-font: 'Lato';
+              $header-font-size: 2.5rem;
+              $header-font-weight: 400;
+              $header-line-height: $base-line-height;
+              $header-font-color: $black;
+
+              // Code
+              $code-font: $paragraph-font;
+              $code-font-size: $paragraph-font-size;
+              $code-font-weight: 400;
+              $code-font-color: $paragraph-font-color;
+              $code-background-color: inherit;
+              $code-border: 1px solid #ccc;
+              $code-border-radius: 3px;
+              
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Buttons                                            ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+              // Buttons
+              $button-font-size: $paragraph-font-size;
+              $button-line-height: $paragraph-line-height;
+              $button-border-radius: $base-border-radius;
 
 $primary-button-background-color: $purpley;
 $success-button-background-color: $success-green;
@@ -89,6 +122,8 @@ $clicky-button-background-color: $purpley;
 $disabled-button-background-color: #999;
 $button-hover-darken-percentage: 15%;
 $button-fixed-width: 280px;
+
+
 
 
 // Forms
@@ -140,3 +175,17 @@ $label-7-background-color:$tw-blue;
 $label-8-background-color:$tw-blue;
 $label-9-background-color:$tw-blue;
 $label-10-background-color:$tw-blue;
+
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Miscellaneous                                      ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+              // Horizontal Rule
+              $hr-color: $white;
+              $hr-margin: 30px;
+              $hr-height: 1px;
+              $hr-mini-width:50px;
+              $hr-custom-width: 70%;

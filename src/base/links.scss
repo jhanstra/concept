@@ -2,12 +2,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration:none;
-  &:hover {
-  }
 }
 
 p a,
-.c-link-list a {
+.link-list a {
   color:$link-color;
   font-weight:400;
   &:hover {
@@ -35,7 +33,7 @@ h6 > a {
     text-decoration:none;
   }
 }
-.c-no-link-color {
+.no-link-color {
   color:inherit;
   &:hover {
     border-bottom:1px solid inherit;

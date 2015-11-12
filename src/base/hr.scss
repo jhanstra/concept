@@ -1,0 +1,18 @@
+hr {
+  background-color:$hr-color;
+  border:none;
+  height:$hr-height;
+  margin:$hr-margin auto;
+}
+.hr-full {
+  width:100%;
+}
+.hr-half {
+  width:50%;
+}
+.hr-mini {
+  width:$hr-mini-width;
+}
+.hr-custom {
+  width:$hr-custom-width;
+}

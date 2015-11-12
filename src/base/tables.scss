@@ -1,4 +1,4 @@
-.c-table {
+.table {
   width:100%;
   color:$table-default-color;
   text-align:left;
@@ -12,17 +12,17 @@
   }
 }
 
-.c-table-lg {
+.table-lg {
   td,th {
     padding:12px 10px;
   }
 }
-.c-table-sm {
+.table-sm {
   td,th {
     padding:4px 4px;
   }
 }
-.c-table-pattern {
+.table-pattern {
   color:#333;
   border-radius:$border-radius;
   th {
