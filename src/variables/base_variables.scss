@@ -167,27 +167,27 @@ $vertical-nav-text-color-hover: $white;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-              // Horizontal Rule
-              $hr-color: $white;
-              $hr-margin: 30px;
-              $hr-height: 1px;
-              $hr-mini-width:50px;
-              $hr-custom-width: 70%;
-              
-              // Labels
-              $label-font-size: $paragraph-font-size;
-              $label-font-weight: 400;
-              $label-font-color: $paragraph-font-color;
-              $label-padding: 2px 6px;
-              $label-margin: 4px 5px;
-              $label-border-radius: $base-border-radius;
-              $label-1-background-color:$red;
-              $label-2-background-color:$green;
-              $label-3-background-color:$orange;
-              $label-4-background-color:$warning-red;
-              $label-5-background-color:$facebook-blue;
-              $label-6-background-color:$tw-blue;
-              $label-7-background-color:$tw-blue;
-              $label-8-background-color:$tw-blue;
-              $label-9-background-color:$tw-blue;
-              $label-10-background-color:$tw-blue;
+    // Horizontal Rule
+    $hr-color: $white;
+    $hr-margin: 30px;
+    $hr-height: 1px;
+    $hr-mini-width:50px;
+    $hr-custom-width: 70%;
+
+    // Labels
+    $label-font-size: $paragraph-font-size;
+    $label-font-weight: 400;
+    $label-font-color: $paragraph-font-color;
+    $label-padding: 0px 5px;
+    $label-margin: 4px 5px;
+    $label-border-radius: $base-border-radius;
+    $label-1-background-color:$red;
+    $label-2-background-color:$green;
+    $label-3-background-color:$orange;
+    $label-4-background-color:$warning-red;
+    $label-5-background-color:$facebook-blue;
+    $label-6-background-color:$tw-blue;
+    $label-7-background-color:$tw-blue;
+    $label-8-background-color:$tw-blue;
+    $label-9-background-color:$tw-blue;
+    $label-10-background-color:$tw-blue;
