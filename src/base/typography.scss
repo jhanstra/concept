@@ -58,7 +58,8 @@ code {
   color: $code-font-color;
   border: $code-border;
   border-radius: $code-border-radius;
-  padding:4px 8px;
+  background: $code-background-color;
+  padding:0px 5px;
 }
 
 /* Mobile */
