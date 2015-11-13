@@ -17,6 +17,7 @@
         vertical-align:middle;
         height:100%;
         padding:$horizontal-nav-spacing;
+        color:$horizontal-nav-color;
         &:hover {
           background-color:$horizontal-nav-item-hover-background;
         }

@@ -21,7 +21,7 @@ button:active {
   border:0px solid transparent;
   padding:6px 12px;
   text-transform:uppercase;
-  font-family:$button-font, $paragraph-font, Helvetica, Arial, sans-serif;
+  font-family:$button-font, Helvetica, Arial, sans-serif;
 }
 .btn:hover {
   text-decoration:none;
@@ -158,14 +158,14 @@ button:active {
     display:inline-block;
     color:$white;
     font-size:20px;
-    border-top-left-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $base-border-radius;
+    border-bottom-left-radius: $base-border-radius;
   }
   p {
     padding:4px 10px;
     margin:0px;
     display: inline-block;
-    font-family:$brandon;
+    font-family:$button-font;
     color:$white;
   }
   &:hover {

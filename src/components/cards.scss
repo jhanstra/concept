@@ -2,14 +2,14 @@
   background-color:$purpley;
   color:#ccc;
   margin:20px;
-  border-radius:$border-radius;
+  border-radius:$base-border-radius;
   h3 {
     text-align:center;
     color:#ccc;
     padding:10px 0px;
     background-color:darken($purpley, 15%);
-    border-top-left-radius:$border-radius;
-    border-top-right-radius:$border-radius;
+    border-top-left-radius:$base-border-radius;
+    border-top-right-radius:$base-border-radius;
   }
   p {
     margin:3px 0px;

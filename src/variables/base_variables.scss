@@ -13,8 +13,8 @@ $base-border-radius:4px;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-    $default-background-color: $true-white
-    $background-image-1: none;
+    $default-background-color: $true-white;
+    $background-image-1: url('http://www.planwallpaper.com/static/images/Desktop-HD-Wallpaper-Free-Download-1.jpg');
     $background-image-2: none;
     $background-image-3: none;
     $background-image-4: none;
@@ -99,6 +99,7 @@ $subtitle-color: #bbb;
 ////////////////////////////////////////////////////////////
 
     // Buttons
+    $button-font: $header-font;
     $button-font-size: $paragraph-font-size;
     $button-line-height: $paragraph-line-height;
     $button-border-radius: $base-border-radius;
@@ -112,7 +113,8 @@ $disabled-button-background-color: #999;
 $button-hover-darken-percentage: 15%;
 $button-fixed-width: 280px;
 
-
+$hover-darken: 6%;
+$hover-double-darken: 9%;
 
 
 // Forms
@@ -151,6 +153,7 @@ $vertical-nav-text-color-hover: $white;
 ////////////////////////////////////////////////////////////
 
     $horizontal-nav-positioning: fixed;
+    $horizontal-nav-color: $white;
     $horizontal-nav-background-color: rgba(0,0,0,0.9);
     $horizontal-nav-height: 50px;
     $horizontal-nav-vert-align: 25%;
