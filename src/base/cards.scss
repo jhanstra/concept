@@ -1,5 +1,5 @@
 .card {
-  background-color:$purpley;
+  background-color:$purple;
   color:#ccc;
   margin:20px;
   border-radius:$base-border-radius;
@@ -7,7 +7,7 @@
     text-align:center;
     color:#ccc;
     padding:10px 0px;
-    background-color:darken($purpley, 15%);
+    background-color:darken($purple, 15%);
     border-top-left-radius:$base-border-radius;
     border-top-right-radius:$base-border-radius;
   }

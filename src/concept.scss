@@ -16,7 +16,7 @@
 /* @import '../../../app/styles/concept_variables.scss'; */
 
 // Mixins
-@import 'mixins/mixins.scss';
+@import 'base/mixins.scss';
 
 // Base
 @import 'bower_components/normalize-scss/_normalize.scss';
@@ -30,17 +30,15 @@
 @import 'base/tables.scss';
 @import 'base/images.scss';
 @import 'base/lists.scss';
+@import 'base/hr.scss';
 @import 'base/helpers.scss';
 @import 'base/background.scss';
 @import 'base/nav.scss';
+@import 'base/vertical-nav.scss';
+@import 'base/labels.scss';
+@import 'base/cards.scss';
 
 
 // Icons
 @import '../bower_components/open-iconic/font/css/open-iconic.scss';
 @import 'base/icons.scss';
-
-// Components
-@import 'components/horizontal-rule.scss';
-@import 'components/vertical-nav.scss';
-@import 'components/labels.scss';
-@import 'components/cards.scss';

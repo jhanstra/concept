@@ -56,14 +56,14 @@ $subtitle-color: #bbb;
     $default-row-width: 960px;
     $wide-row-width: 1080px;
     $extra-wide-row-width:1200px;
-              
+
 
 ////////////////////////////////////////////////////////////
 ///                                                      ///
 ///   Typography                                         ///
 ///                                                      ///
 ////////////////////////////////////////////////////////////
-      
+
     $base-line-height: 1.428571429;
 
     // Paragraphs
@@ -91,7 +91,7 @@ $subtitle-color: #bbb;
     $code-background-color: #ccc;
     $code-border: 1px solid #ccc;
     $code-border-radius: 3px;
-              
+
 ////////////////////////////////////////////////////////////
 ///                                                      ///
 ///   Buttons                                            ///
@@ -104,14 +104,7 @@ $subtitle-color: #bbb;
     $button-line-height: $paragraph-line-height;
     $button-border-radius: $base-border-radius;
 
-$primary-button-background-color: $purpley;
-$success-button-background-color: $success-green;
-$danger-button-background-color: $warning-red;
-$neutral-button-background-color: $neutral-blue;
-$clicky-button-background-color: $purpley;
-$disabled-button-background-color: #999;
-$button-hover-darken-percentage: 15%;
-$button-fixed-width: 280px;
+
 
 $hover-darken: 6%;
 $hover-double-darken: 9%;
@@ -184,7 +177,7 @@ $vertical-nav-text-color-hover: $white;
     $label-1-background-color:$red;
     $label-2-background-color:$green;
     $label-3-background-color:$orange;
-    $label-4-background-color:$warning-red;
+    $label-4-background-color:$red;
     $label-5-background-color:$facebook-blue;
     $label-6-background-color:$tw-blue;
     $label-7-background-color:$tw-blue;
