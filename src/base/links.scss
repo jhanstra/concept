@@ -1,11 +1,8 @@
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration:none;
 }
 
-p a,
-.link-list a {
+p a {
   color:$link-color;
   font-weight:400;
   &:hover {
@@ -31,11 +28,5 @@ h6 > a {
   text-decoration:none;
   &:hover {
     text-decoration:none;
-  }
-}
-.no-link-color {
-  color:inherit;
-  &:hover {
-    border-bottom:1px solid inherit;
   }
 }

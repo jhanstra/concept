@@ -8,12 +8,12 @@
 */
 
 
-// Base Variables
+// Base Concept Variables
 @import 'variables/colors.scss';
 @import 'variables/base_variables.scss';
 
 // Custom Variables
-/* @import '../../../app/styles/concept_variables.scss'; */
+@import 'variables/custom_variables.scss';
 
 // Mixins
 @import 'base/mixins.scss';
@@ -34,9 +34,7 @@
 @import 'base/helpers.scss';
 @import 'base/background.scss';
 @import 'base/nav.scss';
-@import 'base/vertical-nav.scss';
 @import 'base/labels.scss';
-@import 'base/cards.scss';
 
 
 // Icons

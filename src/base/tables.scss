@@ -1,14 +1,16 @@
 .table {
   width:100%;
-  color:$table-default-color;
+  color:$table-font-color;
   text-align:left;
   th {
+    font-size:$table-header-font-size;
     font-weight:bold;
     padding:8px 6px;
   }
   td {
+    font-size:$table-font-size;
     padding:8px 6px;
-    border-top:1px solid $table-default-color;
+    border-top:1px solid $table-grid-color;
   }
 }
 

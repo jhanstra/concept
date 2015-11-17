@@ -18,8 +18,10 @@
         height:100%;
         padding:$horizontal-nav-spacing;
         color:$horizontal-nav-color;
+        border-bottom:$horizontal-nav-item-border-bottom;
         &:hover {
           background-color:$horizontal-nav-item-hover-background;
+          border-bottom:$horizontal-nav-item-border-bottom-hover;
         }
       }
     }

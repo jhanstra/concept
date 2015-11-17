@@ -1,137 +1,18 @@
-/**** CSS ****/
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Custom Variables                                   ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
-$absolute: absolute;
-$fixed: fixed;
-$relative: relative;
-$transparent: transparent;
-
-// Site-wide Defaults
-$base-border-radius:4px;
-
-// Defines the height of a default header div
-$header-full-height: 100vh;
-$header-primary-height: 500px;
-$header-secondary-height:250px;
-$header-primary-background-color: none;
-$header-secondary-background-color: none;
-$header-full-background-color: none;
-
-// Header images
-$header-background-image-1: url('../images/house.jpg');
-$header-background-image-2: none;
-$header-background-image-3: none;
-$header-background-image-4: none;
-$header-background-image-5: none;
-$header-background-image-6: none;
-$header-background-image-7: none;
-$header-background-image-8: none;
-$header-background-image-9: none;
-$header-background-image-10: none;
-
-
-// Horizontal Rule
-$hr-color: $white;
-$hr-margin: 30px;
-$hr-height: 1px;
-$hr-mini-width:50px;
-$hr-custom-width: 70%;
-
-
-// Background Type: choose from 'image' or 'color'
-$background-type: 'image';
-$full-background-color: $white;
-$full-background-image: url('../images/snowy-trees.jpg');
-$full-background-image-2: url('../images/earth-space.jpg');
-$full-background-image-3: url('../images/milky-way.jpg');
-$full-background-image-4: url('../images/winter-trees.jpg');
-$full-background-image-5: url('../images/green-mountain.jpg');
-$full-background-image-6: none;
-$full-background-image-7: none;
-$full-background-image-8: none;
-$full-background-image-9: none;
-$full-background-image-10: none;
-
-
-// Typography
-$paragraph-font: 'Montserrat';
-$header-font: 'Lato';
-$button-font: 'Montserrat';
-$default-font-color: $white;
-$default-header-font-weight: 100;
-$default-paragraph-font-weight: 200;
-$line-height:1.428571429;
-  // Titles
-$title-font-size: 7.0rem;
-$title-color: $white;
-$title-margin-bottom: 10px;
-$subtitle-font-size: 2.5rem;
-$subtitle-color: #bbb;
-
-// If using a fixed width, defines how wide the page should be
-$container-fixed-max-width: 960px;
-
-// Choose the number of columns for the grid
-$number-of-columns: 12;
-
-// Buttons
-$primary-button-background-color: $purple;
-$success-button-background-color: $success-green;
-$danger-button-background-color: $warning-red;
-$neutral-button-background-color: $neutral-blue;
-$clicky-button-background-color: $purple;
-$disabled-button-background-color: #999;
-$button-hover-darken-percentage: 15%;
-$button-fixed-width: 280px;
-
-
-// Forms
-$form-default-width: 400px; // best for mobile
-$input-border-radius: 4px;
-$form-default-padding: 12px;
-
-$line-form-focus-text-color: $white;
-
-
-// Tables
-$table-default-color: #ccc;
-$table-pattern-background-color:#ddd;
-
-// Links
-$link-color: #1eaedb;
-$link-hover: #0fa0ce;
-$concept-link-color:#d45500;
-
-
-/**** COMPONENTS ****/
-
-// Vertical Nav
-$vertical-nav-width: 200px;
-$vertical-nav-width-mobile:250px;
-$vertical-nav-width-closed: 0px;
-$vertical-nav-background-color: $black;
-$vertical-nav-text-color: $white;
-$vertical-nav-item-hover-background:$true-black;
-
-// Horizontal Nav
-/* Choose 'relative' for nav only at the top, 'absolute' to fix it to top of page */
-$horizontal-nav-positioning: $absolute;
-$horizontal-nav-background-color: rgba(0,0,0,0.9);
-$horizontal-nav-height: 50px;
-$horizontal-nav-vert-align: 25%;
-$horizontal-nav-spacing: 0px 20px;
-$horizontal-nav-item-hover-background: rgba(150,150,150,0.5);
-$vertical-nav-text-color-hover: $white;
-$vertical-nav-list-item-margin: 0px auto;
-$vertical-nav-list-item-padding: 20px 0px 20px 40px;
-
-// Labels
-$label-1-background-color:#006c9e;
-$label-2-background-color:$green;
-$label-3-background-color:$orange;
-$label-4-background-color:$warning-red;
-$label-5-background-color:$fb-blue;
-$label-6-background-color:$tw-blue;
-$label-7-background-color:$tw-blue;
-$label-8-background-color:$tw-blue;
-$label-9-background-color:$tw-blue;
-$label-10-background-color:$tw-blue;
+    $table-font-color: #ccc;
+    $paragraph-font-color: $white;
+    $header-font-color: $white;
+    $paragraph-font: 'Lato';
+    $header-font: 'Cabin';
+    $paragraph-font-size: 1.6rem;
+    $horizontal-nav-item-border-bottom: 2px solid transparent;
+    $horizontal-nav-item-border-bottom-hover: 2px solid $blue;
+    
+    $background-image-1: url('http://www.planwallpaper.com/static/images/Desktop-HD-Wallpaper-Free-Download-1.jpg');
+    $background-image-2: url('http://www.planwallpaper.com/static/images/8040518319d1447bbf20cfb44047d0d43.jpg');
+    $background-image-3: url('http://res2.windows.microsoft.com/resbox/en/windows/main/c720f5ed-dd7b-4da0-98ee-40e410b8f45b_5.jpg');

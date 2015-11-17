@@ -123,22 +123,3 @@
   background-image:$background-image-20;
   box-shadow:inset 0 0 0 2000px rgba(20, 20, 20, 0.6);
 }
-
-// Default Font Styles for Background Image Pages
-.bg-image, .full-bg-image {
-  h1, h2, h3 {
-    color:$white;
-  }
-  h4, h5, h6 {
-    color:$light-gray;
-  }
-  p,a  {
-    color:$light-gray;
-  }
-  a {
-    color:#ddd;
-    &:hover {
-      color:$true-white;
-    }
-  }
-}

@@ -1,11 +1,10 @@
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   General                                            ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
-
-
-$base-border-radius:4px;
-
-
-
-
+    $base-border-radius:4px;
 
 ////////////////////////////////////////////////////////////
 ///                                                      ///
@@ -14,9 +13,9 @@ $base-border-radius:4px;
 ////////////////////////////////////////////////////////////
 
     $default-background-color: $true-white;
-    $background-image-1: url('http://www.planwallpaper.com/static/images/Desktop-HD-Wallpaper-Free-Download-1.jpg');
-    $background-image-2: url('http://www.planwallpaper.com/static/images/8040518319d1447bbf20cfb44047d0d43.jpg');
-    $background-image-3: url('http://res2.windows.microsoft.com/resbox/en/windows/main/c720f5ed-dd7b-4da0-98ee-40e410b8f45b_5.jpg');
+    $background-image-1: none;
+    $background-image-2: none;
+    $background-image-3: none;
     $background-image-4: none;
     $background-image-5: none;
     $background-image-6: none;
@@ -35,15 +34,6 @@ $base-border-radius:4px;
     $background-image-19: none;
     $background-image-20: none;
 
-
-
-// Titles
-$title-font-size: 7.0rem;
-$title-color: $white;
-$title-margin-bottom: 10px;
-$subtitle-font-size: 2.5rem;
-$subtitle-color: #bbb;
-
 ////////////////////////////////////////////////////////////
 ///                                                      ///
 ///   Grid                                               ///
@@ -57,7 +47,6 @@ $subtitle-color: #bbb;
     $wide-row-width: 1080px;
     $extra-wide-row-width:1200px;
 
-
 ////////////////////////////////////////////////////////////
 ///                                                      ///
 ///   Typography                                         ///
@@ -67,7 +56,7 @@ $subtitle-color: #bbb;
     $base-line-height: 1.428571429;
 
     // Paragraphs
-    $paragraph-font: 'Montserrat';
+    $paragraph-font: 'Helvetica Neue';
     $paragraph-font-size: 1.4rem;
     $paragraph-font-weight: 400;
     $paragraph-line-height: $base-line-height;
@@ -77,7 +66,7 @@ $subtitle-color: #bbb;
     $paragraph-margin-after-header: 50px;
 
     // Headers
-    $header-font: 'Lato';
+    $header-font: 'Helvetica Neue';
     $header-font-size: 2.5rem;
     $header-font-weight: 400;
     $header-line-height: $base-line-height;
@@ -98,46 +87,33 @@ $subtitle-color: #bbb;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
-    // Buttons
     $button-font: $header-font;
     $button-font-size: $paragraph-font-size;
     $button-line-height: $paragraph-line-height;
     $button-border-radius: $base-border-radius;
+    
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Forms                                              ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
+    $form-default-width: 400px;
+    $input-border-radius: 4px;
+    $form-default-padding: 12px;
+    $line-form-focus-text-color: $white;
 
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Tables                                             ///
+///                                                      ///
+////////////////////////////////////////////////////////////
 
-$hover-darken: 6%;
-$hover-double-darken: 9%;
-
-
-// Forms
-$form-default-width: 400px; // best for mobile
-$input-border-radius: 4px;
-$form-default-padding: 12px;
-
-$line-form-focus-text-color: $white;
-
-
-// Tables
-$table-default-color: #ccc;
-$table-pattern-background-color:#ddd;
-
-// Links
-$link-color: #1eaedb;
-$link-hover: #0fa0ce;
-$concept-link-color:#d45500;
-
-
-/**** COMPONENTS ****/
-
-// Vertical Nav
-$vertical-nav-width: 200px;
-$vertical-nav-width-mobile:250px;
-$vertical-nav-width-closed: 0px;
-$vertical-nav-background-color: $black;
-$vertical-nav-text-color: $white;
-$vertical-nav-item-hover-background:$true-black;
-$vertical-nav-text-color-hover: $white;
+    $table-font-color: #333;
+    $table-grid-color: #777;
+    $table-pattern-background-color:#ccc;
+    $table-header-font-size: 1.6rem;
+    $table-font-size: 1.4rem;
 
 ////////////////////////////////////////////////////////////
 ///                                                      ///
@@ -152,7 +128,9 @@ $vertical-nav-text-color-hover: $white;
     $horizontal-nav-vert-align: 25%;
     $horizontal-nav-initial-spacing: 20px;
     $horizontal-nav-spacing: 0px 20px;
-    $horizontal-nav-item-hover-background: rgba(150,150,150,0.5);
+    $horizontal-nav-item-hover-background: transparent;
+    $horizontal-nav-item-border-bottom: 0px solid transparent;
+    $horizontal-nav-item-border-bottom-hover: 0px solid transparent;
 
 ////////////////////////////////////////////////////////////
 ///                                                      ///
@@ -160,11 +138,15 @@ $vertical-nav-text-color-hover: $white;
 ///                                                      ///
 ////////////////////////////////////////////////////////////
 
+    // Links
+    $link-color: #1eaedb;
+    $link-hover: #0fa0ce;
+
     // Horizontal Rule
     $hr-color: $white;
     $hr-margin: 30px;
     $hr-height: 1px;
-    $hr-mini-width:50px;
+    $hr-mini-width: 50px;
     $hr-custom-width: 70%;
 
     // Labels
@@ -184,3 +166,8 @@ $vertical-nav-text-color-hover: $white;
     $label-8-background-color:$tw-blue;
     $label-9-background-color:$tw-blue;
     $label-10-background-color:$tw-blue;
+    
+    // More
+    $hover-darken: 6%;
+    $hover-double-darken: 9%;
+    
