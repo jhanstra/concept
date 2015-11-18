@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700|Raleway|Montserrat|Lato|Lora|Pacifico|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body class="concept" ng-app="concept" ng-controller="MainCtrl as mainCtrl">
+  <body ng-app="concept" ng-controller="MainCtrl as mainCtrl">
 
     <div class="container full-bg-image bg-1" ng-class="{'bg-2' : (randomImage == 2), 'bg-3' : (randomImage == 3), 'bg-4' : (randomImage == 4), 'bg-5' : (randomImage == 5)}">
       <div class="row no-show" ng-if="downloadLink" ng-class="{true: 'show'}[downloadLink === true]">
