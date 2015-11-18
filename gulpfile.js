@@ -63,6 +63,10 @@ gulp.task('views', function() {
   .pipe(gulp.dest('website/fonts'));
   gulp.src('./bower_components/open-iconic/font/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'));
+  gulp.src('./bower_components/open-iconic/font/fonts/**/*')
+  .pipe(gulp.dest('scss/fonts'));
+  gulp.src('./bower_components/open-iconic/font/css/open-iconic.scss')
+  .pipe(gulp.dest('scss/base'));
 
   // Any other view files from pages
   gulp.src('./app/views/**/*')
