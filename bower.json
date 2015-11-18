@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": [
     "dist/css/concepts.css",
-    "src/concept.scss"
+    "scss/concept.scss"
   ],
   "ignore": [
     "**/.*",
@@ -30,7 +30,6 @@
     "angulartics": "~0.17.2"
   },
   "dependencies": {
-    "open-iconic": "~1.1.1",
     "normalize-scss": "~3.0.2"
   }
 }
