@@ -1,0 +1,35 @@
+.h-nav {
+  position:$horizontal-nav-positioning;
+  top:0px;
+  width:100%;
+  height:$horizontal-nav-height;
+  background-color:$horizontal-nav-background-color;
+  z-index:100;
+  ul {
+    height: $horizontal-nav-height;
+    margin:0px;
+    li {
+      float: left;
+      display: table;
+      height: $horizontal-nav-height;
+      a:not(.btn) {
+        display:table-cell;
+        vertical-align:middle;
+        height:100%;
+        padding:$horizontal-nav-spacing;
+        color:$horizontal-nav-color;
+        border-bottom:$horizontal-nav-item-border-bottom;
+        &:hover {
+          background-color:$horizontal-nav-item-hover-background;
+          border-bottom:$horizontal-nav-item-border-bottom-hover;
+        }
+      }
+    }
+    li.float-right {
+      float: right;
+    }
+  }
+  ul:first-child {
+    padding-left: $horizontal-nav-initial-spacing;
+  }
+}

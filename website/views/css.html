@@ -1,27 +1,27 @@
-<header class="c-header-full">
-  <div class="c-v-center c-center">
+<header class="bg-image ht-100">
+  <div class="v-center center">
     <h1>CSS</h1>
     <p class="page-header-text">Concept's CSS follows modern best practices and techniques. It uses Normalize.css, adds minimal styles to base elements, and provides dozens of specialized, modular classes.</p>
   </div>
 </header>
 
 <!-- Typography -->
-<div class="c-row">
-  <div class="c-col-12 section-header">
+<div class="row">
+  <div class="col-12 section-header">
       <h2>Typography</h2>
-      <p>All headers <code>h1</code> through <code>h6</code> have a default font of Helvetica Neue. All <code>p</code> tags have a default font of Merrieweather Sans. You can easily change these fonts by changing the variables <span class="c-label c-label-2">$header-font</span> and <span class="c-label c-label-2">$paragraph-font</span>, respectively, in variables.scss.</p>
+      <p>All headers <code>h1</code> through <code>h6</code> have a default font of Helvetica Neue. All <code>p</code> tags have a default font of Merrieweather Sans. You can easily change these fonts by changing the variables <span class="label label-2">$header-font</span> and <span class="label label-2">$paragraph-font</span>, respectively, in variables.scss.</p>
   </div>
 </div>
 
 <!-- Header text -->
-<div class="c-row c-center section">
-  <div class="c-col-6 darker-box">
-    <div class="c-v-center">
+<div class="row center section">
+  <div class="col-6 darker-box">
+    <div class="v-center">
       <h4>Headers</h4>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
+  <div class="col-6 dark-box">
+    <div class="v-center">
       <h1>Header 1</h1>
       <h2>Header 2</h2>
       <h3>Header 3</h3>
@@ -33,14 +33,14 @@
 </div>
 
 <!-- Paragraph text -->
-<div class="c-row c-center section">
-  <div class="c-col-6 darker-box">
-    <div class="c-v-center">
+<div class="row center section">
+  <div class="col-6 darker-box">
+    <div class="v-center">
       <h4>Paragraph text</h4>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-left-aligned-content">
+  <div class="col-6 dark-box">
+    <div class="left-aligned-content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus urna eu urna ornare gravida. Fusce sit amet eros dolor. Vestibulum eget iaculis turpis, ut varius lectus. Duis hendrerit nulla eget lobortis blandit. Morbi semper gravida finibus.</p>
       <p>In euismod nec enim sit amet auctor. Sed facilisis ex sed pretium fringilla. Ut auctor dui accumsan, blandit lacus at, eleifend nulla. Mauris at elementum nisi. Donec non venenatis mauris. Vestibulum ultrices odio at est imperdiet, at finibus mauris mollis.</p>
     </div>
@@ -48,17 +48,17 @@
 </div>
 
 <!-- Grid -->
-<div class="c-row">
-  <div class="c-col-12 section-header">
+<div class="row">
+  <div class="col-12 section-header">
       <h2>Grid</h2>
-      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <span class="c-label c-label-2">$number-of-columns</span> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
+      <p>Concept uses a responsive 12-column grid that can be changed from 1 to 50 columns with the <span class="label label-2">$number-of-columns</span> variable. The grid does <i>not</i> give any default padding or margin to columns or rows. Rather, these styles are added using special classes.<p>
     </div>
-    <div class="c-row section small">
+    <div class="row section small">
       <div class="dark-box">
-        <div class="c-col-10 c-offset-1">
-          <div class="c-row grid">
-            <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
-            <div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div><div class="c-col-1"></div>
+        <div class="col-10 offset-1">
+          <div class="row grid">
+            <div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div>
+            <div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div><div class="col-1"></div>
           </div>
         </div>
       </div>
@@ -66,120 +66,108 @@
 
 
 <!-- Buttons -->
-<div class="c-row section-header">
-  <div class="c-col-12">
+<div class="row section-header">
+  <div class="col-12">
       <h2>Buttons</h2>
-      <p>Use a variety of classes to build buttons. Start by adding class <span class="c-label">.c-btn</span> to any &ltbutton&gt or &lta&gt element and add classes as you wish.</p>
+      <p>Use a variety of classes to build buttons. Start by adding class <span class="label label-1">.btn</span> to any &ltbutton&gt or &lta&gt element and add classes as you wish.</p>
   </div>
 </div>
 
 <!-- Button examples -->
-<div class="c-row c-center section small">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content">
-      <h4>Default Button<span class="c-label">.c-default</span></h4>
+<div class="row center section small">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content">
+      <h4>Default Button<span class="label label-1">.default</span></h4>
       <p>The default button is a basic button with white background (#eee), black text (#222), 1px border with same color as the background, and a 2px box-shadow that gives a raised look.</p>
       </div>
     </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
+  <div class="col-6 dark-box">
+    <div class="v-center">
     <div>
-      <button class="c-btn c-default">Default button</button>
+      <button class="btn default">Default button</button>
     </div>
   </div>
   </div>
 </div>
-<div class="c-row c-center section large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Button Types</h4>
-      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons <span class="c-label">.c-flat</span> remove the box-shadow raised look, outline buttons <span class="c-label">.c-outline</span> use a transparent background, rectangle buttons <span class="c-label">.c-rect</span> remove rounded corners, clicky buttons <span class="c-label">.c-clicky</span> appear pressed when hovered over, and text buttons <span class="c-label">.c-text</span> appear as simple text and show a background color on hover.</p>
+      <p>Concept provides many alternative types you can use instead of the default raised style. Flat buttons <span class="label label-1">.flat</span> remove the box-shadow raised look, outline buttons <span class="label label-1">.outline</span> use a transparent background, rectangle buttons <span class="label label-1">.rect</span> remove rounded corners, clicky buttons <span class="label label-1">.clicky</span> appear pressed when hovered over, and text buttons <span class="label label-1">.text</span> appear as simple text and show a background color on hover.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <a class="c-btn c-default c-primary">Raised button (default)</a><br>
-      <a class="c-btn c-primary c-flat">Flat button</a><br>
-      <a class="c-btn c-primary c-outline">Outline button</a><br>
-      <a class="c-btn c-primary c-rect">Rectangle button</a><br>
-      <a class="c-btn c-primary c-rounded">Rounded button</a><br>
-      <a class="c-btn c-primary c-clicky">Clicky button</a><br>
-      <a class="c-btn c-primary c-text">Text button</a><br>
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <a class="btn green">Button (default)</a><br>
+      <a class="btn green outline">Outline button</a><br>
+      <a class="btn green rect">Rectangle button</a><br>
+      <a class="btn green rounded">Rounded button</a><br>
+      <a class="btn green clicky">Clicky button</a><br>
+      <a class="btn green text">Text button</a><br>
     </div>
   </div>
 </div>
-<div class="c-row c-center section large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Button Colors</h4>
-      <p>Using a semantic color scheme communicates the function of the button to your users. Use a primary button color <span class="c-label">.c-primary</span> to communicate importance. It's purple by default and can be changed with <span class="c-label c-label-2">$primary-button-background-color</span>. Use a success button <span class="c-label">.c-success</span> for positive interactive buttons and a danger button <span class="c-label">.c-danger</span> for negative interactive buttons. Use neutral if you want a nice neutral blue color! Transparent-dark <span class="c-label">.c-transparent-dark</span> of transparent-light <span class="c-label">.c-transparent-light</span> buttons are useful for interfaces with a photo background.</p>
+      <p>Add colors to match your brand. Copy and paste code from buttons.scss to make your own colored buttons.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <button class="c-btn c-primary">Primary button</button><br>
-      <a class="c-btn c-default c-success">Success button</a><br>
-      <button class="c-btn c-default c-neutral">Neutral button</button><br>
-      <button class="c-btn c-default c-danger">Danger button</button><br>
-      <button class="c-btn c-default c-disabled">Disabled button</button><br>
-      <button class="c-btn c-flat c-transparent-dark">Transparent Dark button</button><br>
-      <button class="c-btn c-flat c-transparent-light">Transparent Light button</button><br>
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <button class="btn green">Green button</button><br>
+      <a class="btn blue">Blue button</a><br>
+      <button class="btn white">White button</button><br>
+      <button class="btn flat transparent-dark">Transparent Dark button</button><br>
+      <button class="btn flat transparent-light">Transparent Light button</button><br>
     </div>
   </div>
 </div>
-<div class="c-row c-center section large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Button Sizes</h4>
-      <p>Concept uses five sizes for buttons of dynamic width - extra small <span class="c-label">.c-xs</span>, small <span class="c-label">.c-sm</span>, normal (default), large <span class="c-label">.c-lg</span>, and jumbo <span class="c-label">.c-jumbo</span>. Fix the width of your button with fixed-width buttons <span class="c-label">.c-fixed-width</span> or make it super jumbo huge with a full-width button <span class="c-label">.c-full-width</span> that takes the full width of its containing element.</p>
+      <p>
+        <span class="label label-1">.xs</span><br>
+        <span class="label label-1">.sm</span><br>
+        <span class="label label-1">.lg</span><br>
+        <span class="label label-1">.jumbo</span><br>
+      </p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <button class="c-btn c-default c-xs c-neutral">Extra small button</button><br>
-      <button class="c-btn c-default c-sm c-neutral">Small button</button><br>
-      <button class="c-btn c-default c-neutral">Normal (default) button</button><br>
-      <button class="c-btn c-default c-lg c-neutral">Large button</button><br>
-      <button class="c-btn c-default c-jumbo c-neutral">Jumbo button</button><br>
-      <button class="c-btn c-default c-fixed-width c-neutral">Fixed Width button</button><br>
-      <button class="c-btn c-full-width c-neutral">Full width button</button>
-    </div>
-  </div>
-</div>
-<div class="c-row c-center section small">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
-      <h4>Button Helpers</h4>
-      <p>Button text is capitalized by default. You can set to back to normal capitalization with <span class="c-label">.c-capital</span> or lowercase with <span class="c-label">.c-lowercase</span>.
-    </div>
-  </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-left-aligned-content">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <button class="btn blue xs neutral">Extra small button</button><br>
+      <button class="btn blue sm neutral">Small button</button><br>
+      <button class="btn blue neutral">Normal (default) button</button><br>
+      <button class="btn blue lg neutral">Large button</button><br>
+      <button class="btn blue jumbo neutral">Jumbo button</button><br>
     </div>
   </div>
 </div>
 
 <!-- Input -->
-<div class="c-row">
-  <div class="c-col-12 section-header">
+<div class="row">
+  <div class="col-12 section-header">
       <h2>Input</h2>
-      <p>Forms can be built up in a similar way to buttons. Give every form a class of c-form and add classes based on what type of form you want.</p>
+      <p>Forms can be built up in a similar way to buttons. Give every form a class of form and add classes based on what type of form you want.</p>
   </div>
 </div>
 
 <!-- Input examples -->
-<div class="c-row c-center section large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Default Form</h4>
-      <p>Add <span class="c-label">.c-form-default</span> for the default form, which has a gray background color, lighter gray input fields, and a fixed width. You can add a header to your form with a div inside of class <span class="c-label">.c-form-title</span>. Use standard Concept buttons classes for submit input elements.
+      <p>Add <span class="label label-1">.form-default</span> for the default form, which has a gray background color, lighter gray input fields, and a fixed width. You can add a header to your form with a div inside of class <span class="label label-1">.form-title</span>. Use standard Concept buttons classes for submit input elements.
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <form class="c-form c-form-default">
-        <div class="c-form-title">
-          <h3 class="c-center">Optional Form Title</h3>
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <form class="form form-default">
+        <div class="form-title">
+          <h3 class="center">Optional Form Title</h3>
         </div>
         <label>First Name</label>
         <input type="text" placeholder="John">
@@ -189,48 +177,48 @@
         <input type="email" placeholder="jdoe@gmail.com">
         <label>Message</label>
         <textarea placeholder="Hi Dave…"></textarea>
-        <input class="c-btn c-success c-full-width" type="submit" value="Submit">
+        <input class="btn success full-width" type="submit" value="Submit">
       </form>
     </div>
   </div>
 </div>
-<div class="c-row c-center section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Full Width Form</h4>
-      <p>Forms are a fixed width by default, controlled by the <span class="c-label c-label-2">$form-default-width</span> variable. Forms can be expanded to the full width of their containing element with <span class="c-label">.c-form-full</span>.</p>
+      <p>Forms are a fixed width by default, controlled by the <span class="label label-2">$form-default-width</span> variable. Forms can be expanded to the full width of their containing element with <span class="label label-1">.form-full</span>.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <form class="c-form c-form-default c-form-full">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <form class="form form-default form-full">
         <label>Your email</label>
         <input type="email" placeholder="test@mailbox.com">
         <label for="exampleMessage">Message</label>
         <textarea placeholder="Hi Dave…"></textarea>
-        <input class="c-btn c-success" type="submit" value="Submit">
+        <input class="btn success" type="submit" value="Submit">
       </form>
     </div>
   </div>
 </div>
-<div class="c-row c-center section x-large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section x-large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Modern Form Styles</h4>
-      <p>Add some style to your form with <span class="c-label">.c-form-lines</span> or <span class="c-label">.c-form-transparent</span>. These types of lists are best for login screens and screens with a backdrop image. For lines forms, it is recommended not to use placeholders in place of visible input labels.</p>
+      <p>Add some style to your form with <span class="label label-1">.form-lines</span> or <span class="label label-1">.form-transparent</span>. These types of lists are best for login screens and screens with a backdrop image. For lines forms, it is recommended not to use placeholders in place of visible input labels.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <form class="c-form c-form-lines">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <form class="form form-lines">
         <input type="text" placeholder="First Name">
         <input type="text" placeholder="Last Name">
         <input type="email" placeholder="Email">
         <textarea placeholder="Message"></textarea>
-        <div class="c-center"><input class="c-btn c-primary c-rounded c-clicky" type="submit" value="Submit"></div>
+        <div class="center"><input class="btn primary rounded clicky" type="submit" value="Submit"></div>
       </form>
       <br><br><br><br><br><br>
-      <form class="c-form c-form-default c-form-transparent">
+      <form class="form form-default form-transparent">
         <label>First Name</label>
         <input type="text" placeholder="John">
         <label>Last Name</label>
@@ -239,21 +227,21 @@
         <input type="email" placeholder="jdoe@gmail.com">
         <label>Message</label>
         <textarea placeholder="Hi Dave…"></textarea>
-        <input class="c-btn c-success c-full-width" type="submit" value="Submit">
+        <input class="btn success full-width" type="submit" value="Submit">
       </form>
     </div>
   </div>
 </div>
-<div class="c-row c-center section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row center section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Special Input Fields</h4>
       <p>Concept doesn't add much styling to inputs like radio buttons, checklists, selects. Here's what they look like.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <form class="c-form c-form-default c-form-transparent">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <form class="form form-default form-transparent">
         <h5>Checkboxes</h5>
         <label class="checkbox-inline">
           <input type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox 1
@@ -289,23 +277,23 @@
 
 
 <!-- Tables -->
-<div class="c-row">
-  <div class="c-col-12 section-header">
+<div class="row">
+  <div class="col-12 section-header">
       <h2>Tables</h2>
       <!-- <p>Concept provides simple tables to use.</p> -->
   </div>
 </div>
 <!-- Table examples -->
-<div class="c-row section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Default Table</h4>
-      <p>Use Concept table styles by adding <span class="c-label">.c-table</span> to your &lttable&gt element. Tables have very basic styles by default - a transparent background and top border for rows.</p>
+      <p>Use Concept table styles by adding <span class="label label-1">.table</span> to your &lttable&gt element. Tables have very basic styles by default - a transparent background and top border for rows.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <table class="c-table">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <table class="table">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -330,16 +318,16 @@
     </div>
   </div>
 </div>
-<div class="c-row section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Table Sizes</h4>
-      <p>Give table rows more breathing room with <span class="c-label">.c-table-lg</span> or less with <span class="c-label">.c-table-sm</span></p>
+      <p>Give table rows more breathing room with <span class="label label-1">.table-lg</span> or less with <span class="label label-1">.table-sm</span></p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <table class="c-table c-table-lg">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <table class="table table-lg">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -362,7 +350,7 @@
         </tr>
       </table>
       <br><br>
-      <table class="c-table c-table-sm">
+      <table class="table table-sm">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -387,16 +375,16 @@
     </div>
   </div>
 </div>
-<div class="c-row section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Table Types</h4>
-      <p><span class="c-label">.c-table-pattern</span> will give your table an alternating background-color to rows in your table. Change the background-color with <span class="c-label c-label-2">$table-pattern-backgroud-color</span>. Add <span class="c-label">.c-table-hover</span> for a hovering effect.</p>
+      <p><span class="label label-1">.table-pattern</span> will give your table an alternating background-color to rows in your table. Change the background-color with <span class="label label-2">$table-pattern-backgroud-color</span>. Add <span class="label label-1">.table-hover</span> for a hovering effect.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-v-center">
-      <table class="c-table c-table-pattern">
+  <div class="col-6 dark-box">
+    <div class="v-center">
+      <table class="table table-pattern">
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -426,36 +414,36 @@
 
 
 <!-- Miscellaneous -->
-<div class="c-row">
-  <div class="c-col-12 section-header">
+<div class="row">
+  <div class="col-12 section-header">
     <h2>Miscellaneous</h2>
     <!-- <p>Links, lists, and more! Here are some more useful classes Concept ships with. -->
   </div>
 </div>
 <!-- Miscellaneous examples -->
-<div class="c-row section">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row section">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Links</h4>
-      <p>Default links are given styles based on their parent elements. Inline links within paragraph tags are blue, and have a border-bottom on hover. Links within header tags and &ltli&gt tags inherit their color and are not underlined on hover. Add <span class="c-label">.c-link-list</span> to a list which has links that should take the blue styling.</p>
+      <p>Default links are given styles based on their parent elements. Inline links within paragraph tags are blue, and have a border-bottom on hover. Links within header tags and &ltli&gt tags inherit their color and are not underlined on hover. Add <span class="label label-1">.link-list</span> to a list which has links that should take the blue styling.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-left-aligned-content c-v-center">
+  <div class="col-6 dark-box">
+    <div class="left-aligned-content v-center">
       <p>This is a paragraph with a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">basic link</a> in it.
       <h5><a href="">This is a header link</a></h5>
     </div>
   </div>
 </div>
-<div class="c-row section large">
-  <div class="c-col-6 darker-box">
-    <div class="c-left-aligned-content c-v-center">
+<div class="row section large">
+  <div class="col-6 darker-box">
+    <div class="left-aligned-content v-center">
       <h4>Lists</h4>
-      <p>By default unordered lists have no padding, margin, or list-style-type. Ordered lists are padded to compensate for the numbers preceding the items. For a standard indented list, add <span class="c-label">.c-list-indented</span>.</p>
+      <p>By default unordered lists have no padding, margin, or list-style-type. Ordered lists are padded to compensate for the numbers preceding the items. For a standard indented list, add <span class="label label-1">.list-indented</span>.</p>
     </div>
   </div>
-  <div class="c-col-6 dark-box">
-    <div class="c-left-aligned-content c-v-center">
+  <div class="col-6 dark-box">
+    <div class="left-aligned-content v-center">
       <h5>Random Fruits</h5>
       <ul>
         <li>Pineapple</li>

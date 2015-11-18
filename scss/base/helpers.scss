@@ -1,0 +1,56 @@
+.center {
+  text-align:center;
+}
+.left-align {
+  text-align:left;
+}
+.right-align {
+  text-align:right;
+}
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.uppercase {
+  text-transform:uppercase;
+}
+.capital {
+  text-transform:capitalize;
+}
+.lowercase {
+  text-transform:lowercase;
+}
+.float-right {
+  float:right
+}
+.float-left {
+  float:left
+}
+.pos-rel {
+  position:relative;
+}
+.pos-fixed {
+  position:fixed;
+}
+.bold {
+  font-weight:bold;
+}
+.italic {
+  font-weight:italic;
+}
+.rounded {
+  border-radius:$base-border-radius;
+}
+.circular {
+  border-radius:1000px;
+}
+.no-m, .btn.no-m {
+  margin:0px;
+}
+.no-p {
+  padding:0px;
+}
+.on-dark {
+  color:$white;
+}

@@ -1,4 +1,4 @@
-@import '../../src/concept.scss';
+@import '../../scss/concept.scss';
 
 
   .header-example-container {
@@ -6,8 +6,8 @@
   }
   .header-example {
     height:550px;
-    border-top-left-radius:$border-radius;
-    border-top-right-radius:$border-radius;
+    border-top-left-radius:$base-border-radius;
+    border-top-right-radius:$base-border-radius;
 
   }
   .header-example-body {
@@ -59,10 +59,6 @@
       margin-bottom:30px;
       padding:10px;
       height:100px;
-      &:hover {
-        background-color:rgba(0,0,0,0.8);
-        cursor:pointer;
-      }
       span {
         font-size:2rem;
       }
@@ -98,7 +94,7 @@ footer .c-hr-mini {
   }
   code {
     font-size:18px;
-    background-color:darken($purpley,15%);
+    background-color:darken($purple,15%);
     padding:8px 15px;
     margin-bottom:5px;
     display:inline-block;

@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Concept</title>
     <meta name="description" content="Concept is a modern, flexible CSS framework for designers and creators. It comes with dozens of components and beautiful default styles for your website or web application.">
-    <meta name="keywords" content"concept, concept framework, c-o-n-c-e-p-t, concept css framework, css, css framework, framework, modern, modern css, css3 framework, web design, front-end, front end development">
+    <meta name="keywords" content"concept, concept framework, o-n-e-p-t, concept css framework, css, css framework, framework, modern, modern css, css3 framework, web design, front-end, front end development">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700|Raleway|Montserrat|Lato|Lora|Pacifico|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body class="c-concept" ng-app="concept" ng-controller="MainCtrl as mainCtrl">
+  <body ng-app="concept" ng-controller="MainCtrl as mainCtrl">
 
-    <div class="c-container" ng-class="{true: 'darken'}[downloadLink === true]">
-      <div class="c-row no-show" ng-if="downloadLink" ng-class="{true: 'show'}[downloadLink === true]">
-        <div class="c-col-4 c-offset-4 c-card download-card">
-          <h3 ng-click="toggleDownload()">Use Concept<span class="oi c-right" data-glyph="x"></span></h3>
+    <div class="container full-bg-image bg-1" ng-class="{'bg-2' : (randomImage == 2), 'bg-3' : (randomImage == 3), 'bg-4' : (randomImage == 4), 'bg-5' : (randomImage == 5)}">
+      <div class="row no-show" ng-if="downloadLink" ng-class="{true: 'show'}[downloadLink === true]">
+        <div class="col-4 offset-4 card download-card">
+          <h3 ng-click="toggleDownload()">Use Concept<span class="oi right" data-glyph="x"></span></h3>
 
-          <div class="c-row c-center c-card-content">
+          <div class="row center card-content">
             <p><code>bower install concept</code></p>
             <p>or</p>
-            <a class="c-btn c-outline c-default c-flat c-lg" href="https://github.com/jhanstra/concept">Download Source on Github</a>
+            <a class="btn outline default flat lg" href="https://github.com/jhanstra/concept">Download Source on Github</a>
             <p>or</p>
-            <a class="c-btn c-outline c-default c-flat c-lg" href="css/concept.css" download>Download concept.css</a>
+            <a class="btn outline default flat lg" href="css/concept.css" download>Download concept.css</a>
           </div>
         </div>
       </div>
-      <div class="c-horizontal-nav">
-        <ul class="c-list">
-          <!-- <li class="c-show-sidebar"><a><span class="oi c-menu-toggle" data-glyph="menu"></span></a></li>
-          <li class="c-hide-sidebar"><a><span class="oi c-menu-toggle" data-glyph="x"></span></a></li> -->
-            <li class="c-bold"><a href="/#/">Concept</a></li>
+      <div class="h-nav">
+        <ul>
+          <!-- <li class="show-sidebar"><a><span class="oi menu-toggle" data-glyph="menu"></span></a></li>
+          <li class="hide-sidebar"><a><span class="oi menu-toggle" data-glyph="x"></span></a></li> -->
+            <li class="bold"><a href="/#/">Concept</a></li>
             <li><a href="/#/css">CSS</a></li>
             <li><a href="/#/components">Components</a></li>
             <li><a href="/#/icons">Icons</a></li>
             <!-- <li><a href="/#/themes">Themes</a></li>
             <li><a href="/#/learn">Learn</a></li> -->
-            <li class="c-right">
-              <div class="c-button-in-nav"><a href class="c-btn c-primary" ng-click="toggleDownload()"><span class="oi" data-glyph="cloud-download"></span> Use Concept</a></div>
+            <li class="float-right">
+              <div class="button-in-nav"><a href class="btn green sm" ng-click="toggleDownload()"><span class="oi" data-glyph="cloud-download"></span> Use Concept</a></div>
             </li>
           <!-- <li><a href="#/">Concept</a></li>
           <li><a href="/#/components">Components</a></li>
-          <li class="c-right"><a href="http://facebook.com">Account</a></li> -->
+          <li class="right"><a href="http://facebook.com">Account</a></li> -->
         </ul>
       </div>
-      <div class="c-full-background-image" ng-class="{'c-fbi-2' : (randomImage == 2), 'c-fbi-3' : (randomImage == 3), 'c-fbi-4' : (randomImage == 4), 'c-fbi-5' : (randomImage == 5)}"></div>
+      <div class="full-background-image" ></div>
       <div ng-view autoscroll></div>
       <concept-footer></concept-footer>
 

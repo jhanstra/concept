@@ -1,0 +1,173 @@
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   General                                            ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $base-border-radius:4px;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Backgrounds                                        ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $default-background-color: $true-white;
+    $background-image-1: none;
+    $background-image-2: none;
+    $background-image-3: none;
+    $background-image-4: none;
+    $background-image-5: none;
+    $background-image-6: none;
+    $background-image-7: none;
+    $background-image-8: none;
+    $background-image-9: none;
+    $background-image-10: none;
+    $background-image-11: none;
+    $background-image-12: none;
+    $background-image-13: none;
+    $background-image-14: none;
+    $background-image-15: none;
+    $background-image-16: none;
+    $background-image-17: none;
+    $background-image-18: none;
+    $background-image-19: none;
+    $background-image-20: none;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Grid                                               ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $number-of-columns: 12;
+    $extra-narrow-row-width: 480px;
+    $narrow-row-width: 680px;
+    $default-row-width: 960px;
+    $wide-row-width: 1080px;
+    $extra-wide-row-width:1200px;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Typography                                         ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $base-line-height: 1.428571429;
+
+    // Paragraphs
+    $paragraph-font: 'Helvetica Neue';
+    $paragraph-font-size: 1.4rem;
+    $paragraph-font-weight: 400;
+    $paragraph-line-height: $base-line-height;
+    $paragraph-font-color: $black;
+    $paragraph-margin: 24px 0px 0px;
+    $paragraph-lead-margin: 60px;
+    $paragraph-margin-after-header: 50px;
+
+    // Headers
+    $header-font: 'Helvetica Neue';
+    $header-font-size: 2.5rem;
+    $header-font-weight: 400;
+    $header-line-height: $base-line-height;
+    $header-font-color: $black;
+
+    // Code
+    $code-font: 'Monaco';
+    $code-font-size: $paragraph-font-size * 0.8;
+    $code-font-weight: 400;
+    $code-font-color: $paragraph-font-color;
+    $code-background-color: #ccc;
+    $code-border: 1px solid #ccc;
+    $code-border-radius: 3px;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Buttons                                            ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $button-font: $header-font;
+    $button-font-size: $paragraph-font-size;
+    $button-line-height: $paragraph-line-height;
+    $button-border-radius: $base-border-radius;
+    
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Forms                                              ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $form-default-width: 400px;
+    $input-border-radius: 4px;
+    $form-default-padding: 12px;
+    $line-form-focus-text-color: $white;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Tables                                             ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $table-font-color: #333;
+    $table-grid-color: #777;
+    $table-pattern-background-color:#ccc;
+    $table-header-font-size: 1.6rem;
+    $table-font-size: 1.4rem;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Navigation                                         ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    $horizontal-nav-positioning: fixed;
+    $horizontal-nav-color: $white;
+    $horizontal-nav-background-color: rgba(0,0,0,0.9);
+    $horizontal-nav-height: 50px;
+    $horizontal-nav-vert-align: 25%;
+    $horizontal-nav-initial-spacing: 20px;
+    $horizontal-nav-spacing: 0px 20px;
+    $horizontal-nav-item-hover-background: transparent;
+    $horizontal-nav-item-border-bottom: 0px solid transparent;
+    $horizontal-nav-item-border-bottom-hover: 0px solid transparent;
+
+////////////////////////////////////////////////////////////
+///                                                      ///
+///   Miscellaneous                                      ///
+///                                                      ///
+////////////////////////////////////////////////////////////
+
+    // Links
+    $link-color: #1eaedb;
+    $link-hover: #0fa0ce;
+
+    // Horizontal Rule
+    $hr-color: $white;
+    $hr-margin: 30px;
+    $hr-height: 1px;
+    $hr-mini-width: 50px;
+    $hr-custom-width: 70%;
+
+    // Labels
+    $label-font-size: $paragraph-font-size;
+    $label-font-weight: 400;
+    $label-font-color: $paragraph-font-color;
+    $label-padding: 0px 5px;
+    $label-margin: 4px 5px;
+    $label-border-radius: $base-border-radius;
+    $label-1-background-color:$red;
+    $label-2-background-color:$green;
+    $label-3-background-color:$orange;
+    $label-4-background-color:$red;
+    $label-5-background-color:$facebook-blue;
+    $label-6-background-color:$tw-blue;
+    $label-7-background-color:$tw-blue;
+    $label-8-background-color:$tw-blue;
+    $label-9-background-color:$tw-blue;
+    $label-10-background-color:$tw-blue;
+    
+    // More
+    $hover-darken: 6%;
+    $hover-double-darken: 9%;
+    

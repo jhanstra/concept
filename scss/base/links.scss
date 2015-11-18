@@ -1,5 +1,8 @@
-p a,
-.c-link-list a {
+a {
+  text-decoration:none;
+}
+
+p a {
   color:$link-color;
   font-weight:400;
   &:hover {
@@ -25,11 +28,5 @@ h6 > a {
   text-decoration:none;
   &:hover {
     text-decoration:none;
-  }
-}
-.c-no-link-color {
-  color:inherit;
-  &:hover {
-    border-bottom:1px solid inherit;
   }
 }

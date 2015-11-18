@@ -1,0 +1,42 @@
+/*
+* Concept V0.2.0
+* Copyright 2015, Jared Hanstra
+* www.c-o-n-c-e-p-t.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 11/17/2015
+*/
+
+
+// Base Concept Variables
+@import 'variables/colors.scss';
+@import 'variables/base_variables.scss';
+
+// Custom Variables
+@import 'variables/custom_variables.scss';
+
+// Mixins
+@import 'base/mixins.scss';
+
+// Base
+@import 'bower_components/normalize-scss/_normalize.scss';
+@import 'base/base.scss';
+@import 'base/typography.scss';
+@import 'base/links.scss';
+@import 'base/grid.scss';
+@import 'base/content.scss';
+@import 'base/input.scss';
+@import 'base/buttons.scss';
+@import 'base/tables.scss';
+@import 'base/images.scss';
+@import 'base/lists.scss';
+@import 'base/hr.scss';
+@import 'base/helpers.scss';
+@import 'base/background.scss';
+@import 'base/nav.scss';
+@import 'base/labels.scss';
+
+
+// Icons
+@import 'base/open-iconic.scss';
+@import 'base/icons.scss';

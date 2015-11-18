@@ -1,4 +1,4 @@
-.c-form {
+.form {
   text-align:left;
   margin:0px auto;
   display:inline-block;
@@ -16,7 +16,7 @@
     border:0px solid transparent;
   }
 
-  .c-form-title {
+  .form-title {
     position:relative;
     top:-1px;
     display:block;
@@ -25,8 +25,8 @@
     color:$white;
     margin:-$form-default-padding -$form-default-padding 0px -$form-default-padding;
     padding:$form-default-padding;
-    border-top-left-radius:$border-radius;
-    border-top-right-radius:$border-radius;
+    border-top-left-radius:$base-border-radius;
+    border-top-right-radius:$base-border-radius;
     margin-bottom:10px;
     h1,h2,h3,h4,h5,h6 {
       font-size:1.6rem;
@@ -36,15 +36,15 @@
 }
 
 // Full width Form
-.c-form-full {
+.form-full {
   width:100%;
 }
 
 // Default Form
-.c-form-default {
+.form-default {
   background-color:#ddd;
   padding:$form-default-padding;
-  border-radius:$border-radius;
+  border-radius:$base-border-radius;
   label {
     display:block;
     color:#555;
@@ -55,7 +55,7 @@
   textarea,
   select {
     width:100%;
-    border-radius:$border-radius;
+    border-radius:$base-border-radius;
     border:1px solid #f3f3f3;
     background-color:#f3f3f3;
     padding:8px 6px;
@@ -69,7 +69,7 @@
 }
 
 // Lines Form
-.c-form-lines {
+.form-lines {
   background-color:transparent;
   input[type="text"],
   input[type="email"],
@@ -101,7 +101,7 @@
 }
 
 // Transparent Background Form
-.c-form-transparent {
+.form-transparent {
   background-color:transparent;
   label {
     color:#777;
@@ -133,7 +133,7 @@
 
 
 // Input Group
-.c-input-group {
+.input-group {
   position: relative;
   display: table;
   border-collapse: separate;
@@ -150,7 +150,7 @@
 
 
 @media (max-width:549px) {
-  .c-form {
+  .form {
     width:96%;
   }
 }
